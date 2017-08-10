@@ -1,0 +1,17 @@
+/* nav */
+
+nav {
+  line-height: $header-height;
+  ul {
+    li {
+      display: inline;
+      a {
+        color: $gray;
+        float: left;
+        &:hover {
+          color: $gray-darken;
+        }
+      }
+    }
+  }
+}

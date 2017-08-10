@@ -1,0 +1,11 @@
+%main.main.brand
+  %section
+    =image_tag "white/logo.svg", :alt => "Lend a hand logo", :class => "logo"
+    %h1
+      Lend a hand
+    %p
+      We help to connect commuters  with people in a wheelchair  to commute on public transport.
+
+  %section.actions
+    = link_to "I can help", login_path, :class => 'button center primary'
+    = link_to "I need help", login_path, :class => 'button center primary'

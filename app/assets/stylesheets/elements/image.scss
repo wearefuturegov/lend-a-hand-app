@@ -1,0 +1,23 @@
+/* image */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  &.logo {
+    margin: 0 25%;
+    width: 50%;
+  }
+}
+
+.product {
+  height: calc(0vh);
+  &.small {
+    height: auto;
+  }
+}
+
+img.profile-img {
+  margin: 0 35%;
+  width: 30%;
+}

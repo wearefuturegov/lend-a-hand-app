@@ -1,0 +1,59 @@
+/* mixins */
+
+@mixin radius {
+  border-radius: $baseline*0.25;
+  -webkit-border-radius: $baseline*0.25;
+  -moz-radius: $baseline*0.25;
+}
+
+@mixin ease {
+  transition: all $speed $curve;
+  -webkit-transition: all $speed $curve;
+  -moz-transition: all $speed $curve;
+  -o-transition: all $speed $curve;
+}
+
+@mixin circle {
+  border: $border-width $border-style $brand;
+  height: $baseline;
+  width: $baseline;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-radius: 100%;
+}
+
+@mixin spot {
+  background: $brand;
+  line-height: $baseline;
+  height: $baseline;
+  width: $baseline;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-radius: 100%;
+}
+
+@mixin gradient {
+  background: $brand;
+  background: -moz-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $brand), color-stop(100%, $brand-variant));
+  background: -webkit-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: -o-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: -ms-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: linear-gradient(to right, $brand 0%, $brand-variant 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand', endColorstr='$brand-light', GradientType=1 );
+}
+
+@mixin placeholder ($placeholder-color) {
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $placeholder-color;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $placeholder-color;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $placeholder-color;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $placeholder-color;
+  }
+}

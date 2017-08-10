@@ -1,0 +1,12 @@
+%main.main
+
+  %section.map
+    =image_tag "app-grabs/newtown.png", :alt => "Newtown map"
+
+  %section.form
+    %h2 Where do you want to go?
+
+    <input placeholder="Newton, Bedord St, Black Star Pastry…" >
+
+  %section.actions
+    = link_to "Search", search_when_path, :class => 'button center primary'

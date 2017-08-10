@@ -1,0 +1,30 @@
+%main.main
+  %section.card
+    %section.profile
+      =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+      
+      %h2 Jon Snow
+      %p will be lending you a hand
+
+  %section.card
+    %section
+      .info Lending a hand since:
+      .info.right 22
+
+    %section
+      .info People helped:
+      .info.right 22
+
+  %section.card
+    %h3 Feedback
+
+    %ul.tags
+      %li Went above and beyond
+      %li Experienced
+      %li Engaging
+      %li Knowledge in technique
+
+  %section.actions.row
+    = link_to "Profile", help_type_path, :class => 'button row'
+    = link_to "Route", help_type_path, :class => 'button row'
+    = link_to "Contact", help_type_path, :class => 'button row'

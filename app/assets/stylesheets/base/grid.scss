@@ -1,0 +1,38 @@
+/* grid using neat */
+/* grid using neat */
+
+$neat-grid: (
+  columns: 6,
+  gutter: $gutter,
+);
+
+header {
+  @include grid-container;
+}
+
+section, footer {
+  float: left;
+  width: 100%;
+}
+
+.back,
+.nav {
+  @include grid-column(3);
+}
+
+section, .form input, .list {
+  @include grid-column(6);
+}
+
+.card {
+  .info {
+    @include grid-column(4);
+    &.right {
+      @include grid-column(2);
+    }
+  }
+  .tags {
+    @include grid-column(6);
+  }
+}
+

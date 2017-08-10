@@ -1,0 +1,21 @@
+/* header */
+
+.header {
+  .back .fa:before {
+    font-size: $body*1.75;
+    line-height: $header-height;
+  }
+  .nav {
+    font-size: $body*1.25;
+    ul {
+      float: right;
+      li a {
+        color: $white;
+        margin-left: $gutter*0.25;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

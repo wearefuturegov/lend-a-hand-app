@@ -1,0 +1,78 @@
+/* layout */
+
+html {
+  background: whitesmoke;
+}
+
+body {
+  width: $mobile-width;
+  max-width: $mobile-width;
+  margin: 0 auto;
+  height: 736px;
+}
+
+header, footer {
+  background: $brand;
+}
+
+.main {
+  float: left;
+  background: $background;
+  position: relative;
+  height: 666px;
+  width: 100%;
+  .form {
+    margin-top: $baseline*0.5;
+    margin-bottom: $baseline*0.5;
+  }
+  &.brand {
+    background: $brand;
+  }
+}
+
+.fa-clock-o {
+  margin-top: $baseline;
+  text-align: center;
+  width: 100%;
+}
+
+.action {
+  margin-top: $baseline;
+}
+
+.actions {
+  margin-top: $baseline;
+  position: absolute;
+  bottom: $baseline;
+  &.row {
+    position: relative;
+    bottom: $baseline*0.5;
+  }
+}
+
+.choice {
+  margin-bottom: $baseline*0.5;
+}
+
+.map {
+  height: $baseline*10;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+}
+
+.profile {
+  h2, p {
+    margin-bottom: 0;
+  }
+}
+
+.list {
+  
+}
+
+.button {
+  &.center {
+    margin: 0 auto;
+  }
+}

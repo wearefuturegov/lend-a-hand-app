@@ -1,0 +1,45 @@
+/* card */
+
+.card {
+  margin-left: 0;
+  padding: $baseline*0.5 0;
+  float: left;
+  width: 100%;
+  border-bottom: $border-width-thin $border-style $brand;
+  + .card {
+    margin-top: -$border-width;
+  }
+  section {
+    margin-bottom: $baseline*0.5;
+  }
+  .info {
+    &.icon {
+      .spot, .rect {
+        float: left;
+        text-align: center;
+        padding: $baseline*0.0125;
+        margin-right: $baseline*0.25;
+      }
+      .spot {
+        @include spot;
+        color: $white;
+        background: $color-one;
+      }
+      .rect {
+        color: $white;
+        background: $color-two;
+        padding: $baseline*0.0125 $baseline*0.125;
+      }
+    }
+    &.right {
+      text-align: right;
+      span {
+        margin-left: $baseline*0.5;
+      }
+    }
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

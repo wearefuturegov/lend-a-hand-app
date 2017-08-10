@@ -1,0 +1,9 @@
+%main.main
+
+  %section
+    %h2 This is where the route is graphically displayed
+
+  %section.actions
+    = link_to "Map", search_map_path, :class => 'button center primary'
+    = link_to "Route", search_details_path, :class => 'button center primary'
+    = link_to "Request a hand", searching_path, :class => 'button center primary'

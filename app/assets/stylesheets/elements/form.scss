@@ -1,0 +1,35 @@
+/* form */
+
+.feedback {
+  border: none;
+  padding: $baseline*4;
+}
+
+.form {
+  input {
+    border: none;
+    background: $background;
+    border-bottom: $border-width $border-style $gray;
+    margin-top: $baseline*0.5;
+    margin-bottom: $baseline*0.5;
+  }
+}
+
+.form, .form input {
+  @include placeholder($gray);
+  color: $brand-dim;
+  font-size: $body;
+  line-height: $baseline;
+  text-align: center;
+}
+
+.main.brand {
+  .form, .form input {
+    @include placeholder($brand-dim);
+    background: none;
+  }
+  input {
+    color: $white;
+    border-bottom: $border-width $border-style $white;
+  }
+}

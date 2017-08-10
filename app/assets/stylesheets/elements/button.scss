@@ -1,0 +1,72 @@
+/* button */
+
+.button {
+  @include ease;
+  background: $secondary;
+  display: block;
+  border: $border-width $border-style $secondary;
+  font-family: $stack;
+  font-size: $small;
+  text-align: center;
+  color: $white;
+  padding: $baseline*0.25;
+  width: calc(100% - 70px);
+  // &:hover {
+  //   @include ease;
+  //   background: $white;
+  //   cursor: pointer;
+  //   border-color: $white;
+  //   color: $brand;
+  // }
+  &.big {
+    padding: $baseline*0.5 $baseline*0.25;
+  }
+  &.primary {
+    border-color: $brand;
+    background: $brand;
+  }
+  &.row {
+    float: left;
+    width: auto;
+    border: $border-width-thin $border-style $white;
+  }
+}
+
+.brand .button,
+.brand .button.primary {
+  border-color: $white;
+  color: $white;
+  background: none;
+}
+
+// for outlined, might need removing for solid
+.brand .button {
+  + .button {
+    margin-top: -$border-width;
+  }
+}
+
+
+.button + .button {
+  margin-top: $border-width;
+  &.row {
+    margin-top: 0;
+  }
+}
+
+input + .button {
+  width: $baseline;
+  height: $baseline;
+  display: inline-block;
+  line-height: $baseline;
+}
+
+.register .button,
+.bottom .interest .button {
+  color: $brand;
+  border-color: $brand;
+  // &:hover {
+  //   color: $brand-variant;
+  //   border-color: $brand-variant;
+  // }
+}

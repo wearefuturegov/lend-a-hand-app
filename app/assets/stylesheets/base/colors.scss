@@ -1,0 +1,28 @@
+/* colors */
+
+/* general */
+$white: #fff;
+$black: #505050;
+$gray: #bbb;
+$footer: #000;
+
+/* modifiers */
+$gray-darken: darken($gray, 30%);
+
+/* brand */
+$brand: #009ca6;
+$brand-variant: #17cbd4;
+
+$secondary: $brand;
+
+$brand-dim: darken($brand, 12%);
+$brand-bright: lighten($brand, 12%);
+$brand-mute: #d5eff1;
+
+$background: $white;
+
+
+/* outside colors */
+
+$color-one: #f5a623;
+$color-two: #03a9f4;

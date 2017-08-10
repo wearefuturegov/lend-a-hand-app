@@ -1,0 +1,15 @@
+/* footer */
+
+.footer {
+  .nav {
+    ul {
+      li a {
+        color: $gray;
+        margin-right: $gutter*0.25;
+        &:hover {
+          color: $gray-darken;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+%main.main
+  %section
+    %h2.white
+      Help us some more to match someone who is the most helpful to you.
+
+  %section.choice
+    = link_to "Female", search_results_path, :class => 'button big center'
+    = link_to "Male", search_results_path, :class => 'button big center'
+
+  %section.choice
+    = link_to "One off", search_results_path, :class => 'button big center'
+    = link_to "Routine", search_results_path, :class => 'button big center'
+
+  %section.actions
+    = link_to "Update", search_results_path, :class => 'button center primary'

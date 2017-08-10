@@ -1,0 +1,62 @@
+/* typography */
+
+body, h1, h2, h3, p {
+  font-family: $stack;
+  font-size: $body;
+  line-height: $baseline;
+  color: $brand;
+}
+
+a, a:active, a:hover, a:focus {
+  @include ease;
+  color: $brand;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  margin-bottom: $baseline;
+  span {
+    color: $brand;
+  }
+  &.question {
+    border-left: $border-width*3 $border-style $white;
+    padding-left: $gutter*0.5;
+  }
+}
+
+h1 {
+  font-size: $h1;
+  line-height: $h1*1.4;
+  text-align: center;
+}
+
+h2 {
+  font-size: $h2;
+  line-height: $h2*1.25;
+  text-align: center;
+  margin-top: $baseline;
+  margin-bottom: $baseline;
+}
+
+h3 {
+  font-size: $h3;
+  line-height: $h3*1.25;
+  text-align: center;
+  margin-top: $baseline*0.125;
+  margin-bottom: $baseline*0.125;
+}
+
+.info {
+  font-size: $small;
+  line-height: $tight;
+  &.time {
+    font-size: $h2;
+  }
+}
+
+.brand {
+  h1, h2, p, a, a:active, a:hover, a:focus {
+    color: $white;
+  }
+}

@@ -1,0 +1,27 @@
+/* variables */
+
+$body: 20px;
+$baseline: 35px;
+$tight: 20px;
+$gutter: $baseline*0.5;
+
+$mobile-width: 414px;
+
+$h1: 34px;
+$h2: 27px;
+$h3: 20px;
+$small: 16px;
+
+$stack: 'Varela Round', sans-serif;
+
+$border-width: 2px;
+$border-style: solid;
+
+$border-width-thin: 1px;
+
+$speed: 500ms;
+$curve: ease;
+
+/* header */
+$header-height: $baseline*2;
+// this can also be used for placing header nav vertically aligned to the logo

@@ -1,0 +1,13 @@
+/* tags */
+
+.tags {
+  text-align: center;
+  li {
+    font-size: $small;
+    line-height: $tight;
+    background: $brand-mute;
+    padding: $baseline*0.0125 $baseline*0.125;
+    margin: $baseline*0.125;
+    display: inline-block;
+  }
+}

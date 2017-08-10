@@ -1,0 +1,9 @@
+%main.main
+
+  %section.map
+    =image_tag "app-grabs/newtown.png", :alt => "Newtown map"
+
+  %section.actions
+    = link_to "Map", search_map_path, :class => 'button center primary'
+    = link_to "Route", search_details_path, :class => 'button center primary'
+    = link_to "Request a hand", searching_path, :class => 'button center primary'
