@@ -1,0 +1,52 @@
+/* date and time */
+
+.picker {
+  float: left;
+  text-align: center;
+  padding: $baseline 0;
+  border-top: $border-style $border-width $brand;
+  border-bottom: $border-style $border-width $brand;
+}
+
+.day,
+.time,
+.hour,
+.min,
+.meridiem {
+  float: left;
+  width: 18%;
+  margin: 0 1%;
+  li:first-child, li:last-child {
+    color: $brand-mute;
+  }
+  li:nth-child(2) {
+      border-top: $border-width $border-style $brand;
+      border-bottom: $border-width $border-style $brand;
+  }
+}
+
+.day {
+  width: 38%;
+}
+
+.meridiem {
+  li:first-child {
+      border-bottom: $border-width $border-style $brand; 
+  }
+  li:last-child {
+    color: $brand;
+     border: none;
+  }
+}
+
+// .hour {
+//   width: 10%;
+// }
+
+// .min {
+//   width: 10%;
+// }
+
+// .meridiem {
+//   width: 10%;
+// }

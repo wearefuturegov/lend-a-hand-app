@@ -36,17 +36,15 @@ header, footer {
   width: 100%;
 }
 
-.action {
-  margin-top: $baseline;
-}
-
 .actions {
   margin-top: $baseline;
   position: absolute;
   bottom: $baseline;
   &.row {
-    position: relative;
-    bottom: $baseline*0.5;
+    display: flex;
+  }
+  .row {
+    flex: 1 1 100%;
   }
 }
 
@@ -55,7 +53,7 @@ header, footer {
 }
 
 .map {
-  height: $baseline*10;
+  height: $baseline*4;
   overflow: hidden;
   width: 100%;
   margin-left: 0;
@@ -64,6 +62,9 @@ header, footer {
 .profile {
   h2, p {
     margin-bottom: 0;
+  }
+  h2 {
+    color: $primary;
   }
 }
 

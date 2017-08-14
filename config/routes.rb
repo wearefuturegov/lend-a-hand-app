@@ -8,22 +8,25 @@ Rails.application.routes.draw do
   get "/pages/login", to: "pages#login", as: "login"
 
   get "/pages/profile", to: "pages#profile", as: "profile"
-  get "/pages/profile_confirm", to: "pages#profile_confirm", as: "profile_confirm"
-  get "/pages/profile_contact", to: "pages#profile_contact", as: "profile_contact"
-  get "/pages/profile_notification", to: "pages#profile_notification", as: "profile_notification"
-  get "/pages/profile_route", to: "pages#profile_route", as: "profile_route"
+  get "/pages/profile-confirm", to: "pages#profile_confirm", as: "profile_confirm"
+  get "/pages/profile-contact", to: "pages#profile_contact", as: "profile_contact"
+  get "/pages/profile-notification", to: "pages#profile_notification", as: "profile_notification"
+  get "/pages/profile-route", to: "pages#profile_route", as: "profile_route"
 
   get "/pages/search", to: "pages#search", as: "search"
-  get "/pages/search_map", to: "pages#search_map", as: "search_map"
-  get "/pages/search_when", to: "pages#search_when", as: "search_when"
-  get "/pages/search_where", to: "pages#search_where", as: "search_where"
-  get "/pages/search_results", to: "pages#search_results", as: "search_results"
-  get "/pages/search_details", to: "pages#search_details", as: "search_details"
-  get "/pages/search_important", to: "pages#search_important", as: "search_important"
+  get "/pages/search-map", to: "pages#search_map", as: "search_map"
+  get "/pages/search-when", to: "pages#search_when", as: "search_when"
+  get "/pages/search-where", to: "pages#search_where", as: "search_where"
+  get "/pages/search-results", to: "pages#search_results", as: "search_results"
+  get "/pages/search-details", to: "pages#search_details", as: "search_details"
+  get "/pages/search-important", to: "pages#search_important", as: "search_important"
   get "/pages/searching", to: "pages#searching", as: "searching"
 
-  get "/pages/help_pref", to: "pages#help_pref", as: "help_pref"
-  get "/pages/help_type", to: "pages#help_type", as: "help_type"
+  get "/pages/reset-password", to: "pages#reset_password", as: "reset_password"
+  get "/pages/create-password", to: "pages#create_password", as: "create_password"
+
+  get "/pages/help-pref", to: "pages#help_pref", as: "help_pref"
+  get "/pages/help-type", to: "pages#help_type", as: "help_type"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

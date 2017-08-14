@@ -20,7 +20,13 @@ section, footer {
   @include grid-column(3);
 }
 
-section, .form input, .list {
+.body,
+.row,
+.profile,
+.form input, 
+.list,
+.picker,
+.picker .inner {
   @include grid-column(6);
 }
 

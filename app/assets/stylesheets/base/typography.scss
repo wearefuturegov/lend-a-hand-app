@@ -7,10 +7,13 @@ body, h1, h2, h3, p {
   color: $brand;
 }
 
-a, a:active, a:hover, a:focus {
+a, a:active, a:focus {
   @include ease;
   color: $brand;
   text-decoration: none;
+  & a:hover {
+    color: $white;
+  }
 }
 
 p {
@@ -40,11 +43,12 @@ h2 {
 }
 
 h3 {
+  color: $black;
   font-size: $h3;
   line-height: $h3*1.25;
   text-align: center;
-  margin-top: $baseline*0.125;
-  margin-bottom: $baseline*0.125;
+  margin-top: 0;
+  margin-bottom: $baseline*0.5;
 }
 
 .info {

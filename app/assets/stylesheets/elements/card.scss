@@ -9,10 +9,13 @@
   + .card {
     margin-top: -$border-width;
   }
-  section {
-    margin-bottom: $baseline*0.5;
+  &.route {
+    section {
+      margin-bottom: $baseline*0.25;
+    }
   }
   .info {
+    line-height: $baseline;
     &.icon {
       .spot, .rect {
         float: left;
@@ -33,13 +36,10 @@
     }
     &.right {
       text-align: right;
+      line-height: $baseline;
       span {
         margin-left: $baseline*0.5;
       }
     }
-  }
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }

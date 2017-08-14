@@ -6,7 +6,7 @@
   display: block;
   border: $border-width $border-style $secondary;
   font-family: $stack;
-  font-size: $small;
+  font-size: $medium;
   text-align: center;
   color: $white;
   padding: $baseline*0.25;
@@ -22,13 +22,23 @@
     padding: $baseline*0.5 $baseline*0.25;
   }
   &.primary {
-    border-color: $brand;
-    background: $brand;
+    border-color: $primary;
+    background: $primary;
   }
   &.row {
     float: left;
     width: auto;
-    border: $border-width-thin $border-style $white;
+    background: $white;
+    color: $brand;
+    margin-left: -$border-width;
+    &.primary {
+      color: $primary;
+      margin-left: $baseline*0.25;
+    }
+    &.active {
+      color: white;
+      background: $brand;
+    }
   }
 }
 

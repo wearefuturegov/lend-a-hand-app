@@ -1,0 +1,106 @@
+/*
+Error: Undefined mixin 'grid-container'.
+        on line 10 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/grid.scss, in `grid-container'
+        from line 10 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/grid.scss
+        from line 6 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/import.scss
+        from line 22 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/application.scss
+
+5:  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+6:  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+7:  *
+8:  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+9:  * compiled file so the styles you add here take precedence over styles defined in any styles
+10:  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+11:  * file per style scope.
+12:  *
+13:  *\/
+14: 
+15: /*
+
+Backtrace:
+/Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/grid.scss:10:in `grid-container'
+/Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/grid.scss:10
+/Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/import.scss:6
+/Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/application.scss:22
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:98:in `with_mixin'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/martinthompson/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'grid-container'.\A         on line 10 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/grid.scss, in `grid-container'\A         from line 10 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/grid.scss\A         from line 6 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/base/import.scss\A         from line 22 of /Users/martinthompson/futuregov/lend-a-hand-app/app/assets/stylesheets/application.scss\A \A 5:  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,\A 6:  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.\A 7:  *\A 8:  * You're free to add application-wide styles to this file and they'll appear at the bottom of the\A 9:  * compiled file so the styles you add here take precedence over styles defined in any styles\A 10:  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new\A 11:  * file per style scope.\A 12:  *\A 13:  */\A 14: \A 15: /*"; }

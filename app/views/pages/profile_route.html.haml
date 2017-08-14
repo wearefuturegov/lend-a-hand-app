@@ -1,0 +1,35 @@
+%main.main
+  %section.card
+    %section.profile
+      =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+      
+      %h2 Jon Snow
+
+  %section.card.route
+    %h3 Helper's curent route
+    %section
+      .info.icon
+        .spot T
+      .info.right 
+        Boarding train
+
+    %section
+      .info.icon
+        .spot T
+      .info.right 
+        Exiting train
+
+  %section.card
+    %section
+      .info Lending a hand since:
+      .info.right 22
+
+    %section
+      .info People helped:
+      .info.right 22
+
+  %section.actions.row
+    = link_to "Profile", profile_path, :class => 'button row'
+    = link_to "Route", profile_route_path, :class => 'button row active'
+    = link_to "Contact", profile_contact_path, :class => 'button row'
+    = link_to "Accept", profile_confirm_path, :class => 'button row primary'

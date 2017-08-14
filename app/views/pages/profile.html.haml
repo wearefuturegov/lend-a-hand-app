@@ -19,12 +19,17 @@
     %h3 Feedback
 
     %ul.tags
-      %li Went above and beyond
-      %li Experienced
-      %li Engaging
-      %li Knowledge in technique
+      %li 
+        %span Went above and beyond
+      %li 
+        %span Experienced
+      %li 
+        %span Engaging
+      %li 
+        %span Knowledge in technique
 
   %section.actions.row
-    = link_to "Profile", help_type_path, :class => 'button row'
-    = link_to "Route", help_type_path, :class => 'button row'
-    = link_to "Contact", help_type_path, :class => 'button row'
+    = link_to "Profile", profile_path, :class => 'button row active'
+    = link_to "Route", profile_route_path, :class => 'button row'
+    = link_to "Contact", profile_contact_path, :class => 'button row'
+    = link_to "Accept", profile_confirm_path, :class => 'button row primary'

@@ -5,14 +5,11 @@
   padding: $baseline*4;
 }
 
-.form {
-  input {
-    border: none;
-    background: $background;
-    border-bottom: $border-width $border-style $gray;
-    margin-top: $baseline*0.5;
-    margin-bottom: $baseline*0.5;
-  }
+.form input {
+  border: none;
+  background: $background;
+  border-bottom: $border-width $border-style $gray;
+  padding: 0;
 }
 
 .form, .form input {
@@ -21,6 +18,12 @@
   font-size: $body;
   line-height: $baseline;
   text-align: center;
+  margin-top: $baseline*0.5;
+  margin-bottom: $baseline*0.5;
+  .helper {
+    font-size: $tiny;
+    text-decoration: underline;
+  }
 }
 
 .main.brand {

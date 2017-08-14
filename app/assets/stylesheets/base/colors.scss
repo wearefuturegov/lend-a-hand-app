@@ -13,6 +13,7 @@ $gray-darken: darken($gray, 30%);
 $brand: #009ca6;
 $brand-variant: #17cbd4;
 
+$primary: lighten($brand, 7%);
 $secondary: $brand;
 
 $brand-dim: darken($brand, 12%);
