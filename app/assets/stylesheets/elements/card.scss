@@ -10,8 +10,14 @@
     margin-top: -$border-width;
   }
   &.route {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
     section {
       margin-bottom: $baseline*0.25;
+    }
+    .info.right {
+      float: right;
     }
   }
   .info {
@@ -22,6 +28,7 @@
         text-align: center;
         padding: $baseline*0.0125;
         margin-right: $baseline*0.25;
+        box-sizing: border-box;
       }
       .spot {
         @include spot;
@@ -32,14 +39,45 @@
         color: $white;
         background: $color-two;
         padding: $baseline*0.0125 $baseline*0.125;
+        line-height: $icon;
+        height: $icon;
+        min-width: $icon;
       }
+    }
+    &.extra {
+      color: $black;
+      font-size: $tiny;
+      line-height: $tight;
+      margin-top: $baseline*0.5;
     }
     &.right {
       text-align: right;
-      line-height: $baseline;
+      line-height: $icon;
       span {
         margin-left: $baseline*0.5;
       }
     }
   }
+}
+
+.key {
+  margin: $baseline 0;
+  .card {
+      padding: $baseline*0.25 0;
+      border-bottom: none;
+    .info {
+      width: auto;
+      &.extra {
+        margin-top: 0;
+        margin-left: 0;
+        line-height: $icon;
+      }
+    }
+  }
+}
+
+.link {
+  border-left: $border-width*2 dotted $gray;
+  margin-left: $gutter + $icon*0.5 - $border-width;
+  height: $baseline;
 }

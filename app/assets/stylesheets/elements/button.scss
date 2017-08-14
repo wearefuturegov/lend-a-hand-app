@@ -40,6 +40,14 @@
       background: $brand;
     }
   }
+  &.icon {
+    position: relative;
+  }
+  &.icon + .fa {
+    position: absolute;
+    top: $baseline;
+    left: $baseline;
+  }
 }
 
 .brand .button,
@@ -79,4 +87,14 @@ input + .button {
   //   color: $brand-variant;
   //   border-color: $brand-variant;
   // }
+}
+
+.deactive {
+  border-color: $gray;
+  background: $gray;
+  pointer-events: none;
+  cursor: default;
+  &.row {
+    color: $gray;
+  }
 }

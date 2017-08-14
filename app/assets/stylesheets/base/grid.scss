@@ -26,7 +26,8 @@ section, footer {
 .form input, 
 .list,
 .picker,
-.picker .inner {
+.picker .inner,
+.link {
   @include grid-column(6);
 }
 
@@ -38,6 +39,9 @@ section, footer {
     }
   }
   .tags {
+    @include grid-column(6);
+  }
+  .extra {
     @include grid-column(6);
   }
 }

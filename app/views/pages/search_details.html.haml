@@ -1,7 +1,40 @@
 %main.main
 
-  %section
+  %section.body
     %h2 This is where the route is graphically displayed
+
+    %section.card.route
+      .info.icon
+        .spot T
+      .info.right 
+        11:05 AM
+
+    %section.link
+
+    %section.card.route
+      .info.icon
+        .rect T2
+      .info.right 
+        11:20 AM
+
+    %section.key
+      %section.card
+        .info.icon
+          .spot T
+        .info.extra
+          T has a wheelchair accessible bathrooms
+
+      %section.card
+        .info.icon
+          .spot T
+        .info.extra
+          T has wheelchair accessible elevators
+
+      %section.card
+        .info.icon
+          .rect T2
+        .info.extra
+          T2 has a wheelchair accessible entrances
 
   %section.actions
     = link_to "Map", search_map_path, :class => 'button center primary'

@@ -24,9 +24,9 @@
 
 @mixin spot {
   background: $brand;
-  line-height: $baseline;
-  height: $baseline;
-  width: $baseline;
+  line-height: $icon;
+  height: $icon;
+  width: $icon;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-radius: 100%;

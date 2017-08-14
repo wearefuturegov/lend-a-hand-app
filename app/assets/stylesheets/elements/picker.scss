@@ -16,6 +16,9 @@
   float: left;
   width: 18%;
   margin: 0 1%;
+  li {
+    padding: $baseline*0.25 0;
+  }
   li:first-child, li:last-child {
     color: $brand-mute;
   }
