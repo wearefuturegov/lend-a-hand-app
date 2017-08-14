@@ -4,29 +4,23 @@
       =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
       
       %h2 Jon Snow
-
-  %section.card.route
-    %h3 Helper's curent route
-    %section
-      .info.icon
-        .spot T
-      .info.right 
-        Boarding train
-
-    %section
-      .info.icon
-        .spot T
-      .info.right 
-        Exiting train
+      %p will be lending you a hand
 
   %section.card
-    %section
-      .info Lending a hand since:
-      .info.right 22
+    %h3 Helper's current route
+    %section.card.route
+      .info.icon
+        .spot T
+      .info.right 
+        11:05 AM
 
-    %section
-      .info People helped:
-      .info.right 22
+    %section.link
+
+    %section.card.route
+      .info.icon
+        .rect T2
+      .info.right 
+        11:20 AM
 
   %section.actions.row
     = link_to "Profile", profile_path, :class => 'button row'

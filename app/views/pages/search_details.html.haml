@@ -1,7 +1,7 @@
 %main.main
 
   %section.body
-    %h2 This is where the route is graphically displayed
+    %h2 This is your currently planned route.
 
     %section.card.route
       .info.icon
@@ -37,6 +37,6 @@
           T2 has a wheelchair accessible entrances
 
   %section.actions
-    = link_to "Map", search_map_path, :class => 'button center primary'
-    = link_to "Route", search_details_path, :class => 'button center primary'
+    = link_to "Map", search_where_path, :class => 'button center'
+    = link_to "Route", search_details_path, :class => 'button center'
     = link_to "Request a hand", searching_path, :class => 'button center primary'
