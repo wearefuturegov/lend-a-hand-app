@@ -33,8 +33,6 @@ body {
 
 .actions {
   margin-top: $baseline;
-  position: absolute;
-  bottom: $baseline;
   &.row {
     display: flex;
   }
