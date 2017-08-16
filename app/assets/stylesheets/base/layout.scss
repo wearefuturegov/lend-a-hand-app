@@ -1,25 +1,20 @@
 /* layout */
 
-html {
-  background: whitesmoke;
-}
-
-body {
-  width: $mobile-width;
-  max-width: $mobile-width;
-  margin: 0 auto;
-  height: 736px;
-}
-
 header, footer {
   background: $brand;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $background;
+}
+
 .main {
   float: left;
-  background: $background;
-  position: relative;
-  height: 666px;
+  height: 100%;
   width: 100%;
   .form {
     margin-top: $baseline*0.5;
