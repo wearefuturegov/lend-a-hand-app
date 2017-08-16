@@ -2,7 +2,7 @@
 
 .card {
   margin-left: 0;
-  padding: $baseline*0.5 0;
+  padding: $baseline 0;
   float: left;
   width: 100%;
   border-bottom: $border-width-thin $border-style $brand;
@@ -16,6 +16,9 @@
     section {
       margin-bottom: $baseline*0.25;
     }
+  }
+  section {
+    margin-bottom: $baseline*0.5;
   }
   .info {
     line-height: $baseline;
@@ -60,13 +63,15 @@
 .key {
   margin: $baseline 0;
   .card {
-      padding: $baseline*0.25 0;
+      padding: $baseline*0.5 0;
       border-bottom: none;
     .info {
-      width: auto;
       &.extra {
         margin-top: 0;
-        margin-left: 0;
+      }
+    }
+    &.route {
+      &.extra {
         line-height: $icon;
       }
     }

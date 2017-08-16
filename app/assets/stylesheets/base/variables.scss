@@ -1,15 +1,15 @@
 /* variables */
 
-$body: 20px;
-$baseline: 35px;
+$body: 18px;
+$baseline: 24px;
 $tight: 20px;
 $gutter: $baseline*0.75;
 
 $mobile-width: 414px;
 
-$h1: 34px;
-$h2: 27px;
-$h3: 16px;
+$h1: 30px;
+$h2: 22px;
+$h3: 14px;
 
 $medium: 18px;
 $small: 16px;
@@ -29,4 +29,4 @@ $curve: ease;
 $header-height: $baseline*2;
 // this can also be used for placing header nav vertically aligned to the logo
 
-$icon: $baseline*0.75;
+$icon: $baseline;

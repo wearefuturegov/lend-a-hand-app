@@ -32,11 +32,18 @@ p,
   @include grid-column(6);
 }
 
+.button {
+  @include grid-column(6);
+}
+
 .card {
   .info {
-    @include grid-column(4);
+    @include grid-column(3);
     &.right {
-      @include grid-column(2);
+      @include grid-column(3);
+    }
+    &.extra {
+      @include grid-column(6);
     }
   }
   .tags {

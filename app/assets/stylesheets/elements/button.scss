@@ -9,8 +9,9 @@
   font-size: $medium;
   text-align: center;
   color: $white;
-  padding: $baseline*0.25;
-  width: calc(100% - 70px);
+  padding: $baseline*0.5;
+  box-sizing: border-box;
+
   // &:hover {
   //   @include ease;
   //   background: $white;
@@ -19,7 +20,7 @@
   //   color: $brand;
   // }
   &.big {
-    padding: $baseline*0.5 $baseline*0.25;
+    padding: $baseline $baseline*0.25;
   }
   &.primary {
     border-color: $primary;
@@ -30,6 +31,7 @@
     width: auto;
     background: $white;
     color: $brand;
+    font-size: $small;
     margin-left: -$border-width;
     &.primary {
       color: $primary;

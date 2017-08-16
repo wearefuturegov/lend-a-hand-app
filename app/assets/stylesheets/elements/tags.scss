@@ -4,8 +4,8 @@
   text-align: center;
   li {
     background: $brand-mute;
-    padding: $baseline*0.0125 $baseline*0.25;
-    margin: $baseline*0.125;
+    padding: $baseline*0.25 $baseline*0.5;
+    margin: $baseline*0.25;
     display: inline-block;
     span {
       font-size: $small;
