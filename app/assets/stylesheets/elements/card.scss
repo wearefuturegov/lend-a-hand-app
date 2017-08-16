@@ -76,5 +76,5 @@
 .link {
   border-left: $border-width*2 dotted $gray;
   margin-left: $gutter + $icon*0.5 - $border-width;
-  height: $baseline;
+  height: $baseline*2;
 }
