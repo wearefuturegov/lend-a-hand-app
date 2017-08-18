@@ -1,18 +1,21 @@
 %main.main
-  %section.card
-    %section.profile
-      =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+  %section.container
+    %section.body
+      %section.actions.secondary
+        = link_to "Profile", profile_path, :class => 'button secondary'
+        = link_to "Route", profile_route_path, :class => 'button secondary'
+        = link_to "Contact", profile_contact_path, :class => 'button secondary active'
       
-      %h2 Jon Snow
-      %p will be lending you a hand
+      %section.card
+        %section.profile
+          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+          
+          %h2 Jon Snow
+          %p will be lending you a hand
 
-  %section.choice
-    = link_to "Call Jon", search_results_path, :class => 'button big center'
-    = link_to "Message Jon", search_results_path, :class => 'button big center'
+      %section.actions.secondary
+        = link_to "Call Jon", profile_contact_path, :class => 'button secondary'
+        = link_to "Message Jon", profile_contact_path, :class => 'button secondary'
 
-  %section.actions.row
-    = link_to "Profile", profile_path, :class => 'button row'
-    = link_to "Route", profile_route_path, :class => 'button row'
-    = link_to "Contact", profile_contact_path, :class => 'button row active'
-  %section.actions
-    = link_to "Accept", profile_confirm_path, :class => 'button center primary'
+      %section.actions.primary
+        = link_to "Accept", profile_confirm_path, :class => 'button primary confirm'

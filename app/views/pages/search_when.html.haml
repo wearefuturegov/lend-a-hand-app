@@ -1,28 +1,29 @@
 %main.main
-  %section.body
-    %h2 When do you plan on arriving?
-    %h3 Set date
+  %section.container
+    %section.body
+      %h2 When do you plan on arriving?
+      %h3 Set date
 
-    %section.picker
-      .inner
-        %ul.day
-          %li 15th Aug
-          %li 16th Aug
-          %li 17th Aug
+      %section.picker
+        .inner
+          %ul.day
+            %li 15th Aug
+            %li 16th Aug
+            %li 17th Aug
 
-        %ul.hour
-          %li 9
-          %li 10
-          %li 11     
-        
-        %ul.min
-          %li 15
-          %li 30
-          %li 45
+          %ul.hour
+            %li 9
+            %li 10
+            %li 11     
+          
+          %ul.min
+            %li 15
+            %li 30
+            %li 45
 
-        %ul.meridiem
-          %li AM
-          %li PM
+          %ul.meridiem
+            %li AM
+            %li PM
 
-  %section.actions
-    = link_to "Confirm", help_type_path, :class => 'button center primary'
+    %section.actions.primary
+      = link_to "Confirm", help_type_path, :class => 'button primary'

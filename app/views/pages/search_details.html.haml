@@ -1,42 +1,25 @@
-%main.main
+%main.main.search-details
+  %section.container
+    %section.body
+      %section.actions.secondary
+        = link_to "Map", search_details_path, :class => 'button secondary'
+        = link_to "Route", search_details_path, :class => 'button secondary'
 
-  %section.body
-    %h2 This is your currently planned route.
+      %h2 This is your currently planned route.
 
-    %section.card.route
-      .info.icon
-        .spot T
-      .info.right 
-        11:05 AM
+      %section.key
+        %section.markers
+          %section
+            .info 11:05 AM. Platform 1. 
+            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
 
-    %section.link
+          %section.link.center
+          
+          %section
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            .info 11:25 AM Platform 2. 
+            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-    %section.card.route
-      .info.icon
-        .rect T2
-      .info.right 
-        11:20 AM
-
-    %section.key
-      %section.card
-        .info.icon
-          .spot T
-        .info.extra
-          T has a wheelchair accessible bathrooms
-
-      %section.card
-        .info.icon
-          .spot T
-        .info.extra
-          T has wheelchair accessible elevators
-
-      %section.card
-        .info.icon
-          .rect T2
-        .info.extra
-          T2 has a wheelchair accessible entrances
-
-  %section.actions
-    = link_to "Map", search_where_path, :class => 'button center'
-    = link_to "Route", search_details_path, :class => 'button center'
-    = link_to "Request a hand", searching_path, :class => 'button center primary'
+      %section.actions.primary
+        = link_to "Request a hand", searching_path, :class => 'button primary'

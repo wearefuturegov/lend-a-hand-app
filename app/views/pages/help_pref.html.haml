@@ -1,15 +1,14 @@
 %main.main
-  %section.body
-    %h2.white
-      Help us to match you to someone who will be the most helpful.
+  %section.container
+    %section.body
+      %h2.white
+        Help us to match you to someone who will be the most helpful.
 
-  %section.choice
-    = link_to "Female", search_results_path, :class => 'button big center deactive'
-    = link_to "Male", search_results_path, :class => 'button big center'
+      %section
+        = link_to "Female", search_results_path, :class => 'button big'
+        = link_to "Male", search_results_path, :class => 'button big'
+        = link_to "One off", search_results_path, :class => 'button big'
+        = link_to "Routine", search_results_path, :class => 'button big'
 
-  %section.choice
-    = link_to "One off", search_results_path, :class => 'button big center deactive'
-    = link_to "Routine", search_results_path, :class => 'button big center'
-
-  %section.actions
-    = link_to "Update", search_results_path, :class => 'button center primary'
+    %section.actions.primary
+      = link_to "Update", search_results_path, :class => 'button primary'

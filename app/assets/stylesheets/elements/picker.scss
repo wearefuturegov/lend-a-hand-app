@@ -3,53 +3,26 @@
 .picker {
   float: left;
   text-align: center;
-  padding: $baseline 0;
-  border-top: $border-style $border-width $brand;
-  border-bottom: $border-style $border-width $brand;
+  margin-top: $baseline;
+  .inner {
+    display: flex;
+  }
 }
 
+.month,
 .day,
 .time,
-.hour,
-.min,
 .meridiem {
+  border: $border-width $border-style $brand;
   float: left;
-  width: 18%;
-  margin: 0 1%;
+  flex: 1 1 100%;
   li {
-    padding: $baseline*0.25 0;
-  }
-  li:first-child, li:last-child {
-    color: $brand-mute;
-  }
-  li:nth-child(2) {
-      border-top: $border-width $border-style $brand;
-      border-bottom: $border-width $border-style $brand;
+    padding: $baseline*0.5 0;
   }
 }
 
-.day {
-  width: 38%;
+.day, .meridiem {
+  background: $brand;
+  color: $white;
+  flex-basis: 75%;
 }
-
-.meridiem {
-  li:first-child {
-      border-bottom: $border-width $border-style $brand; 
-  }
-  li:last-child {
-    color: $brand;
-     border: none;
-  }
-}
-
-// .hour {
-//   width: 10%;
-// }
-
-// .min {
-//   width: 10%;
-// }
-
-// .meridiem {
-//   width: 10%;
-// }

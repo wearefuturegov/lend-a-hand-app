@@ -1,11 +1,12 @@
 %main.main
-  %section.body
-    %h2 Welcome back, please login below.
+  %section.container
+    %section.body
+      %h2 Welcome back, please login below.
 
-  %section.form
-    <input placeholder="Email" >
-    <input placeholder="Password" >
-    = link_to "Forgot password", reset_password_path, :class => 'helper'
+      %section.form
+        %input{:placeholder => "Email"}
+        %input{:placeholder => "Password"}
+        = link_to "Forgot password", reset_password_path, :class => 'helper'
 
-  %section.actions
-    = link_to "Login", search_where_path, :class => 'button center primary'
+    %section.actions.primary
+      = link_to "Login", search_when_where_path, :class => 'button primary'

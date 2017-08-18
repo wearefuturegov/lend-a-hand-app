@@ -1,14 +1,11 @@
 /* layout */
 
-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+html, body {
+  height: 100%;
 }
 
-header, footer {
-  background: $brand;
+header {
+  // flex: 0 1 auto;
 }
 
 body {
@@ -16,7 +13,34 @@ body {
 }
 
 .main {
-  margin-top: $header-height;
+  display: flex;
+  height: calc(100% - #{$header-height});
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.body { 
+  overflow-y: auto; 
+  height: calc(100% - #{$header-height + $baseline });
+}
+
+// .actions {
+//   flex: 0 1 auto;
+// }
+
+.header {
+  height: $header-height;
+}
+
+header, footer {
+  background: $brand;
+}
+
+.main {
+  // margin-top: $header-height;
   .form {
     margin-top: $baseline*0.5;
     margin-bottom: $baseline*0.5;
@@ -33,13 +57,17 @@ body {
 }
 
 .actions {
-  margin-top: $baseline;
-  margin-bottom: $baseline;
-  &.row {
+  margin-top: $baseline*0.5;
+  margin-bottom: $baseline*0.5;
+  &.secondary {
     display: flex;
   }
-  .row {
+  .secondary {
     flex: 1 1 100%;
+  }
+  &.primary {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -62,8 +90,4 @@ body {
   h2 {
     color: $primary;
   }
-}
-
-.list {
-  
 }

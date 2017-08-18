@@ -1,0 +1,8 @@
+/* markers */
+
+.link {
+  border-left: $border-width*2 dotted $gray;
+  height: $baseline*3;
+  margin-top: $baseline*0.25;
+  margin-bottom: $baseline*0.25;
+}

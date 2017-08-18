@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/pages/search-map", to: "pages#search_map", as: "search_map"
   get "/pages/search-when", to: "pages#search_when", as: "search_when"
   get "/pages/search-where", to: "pages#search_where", as: "search_where"
+  get "/pages/search-when-where", to: "pages#search_when-where", as: "search_when-where"
   get "/pages/search-results", to: "pages#search_results", as: "search_results"
   get "/pages/search-details", to: "pages#search_details", as: "search_details"
   get "/pages/search-important", to: "pages#search_important", as: "search_important"

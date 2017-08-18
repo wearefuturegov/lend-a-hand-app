@@ -12,3 +12,20 @@
   color: $brand;
 }
 
+.fa-circle-o {
+  color: $black;
+  font-size: $baseline;
+  font-weight: 600;
+  margin-top: $baseline*0.5;
+}
+
+.fa-map-marker {
+  color: $attention;
+  font-size: $baseline*1.5;
+  margin-bottom: $baseline*0.5;
+}
+
+.fa-circle-o, .fa-map-marker {
+  width: 100%;
+  text-align: center;
+}

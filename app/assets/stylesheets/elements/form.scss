@@ -18,11 +18,25 @@
   font-size: $body;
   line-height: $baseline;
   text-align: center;
-  margin-top: $baseline*0.5;
-  margin-bottom: $baseline*0.5;
+  margin-top: $baseline;
+  margin-bottom: $baseline;
   .helper {
     font-size: $tiny;
     text-decoration: underline;
+  }
+}
+
+.key {
+  .form input {
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+.key {
+  .form, .form input {
+    margin-top: $baseline*0.5;
+    margin-bottom: $baseline*1.5;
   }
 }
 

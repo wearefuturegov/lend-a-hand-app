@@ -25,22 +25,26 @@
   &.primary {
     border-color: $primary;
     background: $primary;
+    &.confirm {
+      background: $confirm;
+      border-color: $confirm;
+    }
   }
-  &.row {
+  &.secondary {
     float: left;
     width: auto;
     background: $white;
     color: $brand;
     font-size: $small;
     margin-left: -$border-width;
-    &.primary {
-      color: $primary;
-      margin-left: $baseline*0.25;
-    }
     &.active {
       color: white;
       background: $brand;
     }
+  }
+  &.alert {
+    color: $alert;
+    border-color: $alert;
   }
   &.icon {
     position: relative;
@@ -69,7 +73,7 @@
 
 .button + .button {
   margin-top: $border-width;
-  &.row {
+  &.secondary {
     margin-top: 0;
   }
 }
@@ -96,7 +100,7 @@ input + .button {
   background: $gray;
   pointer-events: none;
   cursor: default;
-  &.row {
+  &.secondary {
     color: $gray;
   }
 }

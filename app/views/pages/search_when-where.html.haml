@@ -1,0 +1,35 @@
+%main.main
+  %section.container
+    %section.body
+      %h2 Where are you planning to go?
+
+      %section.key
+        %section.markers
+          %section
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+          %section.link
+          %section
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+        %section.form
+
+          %input{:placeholder => "From"}
+          %input{:placeholder => "To"}
+
+      %h2 When are your travelling?
+
+      %section.picker
+        .inner
+          %ul.month
+            %li Aug
+
+          %ul.day
+            %li 23
+
+          %ul.time
+            %li 9:30
+
+          %ul.meridiem
+            %li AM
+
+      %section.actions.primary
+        = link_to "Confirm", help_type_path, :class => 'button primary'

@@ -1,36 +1,42 @@
 %main.main
-  %section.card
-    %section.profile
-      =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-      
-      %h2 Jon Snow
-      %p will be lending you a hand
+  %section.container
+    %section.body
+      %section.actions.secondary
+        = link_to "Profile", profile_path, :class => 'button secondary active'
+        = link_to "Route", profile_route_path, :class => 'button secondary'
+        = link_to "Contact", profile_contact_path, :class => 'button secondary'
 
-  %section.card
-    %section
-      .info Lending a hand since:
-      .info.right 13/05/17
+      %section.card
+        %section.profile
+          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+          
+          %h2 Jon Snow
+          %p will be lending you a hand
 
-    %section
-      .info People helped:
-      .info.right 22
+      %section.card
+        %section
+          .info Lending a hand since:
+          .info.right 13/05/17
 
-  %section.card
-    %h3 Feedback
+        %section
+          .info People helped:
+          .info.right 22
 
-    %ul.tags
-      %li 
-        %span Went above and beyond
-      %li 
-        %span Experienced
-      %li 
-        %span Engaging
-      %li 
-        %span Knowledge in technique
+      %section.card
+        %h3 Feedback
 
-  %section.actions.row
-    = link_to "Profile", profile_path, :class => 'button row active'
-    = link_to "Route", profile_route_path, :class => 'button row'
-    = link_to "Contact", profile_contact_path, :class => 'button row'
-  %section.actions
-    = link_to "Accept", profile_confirm_path, :class => 'button center primary'
+        %ul.tags
+          %li 
+            %span Went above and beyond
+          %li 
+            %span Experienced
+          %li 
+            %span Engaging
+          %li 
+            %span Knowledge in technique
+
+      %section.actions.secondary
+        = link_to "Find me another", profile_contact_path, :class => 'button secondary'
+
+    %section.actions
+      = link_to "Accept", profile_confirm_path, :class => 'button primary confirm'

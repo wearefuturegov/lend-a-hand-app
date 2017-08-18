@@ -54,8 +54,14 @@ h3 {
 }
 
 .info {
-  font-size: $small;
-  line-height: $tight;
+  color: $black;
+  font-size: $body;
+  line-height: $baseline;
+  margin-bottom: $baseline*0.25;
+  &.extra {
+    font-size: $small;
+    line-height: $baseline - 2px;
+  }
   &.time {
     font-size: $h2;
   }

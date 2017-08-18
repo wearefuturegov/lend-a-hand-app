@@ -24,16 +24,29 @@ h1,
 h2,
 h3,
 p,
-.row,
+.secondary,
 .profile,
 .form input, 
 .list,
-.link {
+.link,
+.inner {
   @include grid-column(6);
 }
 
 .button {
   @include grid-column(6);
+}
+
+.key {
+  .markers {
+    @include grid-column(1);
+  }
+  .route {
+    @include grid-column(1);
+  }
+  .form {
+    @include grid-column(5);
+  }
 }
 
 .card {
@@ -54,3 +67,16 @@ p,
   }
 }
 
+
+.link {
+    &.center {
+      margin-left: calc(50% - 3px);
+      width: 50%;
+  }
+}
+
+.search-details, .profile-route {
+  .markers {
+    @include grid-column(6);
+  }
+}

@@ -6,6 +6,10 @@ $black: #505050;
 $gray: #bbb;
 $footer: #000;
 
+/* notify */
+$alert: #a62200;
+$confirm: #09b569;
+
 /* modifiers */
 $gray-darken: darken($gray, 30%);
 
@@ -19,6 +23,8 @@ $secondary: $brand;
 $brand-dim: darken($brand, 12%);
 $brand-bright: lighten($brand, 12%);
 $brand-mute: #d5eff1;
+
+$attention: #ea7e07;
 
 $background: $white;
 

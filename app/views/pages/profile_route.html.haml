@@ -1,30 +1,32 @@
-%main.main
-  %section.card
-    %section.profile
-      =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-      
-      %h2 Jon Snow
-      %p will be lending you a hand
+%main.main.profile-route
+  %section.container
+    %section.body
+      %section.actions.secondary
+        = link_to "Profile", profile_path, :class => 'button secondary'
+        = link_to "Route", profile_route_path, :class => 'button secondary active'
+        = link_to "Contact", profile_contact_path, :class => 'button secondary'
 
-  %section.card
-    %h3 Helper's current route
-    %section.card.route
-      .info.icon
-        .spot T
-      .info.right 
-        11:05 AM
+      %section.card
+        %section.profile
+          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+          
+          %h2 Jon Snow
+          %p will be lending you a hand
 
-    %section.link
+        %h3 Helper's current route
+      %section.key
+        %section.markers
+          %section
+            .info 11:05 AM. Platform 1. 
+            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
 
-    %section.card.route
-      .info.icon
-        .rect T2
-      .info.right 
-        11:20 AM
+          %section.link.center
+          
+          %section
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            .info 11:25 AM Platform 2. 
+            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-  %section.actions.row
-    = link_to "Profile", profile_path, :class => 'button row'
-    = link_to "Route", profile_route_path, :class => 'button row active'
-    = link_to "Contact", profile_contact_path, :class => 'button row'
-  %section.actions
-    = link_to "Accept", profile_confirm_path, :class => 'button center primary'
+      %section.actions.primary
+        = link_to "Accept", profile_confirm_path, :class => 'button primary confirm'

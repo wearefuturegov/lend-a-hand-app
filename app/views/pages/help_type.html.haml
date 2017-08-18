@@ -1,16 +1,20 @@
 %main.main
-  %section.body
-    %h2.white
-      What help do you need today?
+  %section.container
+    %section.body
 
-  %section.select
-    = link_to "Finding my way around", help_pref_path, :class => 'button big center icon'
-    // = fa_icon "map-marker"
-    = link_to "Feel safe", help_pref_path, :class => 'button big center icon deactive'
-    // = fa_icon "heart-o"
-    = link_to "A helping hand", help_pref_path, :class => 'button big center icon deactive'
-    // = fa_icon "handshake-o"
+      %h2.white
+        What help do you need today?
 
-  %section.actions.row
-    = link_to "Add/edit", help_pref_path, :class => 'button center row deactive'
-    = link_to "Continue", help_pref_path, :class => 'button center primary row'
+      %section.select
+        = link_to "Finding my way around", help_pref_path, :class => 'button big icon'
+        // = fa_icon "map-marker"
+        = link_to "Feel safe", help_pref_path, :class => 'button big icon'
+        // = fa_icon "heart-o"
+        = link_to "A helping hand", help_pref_path, :class => 'button big icon'
+        // = fa_icon "handshake-o"
+
+      %section.actions.secondary
+        = link_to "Add/edit", help_pref_path, :class => 'button secondary'
+
+      %section.actions.primary
+        = link_to "Continue", help_pref_path, :class => 'button primary'
