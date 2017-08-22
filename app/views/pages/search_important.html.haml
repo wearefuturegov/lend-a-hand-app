@@ -3,7 +3,4 @@
   %section
     %h2 Important details
 
-  %section.actions
-    = link_to "Map", page_path(id: 'search_map'), :class => 'button center primary'
-    = link_to "Route", page_path(id: 'search_details'), :class => 'button center primary'
-    = link_to "Request a hand", page_path(id: 'searching'), :class => 'button center primary'
+  = render partial: 'search_actions'
