@@ -1,0 +1,22 @@
+%main.main
+  %section.container
+    %section.body
+      %h2 Please review and agree to the terms of consent below before continuing. You will also need to upload proof of ID.
+
+      = link_to page_path(id: 'consent'), :title => "Consent to share" do
+
+        %section.card
+          .info
+            Consent to share your profile with other service users.
+          .info.right
+            = fa_icon "angle-right"
+      = link_to page_path(id: 'acknowledgement'), :title => "Acknowledgement of responsibility" do
+        %section.card
+          .info
+            Acknowledgement of personal responsibility.
+          .info.right
+            %span
+            = fa_icon "angle-right"
+
+      %section.actions.primary
+        = link_to "Continue", page_path(id: 'profile_create_private'), :class => 'button primary'

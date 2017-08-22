@@ -1,0 +1,53 @@
+%main.main
+  %section.container
+    %section.body
+      %section.actions.secondary
+        = link_to "Personal details", page_path(id: 'profile_create_private'), :class => 'button secondary'
+        = link_to "Public profile", page_path(id: 'profile_create_public'), :class => 'button secondary active'
+      
+      %section.card
+        %section.profile
+
+          = fa_icon "camera"
+
+          %section.form
+            %input{:placeholder => "First name"}
+            %input{:placeholder => "Last name"}
+
+          %section.form
+            %input{:placeholder => "Email"}
+            %input{:placeholder => "Password"}
+
+      %section.card
+        %h2 Gender
+
+        %section.actions.secondary
+          = link_to "Female", page_path(id: 'profile_contact'), :class => 'button secondary'
+          = link_to "Male", page_path(id: 'profile_contact'), :class => 'button secondary'
+
+      %section.card
+        %h2 Needs
+
+        %ul.tags
+          %li 
+            %span Lifting up 
+          %li 
+            %span Securing while on train
+          %li 
+            %span Support
+          %li 
+            %span Pushing up slope
+          %li
+            %span Holding me down steep slope
+          %li
+            %span Emotional
+          %li
+            %span General
+          %li
+            %span Guiding me
+          %li
+            %span Help down the escalators
+
+
+      %section.actions.primary
+        = link_to "Create public profile", page_path(id: 'profile_confirm'), :class => 'button primary confirm'

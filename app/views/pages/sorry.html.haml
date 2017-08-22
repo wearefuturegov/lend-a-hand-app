@@ -1,0 +1,12 @@
+%main.main
+  %section.container
+    %section.body
+
+      = fa_icon "frown-o"
+
+      %h2 It looks like there isn't anyone to help you at the moment.
+
+      %p Don't worry, we're still looking and will notify you when we have found someone.
+
+      %section.actions.primary
+        = link_to "Ok", page_path(id: 'search_details'), :class => 'button primary'

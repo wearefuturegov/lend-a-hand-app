@@ -42,6 +42,15 @@
       background: $brand;
     }
   }
+  &.deactive {
+    border-color: $gray;
+    background: $gray;
+    pointer-events: none;
+    cursor: default;
+    &.secondary {
+      color: $gray;
+    }
+  }
   &.alert {
     color: $alert;
     border-color: $alert;
@@ -93,14 +102,4 @@ input + .button {
   //   color: $brand-variant;
   //   border-color: $brand-variant;
   // }
-}
-
-.deactive {
-  border-color: $gray;
-  background: $gray;
-  pointer-events: none;
-  cursor: default;
-  &.secondary {
-    color: $gray;
-  }
 }

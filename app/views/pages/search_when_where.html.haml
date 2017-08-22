@@ -1,0 +1,35 @@
+%main.main
+  %section.container
+    %section.body
+      %h2 Where are you planning to go?
+
+      %section.key
+        %section.markers
+          %section
+            = fa_icon "circle-o"
+          %section.link
+          %section
+            = fa_icon "map-marker"
+        %section.form
+
+          %input{:placeholder => "From"}
+          %input{:placeholder => "To"}
+
+      %h2 When are your travelling?
+
+      %section.picker
+        .inner
+          %ul.month
+            %li Aug
+
+          %ul.day
+            %li 23
+
+          %ul.time
+            %li 9:30
+
+          %ul.meridiem
+            %li AM
+
+      %section.actions.primary
+        = link_to "Continue", page_path(id: 'search_details'), :class => 'button primary'
