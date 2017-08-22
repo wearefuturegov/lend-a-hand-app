@@ -1,19 +1,10 @@
 %main.main
   %section.container
     %section.body
-      %section.card
-        %section.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-          
-          %h2 Jon Snow
-          %p will be lending you a hand
+      =image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
 
-      %section.card
-        %h3 Would you like to select Jon?
-        %p If you wish for Jon to lend you hand,  press accept and a notification will be sent and Jon will be able to contact you.
-
-      %section.actions.secondary
-        = link_to "Decline", profile_confirm_path, :class => 'button secondary alert'
+      %h2 Your profile has been created!
+      %p We've also sent you an email  confirm your registration
 
       %section.actions.primary
-        = link_to "Accept", profile_confirm_path, :class => 'button primary confirm'
+        = link_to "Begin your search", page_path(id: 'search_when_where'), :class => 'button primary'

@@ -6,10 +6,10 @@
       %section.key
         %section.markers
           %section
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            = fa_icon "circle-o"
           %section.link
           %section
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            = fa_icon "map-marker"
         %section.form
 
           %input{:placeholder => "From"}
@@ -32,4 +32,4 @@
             %li AM
 
       %section.actions.primary
-        = link_to "Confirm", help_type_path, :class => 'button primary'
+        = link_to "Continue", page_path(id: 'search_details'), :class => 'button primary'

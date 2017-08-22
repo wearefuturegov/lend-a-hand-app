@@ -1,25 +1,77 @@
 %main.main.search-details
   %section.container
     %section.body
-      %section.actions.secondary
-        = link_to "Map", search_details_path, :class => 'button secondary'
-        = link_to "Route", search_details_path, :class => 'button secondary'
 
-      %h2 This is your currently planned route.
+      %h2 About your journey
 
-      %section.key
+      %section.key.card
         %section.markers
           %section
             .info 11:05 AM. Platform 1. 
             .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            = fa_icon "circle-o"
 
           %section.link.center
           
           %section
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
             .info 11:25 AM Platform 2. 
             .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            = fa_icon "circle-o"
+
+          %section.link.center
+
+          %section
+            = fa_icon "map-marker"
+            .info 11:05 AM. Platform 1. 
+            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      %h2 Choose a departure time
+
+      = link_to page_path(id: 'search_details'), :title => "Search Details" do
+        %section.card
+          .info.icon
+            .spot T
+            .rect T2
+          .info.right 
+            15mins
+            %span
+              = fa_icon "angle-right"
+          .info.extra
+            11.05am – 11:20am. Ramps available.
+      = link_to page_path(id: 'search_details'), :title => "Search Details" do
+        %section.card
+          .info.icon
+            .spot B
+            .rect 438
+          .info.right 
+            25mins
+            %span
+              = fa_icon "angle-right"
+          .info.extra
+            11.05am – 11:13am. Ramps available.
+      = link_to page_path(id: 'search_details'), :title => "Search Details" do
+        %section.card
+          .info.icon
+            .spot B
+            .rect 438
+          .info.right 
+            5mins
+            %span
+              = fa_icon "angle-right"
+          .info.extra
+            11.05am – 11:13am. Lifts available.
+      = link_to page_path(id: 'search_details'), :title => "Search Details" do
+        %section.card
+          .info.icon
+            .spot T
+            .rect T3
+          .info.right 
+            45mins
+            %span
+              = fa_icon "angle-right"
+          .info.extra
+            11.05am – 11:13am. Lifts & ramps available.
 
       %section.actions.primary
-        = link_to "Request a hand", searching_path, :class => 'button primary'
+        = link_to "Find a helper", page_path(id: 'searching'), :class => 'button primary confirm'

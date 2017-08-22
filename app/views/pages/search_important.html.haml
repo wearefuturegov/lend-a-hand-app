@@ -4,6 +4,6 @@
     %h2 Important details
 
   %section.actions
-    = link_to "Map", search_map_path, :class => 'button center primary'
-    = link_to "Route", search_details_path, :class => 'button center primary'
-    = link_to "Request a hand", searching_path, :class => 'button center primary'
+    = link_to "Map", page_path(id: 'search_map'), :class => 'button center primary'
+    = link_to "Route", page_path(id: 'search_details'), :class => 'button center primary'
+    = link_to "Request a hand", page_path(id: 'searching'), :class => 'button center primary'

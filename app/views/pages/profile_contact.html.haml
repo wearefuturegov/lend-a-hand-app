@@ -2,20 +2,23 @@
   %section.container
     %section.body
       %section.actions.secondary
-        = link_to "Profile", profile_path, :class => 'button secondary'
-        = link_to "Route", profile_route_path, :class => 'button secondary'
-        = link_to "Contact", profile_contact_path, :class => 'button secondary active'
+        = link_to "Profile", page_path(id: 'profile'), :class => 'button secondary'
+        = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary'
+        = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary active'
       
       %section.card
         %section.profile
           =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
           
           %h2 Jon Snow
-          %p will be lending you a hand
+          %p could be lending you a hand
 
       %section.actions.secondary
-        = link_to "Call Jon", profile_contact_path, :class => 'button secondary'
-        = link_to "Message Jon", profile_contact_path, :class => 'button secondary'
+        = link_to "Call Jon", page_path(id: 'profile_contact'), :class => 'button secondary'
+        = link_to "Message Jon", page_path(id: 'profile_contact'), :class => 'button secondary'
+
+      %section.actions.secondary
+        = link_to "Find me another", page_path(id: 'sorry'), :class => 'button secondary'
 
       %section.actions.primary
-        = link_to "Accept", profile_confirm_path, :class => 'button primary confirm'
+        = link_to "Accept", page_path(id: 'profile_confirm'), :class => 'button primary confirm'
