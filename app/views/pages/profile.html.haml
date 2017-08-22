@@ -6,14 +6,7 @@
         = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary'
         = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary'
 
-      %section.card
-        %section.profile
-          %h3 We found someone who would like to help.
-
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-          
-          %h2 Jon Snow
-          %p could be lending you a hand.
+      = render partial: "partials/profile", locals: {title: "We found someone who would like to help.", name: "Jon Snow", info: "could be lending you a hand"}
 
       %section.card
         %section
@@ -24,21 +17,8 @@
           .info People helped:
           .info.right 22
 
-      %section.card
-        %h3 Feedback
+      = render partial: "partials/tags", locals: {title: "Feedback", tag_1: "Went above and beyond", tag_2: "Experienced", tag_3: "Engaging", tag_4: "Knowledge in technique", tag_5: "Funny and supportive", tag_6: "Super helpful"}
 
-        %ul.tags
-          %li 
-            %span Went above and beyond
-          %li 
-            %span Experienced
-          %li 
-            %span Engaging
-          %li 
-            %span Knowledge in technique
+      = render partial: "partials/secondary_single", locals: {title: "Find me another", page: 'sorry'}
 
-      %section.actions.secondary
-        = link_to "Find me another", page_path(id: 'sorry'), :class => 'button secondary'
-
-    %section.actions
-      = link_to "Accept", page_path(id: 'accept'), :class => 'button primary confirm'
+      = render partial: "partials/cta", locals: {title: "Accept", page: 'helper_status'}

@@ -8,5 +8,4 @@
 
       %p Don't worry, we're still looking and will notify you when we have found someone.
 
-      %section.actions.primary
-        = link_to "Ok", page_path(id: 'search_details'), :class => 'button primary'
+      = render partial: "partials/cta", locals: {title: "Ok", page: 'search_details'}

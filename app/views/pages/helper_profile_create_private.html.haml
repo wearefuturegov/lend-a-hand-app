@@ -1,0 +1,40 @@
+%main.main
+  %section.container
+    %section.body
+      %section.actions.secondary
+        = link_to "Personal details", page_path(id: 'helper_profile_create_private'), :class => 'button secondary active'
+        = link_to "Public profile", page_path(id: 'helper_profile_create_public'), :class => 'button secondary'
+      
+      %section.card
+        %h2 Your details
+
+        %section.form
+          %input{:placeholder => "Email"}
+          %input{:placeholder => "Password"}
+          %input{:placeholder => "Tel."}
+
+      %section.card
+        %h2 Emergency contact
+
+        %section.form
+          %input{:placeholder => "Name"}
+          %input{:placeholder => "Tel."}
+          %input{:placeholder => "Relationship to you"}
+
+      %section.card
+        %h2 Who do you prefer to help?
+
+        %section.actions.secondary
+          = link_to "Female", page_path(id: 'helper_profile_create_private'), :class => 'button secondary'
+          = link_to "Male", page_path(id: 'helper_profile_create_private'), :class => 'button secondary'
+          = link_to "Either", page_path(id: 'helper_profile_create_private'), :class => 'button secondary'
+
+      %section.card
+        %h2 How often do you need help?
+
+        %section.actions.secondary
+          = link_to "One-off", page_path(id: 'helper_profile_create_private'), :class => 'button secondary'
+          = link_to "Routine", page_path(id: 'helper_profile_create_private'), :class => 'button secondary'
+
+      %section.actions.primary
+        = link_to "Create profile", page_path(id: 'profile_confirm'), :class => 'button primary deactive'

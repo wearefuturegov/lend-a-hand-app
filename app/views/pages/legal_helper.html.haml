@@ -1,0 +1,28 @@
+%main.main
+  %section.container
+    %section.body
+      %h2 Please review and agree to the terms of consent below before continuing. You will also need to upload proof of ID.
+
+      %section.card
+        .info
+          Consent for Lend a hand to share your registered profile with other service users
+        .info.right
+          = fa_icon "check"
+
+      %section.card
+        .info
+          Acknowledgement of personal responsibility
+        .info.right
+          %span
+          = fa_icon "check"
+
+      = link_to page_path(id: 'acknowledgement'), :title => "Acknowledgement of responsibility" do
+        %section.card
+          .info
+            Proof of ID – Driver’s Licence or Passport
+          .info.right
+            %span
+            = fa_icon "check"
+
+      %section.actions.primary
+        = link_to "Continue", page_path(id: 'photo_id'), :class => 'button primary'

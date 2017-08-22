@@ -43,6 +43,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand', endColorstr='$brand-light', GradientType=1 );
 }
 
+@mixin grayscale {
+  border-color: $black;
+  color: $black;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 @mixin placeholder ($placeholder-color) {
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $placeholder-color;

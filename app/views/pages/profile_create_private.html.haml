@@ -4,24 +4,10 @@
       %section.actions.secondary
         = link_to "Personal details", page_path(id: 'profile_create_private'), :class => 'button secondary active'
         = link_to "Public profile", page_path(id: 'profile_create_public'), :class => 'button secondary'
-      
-      %section.card
-        %section.profile
-          %h2 Your details
 
-          %section.form
-            %input{:placeholder => "Email"}
-            %input{:placeholder => "Password"}
-            %input{:placeholder => "Tel."}
+      = render partial: "partials/form", locals: {title: "Your details", first: "Email", second: "Password", third: "Tel."}
 
-      %section.card
-        %section.profile
-          %h2 Emergency contact
-
-          %section.form
-            %input{:placeholder => "Name"}
-            %input{:placeholder => "Tel."}
-            %input{:placeholder => "Relationship to you"}
+      = render partial: "partials/form", locals: {title: "Emergency contact", first: "Name", second: "Tel.", third: "Relationship to you"}
 
       %section.card
         %h2 Who do you prefer to help?
@@ -39,4 +25,4 @@
           = link_to "Routine", page_path(id: 'profile_create_private'), :class => 'button secondary'
 
       %section.actions.primary
-        = link_to "Create personal profile", page_path(id: 'profile_confirm'), :class => 'button primary confirm'
+        = link_to "Create profile", page_path(id: 'profile_confirm'), :class => 'button primary deactive'

@@ -6,27 +6,11 @@
         = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary active'
         = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary'
 
-      %section.card
-        %section.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-          
-          %h2 Jon Snow
-          %p could be lending you a hand
+      = render partial: "partials/profile", locals: {title: "We found someone who would like to help.", name: "Jon Snow", info: "could be lending you a hand"}
+        
+      = render partial: "partials/route", locals: {title: "Helper's current route", info: "11:05 AM. Platform 1.", info_extra: "Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
 
-        %h3 Helper's current route
-      %section.key
-        %section.markers
-          %section
-            .info 11:05 AM. Platform 1. 
-            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            = fa_icon "circle-o"
-
-          %section.link.center
-          
-          %section
-            = fa_icon "map-marker"
-            .info 11:25 AM Platform 2. 
-            .info.extra Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      = render partial: "partials/secondary_single", locals: {title: "Find me another"}
 
       %section.actions.secondary
         = link_to "Find me another", page_path(id: 'sorry'), :class => 'button secondary'

@@ -21,3 +21,7 @@ img.profile-img {
   margin: 0 35%;
   width: 30%;
 }
+
+.grayscale, .grayscale h2 {
+  @include grayscale;
+}

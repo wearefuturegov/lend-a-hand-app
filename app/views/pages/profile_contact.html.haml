@@ -6,12 +6,7 @@
         = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary'
         = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary active'
       
-      %section.card
-        %section.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-          
-          %h2 Jon Snow
-          %p could be lending you a hand
+      = render partial: "partials/profile", locals: {title: "We found someone who would like to help.", name: "Jon Snow", info: "could be lending you a hand"}
 
       %section.actions.secondary
         = link_to "Call Jon", page_path(id: 'profile_contact'), :class => 'button secondary'
