@@ -2,7 +2,7 @@
   %section.container
     %section.body
       %section.actions.secondary
-        = link_to "Profile", page_path(id: 'profile'), :class => 'button secondary active'
+        = link_to I18n.t('buttons.this'), page_path(id: 'profile'), :class => 'button secondary active'
         = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary'
         = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary'
 
