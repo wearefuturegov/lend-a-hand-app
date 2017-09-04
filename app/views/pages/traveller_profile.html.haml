@@ -1,0 +1,18 @@
+%main.main
+  %section.container
+    %section.body
+
+      %section.card.divide
+        %h1
+          = t('traveller_profile.title')
+
+        = render partial: "partials/profile", locals: {title: I18n.t('traveller_profile.title'), name: I18n.t('traveller_profile.name'), info: I18n.t('traveller_profile.info')}
+
+      %section.card
+        %h2 
+          = t('helper_profile.feedback')
+
+        = render partial: "partials/tags", locals: {tag_a: I18n.t('dummy.tag_a'), tag_b: I18n.t('dummy.tag_b'), tag_c: I18n.t('dummy.tag_c'), tag_d: I18n.t('dummy.tag_d'), tag_e: I18n.t('dummy.tag_e'), tag_f: I18n.t('dummy.tag_f')}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.offer_to_help'), page: 'helper_status', myclass: 'button primary confirm'}

@@ -47,6 +47,7 @@ en:
     find: "Find helpers"
     find_traveller: "Find travellers"
     accept: "Accept"
+    offer_to_help: "Offer to help"
     consent: "I consent"
     yep: "Yes"
     nope: "No"
@@ -65,7 +66,22 @@ en:
     info: "Familiarise yourself with each station's accessibility details"
     departure: "Choose your departure time"
 
+  searching:
+    title: "Finding travellers for you to lend a hand…"
+
 # traveller
+
+  travellers_available:
+    title: "We have found 3 travellers who are looking for help on this journey"
+    info: "Check a traveller's profile to make sure you are able to provide the help they need on their journey"
+
+  traveller_profile:
+    title: "We found someone who needs your help."
+    name: "Kat Stevens"
+    info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
+    feedback: "I need help with"
+
+## --- to check
 
   profile_create_private:
     gender: "Who do you prefer to help?"
@@ -133,9 +149,6 @@ en:
   search_details:
     title: "About your journey"
     time: "Choose a departure time"
-
-  searching:
-    title: "Looking for someone to lend a hand…"
 
   acknowledgement:
     title: "Acknowledgement of personal responsibility."

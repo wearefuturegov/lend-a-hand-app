@@ -6,7 +6,11 @@
         = render partial: "partials/button", locals: {one: I18n.t('button.route'), page: 'profile_route', myclass: 'button secondary'}
         = render partial: "partials/button", locals: {one: I18n.t('button.contact'), page: 'profile_contact', myclass: 'button secondary'}
 
-      = render partial: "partials/profile", locals: {title: I18n.t('helper_profile.title'), name: I18n.t('helper_profile.name'), info: I18n.t('helper_profile.info')}
+      %section.card
+        %h1
+          = t('traveller_profile.title')
+        
+        = render partial: "partials/profile", locals: {title: I18n.t('helper_profile.title'), name: I18n.t('helper_profile.name'), info: I18n.t('helper_profile.info')}
 
 
       %section.card

@@ -21,6 +21,14 @@
     .fa-circle-o {
       text-align: left;
     }
+    .profile-img {
+      margin: 0;
+      width: 100%; 
+    }
+    &.profile + .right {
+      float: right;
+      margin-right: $gutter;
+    }
     &.extra {
       color: $black;
       font-size: $tiny;

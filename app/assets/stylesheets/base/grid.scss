@@ -51,9 +51,12 @@ p,
 
 .card {
   .info {
-    @include grid-column(3);
+    @include grid-column(4);
+    &.profile {
+      @include grid-column(2);
+    }
     &.right {
-      @include grid-column(3);
+      @include grid-column(2);
     }
     &.extra {
       @include grid-column(6);
