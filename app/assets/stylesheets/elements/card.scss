@@ -1,11 +1,10 @@
 /* card */
 
 .card {
-  margin-left: 0;
   padding: $baseline 0;
-  float: left;
-  width: 100%;
-  border-bottom: $border-width-thin $border-style $brand;
+  &.divide {
+    border-bottom: $border-width-thin $border-style $brand;
+  }
   + .card {
     margin-top: -$border-width;
   }
@@ -40,7 +39,6 @@
 }
 
 .key {
-  margin: $baseline 0;
   .card {
       padding: $baseline*0.5 0;
       border-bottom: none;

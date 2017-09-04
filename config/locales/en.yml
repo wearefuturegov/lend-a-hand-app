@@ -44,13 +44,28 @@ en:
     continue: "Continue"
     confirm: "Confirm"
     begin: "Begin your search"
-    find: "Find a helper"
+    find: "Find helpers"
+    find_traveller: "Find travellers"
     accept: "Accept"
     consent: "I consent"
     yep: "Yes"
     nope: "No"
     home: "Home"
     ok: "Ok"
+    plan: "Plan your journey"
+
+# helper
+
+  helper_search_when_where:
+    title: "Hi Julia!"
+    info: "Find travellers to help on your next journey…"
+
+  helper_search_details:
+    title: "About your journey"
+    info: "Familiarise yourself with each station's accessibility details"
+    departure: "Choose your departure time"
+
+# traveller
 
   profile_create_private:
     gender: "Who do you prefer to help?"
@@ -75,6 +90,10 @@ en:
     password: "Password"
     tel: "Tel"
     relationship: "Relationship to you"
+    from: "From station"
+    to: "To station"
+    leaving: "Leaving 9am Oct 12"
+
 
   legal_helper:
     title: "Please review and agree to the terms of consent below before continuing. You will also need to upload proof of ID."
@@ -131,14 +150,6 @@ en:
     title: "Take photo of your driver’s licence or ID page of your passport."
     info: "This must be a clear photo and show your full name, age, date of bith and expiration date."
     check: "Have you had a police check?"
-
-  helper_search_when_where:
-    title: "Where are you planning to go?"
-    info: "When are your travelling?"
-
-  helper_search_details:
-    title: "About your journey"
-    departurez: "Choose a departure time"
 
   sorry:
     title: "It looks like there isn't anyone to help you at the moment."

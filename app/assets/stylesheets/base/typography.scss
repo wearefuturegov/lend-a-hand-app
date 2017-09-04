@@ -40,8 +40,8 @@ h2 {
   font-size: $h2;
   line-height: $h2*1.25;
   text-align: center;
-  margin-top: $baseline;
-  margin-bottom: $baseline;
+  margin-top: $baseline*0.5;
+  margin-bottom: $baseline*0.5
 }
 
 h3 {

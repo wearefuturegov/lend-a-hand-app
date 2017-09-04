@@ -27,6 +27,11 @@
 .fa-map-marker {
   color: $attention;
   font-size: $baseline*1.5;
+}
+
+.fa-calendar-o {
+  color: $black;
+  font-size: $baseline;
   margin-bottom: $baseline*0.5;
 }
 
@@ -34,7 +39,8 @@
 .fa-map-marker, 
 .fa-camera, 
 .fa-frown-o, 
-.fa-smile-o {
+.fa-smile-o,
+.fa-calendar-o {
   width: 100%;
   text-align: center;
 }

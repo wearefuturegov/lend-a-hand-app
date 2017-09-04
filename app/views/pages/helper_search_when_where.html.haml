@@ -1,8 +1,12 @@
 %main.main
   %section.container
     %section.body
-      %h2
-        = t('helper_search_when_where.title')
+      %section.card
+        %h1
+          = t('helper_search_when_where.title')
+
+        %h2
+          = t('helper_search_when_where.info')
 
       %section.key
         %section.markers
@@ -13,25 +17,16 @@
             = fa_icon "map-marker"
         %section.form
 
-          %input{:placeholder => "From"}
-          %input{:placeholder => "To"}
+          %input{:placeholder => t('form.from'), :class => "from"} 
+          %input{:placeholder => t('form.to'), :class => "to"}
 
-      %h2
-        = t('helper_search_when_where.info')
+      %section.key
+        %section.markers
+          %section
+            = fa_icon "calendar-o"
+        %section.form
 
-      %section.picker
-        .inner
-          %ul.month
-            %li Aug
-
-          %ul.day
-            %li 23
-
-          %ul.time
-            %li 9:30
-
-          %ul.meridiem
-            %li AM
+          %input{:value => t('form.leaving')}
 
     %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.continue'), page: 'helper_search_details', myclass: 'button primary'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.plan'), page: 'helper_search_details', myclass: 'button primary'}
