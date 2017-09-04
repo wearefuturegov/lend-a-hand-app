@@ -81,7 +81,7 @@
 
 
 .button + .button {
-  margin-top: $border-width;
+  margin-top: $baseline*0.5;
   &.secondary {
     margin-top: 0;
   }

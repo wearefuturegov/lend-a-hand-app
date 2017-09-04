@@ -1,22 +1,23 @@
 %main.main
   %section.container
     %section.body
-      %h2 Please review and agree to the terms of consent below before continuing. You will also need to upload proof of ID.
+      %h2 
+        = t('legal_consent.title')
 
       = link_to page_path(id: 'consent'), :title => "Consent to share" do
 
         %section.card
           .info
-            Consent to share your profile with other service users.
+            = t('legal_consent.consent')
           .info.right
             = fa_icon "check"
       = link_to page_path(id: 'acknowledgement'), :title => "Acknowledgement of responsibility" do
         %section.card
           .info
-            Acknowledgement of personal responsibility.
+            = t('legal_consent.acknowledgement')
           .info.right
             %span
             = fa_icon "check"
 
       %section.actions.primary
-        = link_to "Continue", page_path(id: 'profile_create_private'), :class => 'button primary'
+        = render partial: "partials/button", locals: {one: I18n.t('button.continue'), page: 'profile_create_private', myclass: 'button'}

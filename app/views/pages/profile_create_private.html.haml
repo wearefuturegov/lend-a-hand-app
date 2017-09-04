@@ -2,27 +2,36 @@
   %section.container
     %section.body
       %section.actions.secondary
-        = link_to "Personal details", page_path(id: 'profile_create_private'), :class => 'button secondary active'
-        = link_to "Public profile", page_path(id: 'profile_create_public'), :class => 'button secondary'
-
-      = render partial: "partials/form", locals: {title: "Your details", first: "Email", second: "Password", third: "Tel."}
-
-      = render partial: "partials/form", locals: {title: "Emergency contact", first: "Name", second: "Tel.", third: "Relationship to you"}
+        = render partial: "partials/button", locals: {one: I18n.t('button.personal_details'), page: 'profile_create_private', myclass: 'button secondary active'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.public_details'), page: 'profile_create_public', myclass: 'button secondary'}
 
       %section.card
-        %h2 Who do you prefer to help?
+        %h2 
+          = t('form.personal')
+        = render partial: "partials/form", locals: {one: I18n.t('form.email'), two: I18n.t('form.password'), three: I18n.t('form.tel')}
 
-        %section.actions.secondary
-          = link_to "Female", page_path(id: 'profile_create_private'), :class => 'button secondary'
-          = link_to "Male", page_path(id: 'profile_create_private'), :class => 'button secondary'
-          = link_to "Either", page_path(id: 'profile_create_private'), :class => 'button secondary'
 
       %section.card
-        %h2 How often do you need help?
+        %h2 
+          = t('form.emergency')
+        = render partial: "partials/form", locals: {one: I18n.t('form.name'), two: I18n.t('form.tel'), three: I18n.t('form.relationship')}
+
+      %section.card
+        %h2 
+          = t('profile_create_private.gender')
 
         %section.actions.secondary
-          = link_to "One-off", page_path(id: 'profile_create_private'), :class => 'button secondary'
-          = link_to "Routine", page_path(id: 'profile_create_private'), :class => 'button secondary'
+          = render partial: "partials/button", locals: {one: I18n.t('button.male'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.female'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.either'), myclass: 'button secondary'}
 
-      %section.actions.primary
-        = link_to "Create profile", page_path(id: 'profile_confirm'), :class => 'button primary deactive'
+      %section.card
+        %h2 
+          = t('profile_create_private.routine')
+
+        %section.actions.secondary
+          = render partial: "partials/button", locals: {one: I18n.t('button.oneoff'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.routine'), myclass: 'button secondary'}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.create_profile'), page: 'profile_confirm', myclass: 'button primary confirm'}

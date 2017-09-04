@@ -1,8 +1,10 @@
 %main.main
   %section.container
     %section.body
-      %h2 When do you plan on arriving?
-      %h3 Set date
+      %h2
+        = t('search_when_where.title')
+      %h3
+        = t('search_when_where.date')
 
       %section.picker
         .inner
@@ -26,4 +28,4 @@
             %li PM
 
     %section.actions.primary
-      = link_to "Confirm", help_type_path, :class => 'button primary'
+      = render partial: "partials/button", locals: {one: I18n.t('button.confirm'), page: 'help_type', myclass: 'button primary'}

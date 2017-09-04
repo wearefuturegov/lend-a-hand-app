@@ -2,18 +2,25 @@
   %section.container
     %section.body
       %section.actions.secondary
-        = link_to "Profile", page_path(id: 'profile'), :class => 'button secondary'
-        = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary'
-        = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary active'
-      
+        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'profile', myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.route'), page: 'profile_route', myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.contact'), page: 'profile_contact', myclass: 'button secondary active'}
+
       = render partial: "partials/profile", locals: {title: "We found someone who would like to help.", name: "Jon Snow", info: "could be lending you a hand"}
 
-      %section.actions.secondary
-        = link_to "Call Jon", page_path(id: 'profile_contact'), :class => 'button secondary'
-        = link_to "Message Jon", page_path(id: 'profile_contact'), :class => 'button secondary'
+      %section.card
+        %h2
+          = t('gender')
 
-      %section.actions.secondary
-        = link_to "Find me another", page_path(id: 'sorry'), :class => 'button secondary'
+        %section.actions.secondary
+          = render partial: "partials/button", locals: {one: I18n.t('button.call'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
 
-      %section.actions.primary
-        = link_to "Accept", page_path(id: 'profile_confirm'), :class => 'button primary confirm'
+
+
+        %section.actions.secondary
+          = render partial: "partials/button", locals: {one: I18n.t('button.decline'), page: 'sorry', myclass: 'button secondary'}
+
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.accept'), page: 'helper_status', myclass: 'button primary confirm'}

@@ -19,36 +19,9 @@
   }
   .info {
     line-height: $baseline;
-    .icon {
-      float: left;
-      margin-right: $baseline*0.25;
-      .fa-map-marker {
-        top: -4px;
-        position: relative;
-      }
+    .fa-circle-o {
+      text-align: left;
     }
-    // &.icon {
-    //   .spot, .rect {
-    //     float: left;
-    //     text-align: center;
-    //     padding: $baseline*0.0125;
-    //     margin-right: $baseline*0.25;
-    //     box-sizing: border-box;
-    //   }
-    //   .spot {
-    //     @include spot;
-    //     color: $white;
-    //     background: $color-one;
-    //   }
-    //   .rect {
-    //     color: $white;
-    //     background: $color-two;
-    //     padding: $baseline*0.0125 $baseline*0.125;
-    //     line-height: $icon;
-    //     height: $icon;
-    //     min-width: $icon;
-    //   }
-    // }
     &.extra {
       color: $black;
       font-size: $tiny;
@@ -59,7 +32,7 @@
     &.right {
       text-align: right;
       line-height: $icon;
-      span {
+      .fa-angle-right {
         margin-left: $baseline*0.5;
       }
     }

@@ -1,7 +1,8 @@
 %main.main
   %section.container
     %section.body
-      %h2 Where are you planning to go?
+      %h2
+        = t('search_when_where.title')
 
       %section.key
         %section.markers
@@ -15,7 +16,8 @@
           %input{:placeholder => "From"}
           %input{:placeholder => "To"}
 
-      %h2 When are your travelling?
+      %h2
+        = t('search_when_where.date')
 
       %section.picker
         .inner
@@ -31,5 +33,5 @@
           %ul.meridiem
             %li AM
 
-      %section.actions.primary
-        = link_to "Continue", page_path(id: 'search_details'), :class => 'button primary'
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.continue'), page: 'search_details', myclass: 'primary'}

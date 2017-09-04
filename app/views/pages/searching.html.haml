@@ -1,8 +1,7 @@
 %main.main
   %section.body
-    =image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
+    = link_to page_path(id: 'profile'), :title => "Profile" do
+      = image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
 
-    %h2 Looking for someone to lend a hand…
-
-    %section.actions.primary
-      = link_to "Continue", page_path(id: 'profile'), :class => 'button primary'
+    %h2
+      = t('searching.title')

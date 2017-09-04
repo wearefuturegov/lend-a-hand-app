@@ -1,42 +1,44 @@
 %main.main
   %section.container
     %section.body
-
       %section.card
         %section.profile
 
           =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
           
-          %h2 Jon Snow
-          %p will be lending you a hand.
-          %h3 Pending…
+          %h2
+            = t('helper_profile.name')
+          %p
+            = t('helper_status.info')
+          %h3
+            = t('helper_status.feedback')
 
       %section.card.grayscale
         %section.profile
 
-          %h3 Previous helpers
+          %h3
+            = t('helper_status.card_title')
 
           =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
           
-          %h2 Jon Snow
+          %h2
+            = t('helper_profile.name')
 
       %section.card.grayscale
         %section.profile
 
-          %h3 Previous helpers
-
           =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
           
-          %h2 Terry Snow
+          %h2
+            = t('helper_profile.name')
 
       %section.card.grayscale
         %section.profile
 
-          %h3 Previous helpers
-
           =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
           
-          %h2 James Snow
+          %h2
+            = t('helper_profile.name')
 
-      %section.actions.primary
-        = link_to "Home", page_path(id: 'profile_create_public'), :class => 'button primary'
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.home'), page: 'profile_create_public', myclass: 'button primary'}

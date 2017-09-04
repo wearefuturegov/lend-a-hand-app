@@ -3,8 +3,11 @@
     %section.body
       =image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
 
-      %h2 Your profile has been created!
-      %p We've also sent you an email  confirm your registration
+      %h2
+        = t('profile_confirm.profile')
+      %p 
+        = t('profile_confirm.email')
 
-      %section.actions.primary
-        = link_to "Begin your search", page_path(id: 'search_when_where'), :class => 'button primary'
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.begin'), page: 'search_when_where', myclass: 'primary'}

@@ -4,19 +4,22 @@
 
       %section.card
         %section.profile
-          %h2 Take photo of your driver’s licence or ID page of your passport.
+          %h2 
+            = t('photo_id.title')
 
           = fa_icon "camera"
 
-          %h3 This must be a clear photo and show your full name, age, date of bith and expiration date.
+          %h3
+            = t('photo_id.info')
 
 
       %section.card
-        %h2 Have you had a police check?
+        %h2
+          = t('photo_id.check')
       
         %section.actions.secondary
-          = link_to "No", page_path(id: 'photo_id'), :class => 'button secondary'
-          = link_to "Yes", page_path(id: 'photo_id'), :class => 'button secondary'
+          = render partial: "partials/button", locals: {one: I18n.t('button.nope'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.yep'), myclass: 'button secondary'}
 
-    %section.actions
-      = link_to "Confirm", page_path(id: 'helper_profile_create_private'), :class => 'button primary confirm'
+  %section.actions.primary
+    = render partial: "partials/button", locals: {one: I18n.t('button.confirm'), page: 'helper_profile_create_private', myclass: 'button primary confirm'}

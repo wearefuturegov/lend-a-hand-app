@@ -1,0 +1,13 @@
+- if local_assigns[:page]
+  = link_to one, page_path(id: "#{page}"), :class => "button #{myclass}"
+- else local_assigns[:myclass]
+  .button{:class => "button #{myclass}"}
+    = one
+
+
+// old button
+/ - if local_assigns[:myclass]
+/   = link_to one, page_path(id: page), :class => "button #{myclass}"
+/ - else
+/   = link_to one, page_path(id: page), :class => "button"
+

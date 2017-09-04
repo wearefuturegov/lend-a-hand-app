@@ -2,13 +2,15 @@
   %section.container
     %section.body
 
-      %h2 About your journey
+      %h2
+        = t('helper_search_details.title')
 
       = render partial: 'partials/route_large'
 
-      %h2 Choose a departure time
+      %h2
+        = t('helper_search_details.departure')
 
       = render partial: 'partials/helper_departure'
 
-      %section.actions.primary
-        = link_to "Find a helper", page_path(id: 'searching'), :class => 'button primary confirm'
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.find'), page: 'searching', myclass: 'button primary confirm'}

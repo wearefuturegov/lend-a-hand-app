@@ -2,11 +2,13 @@
   %section.container
     %section.body
       =image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
+      
       %h1
-        Lend a hand
+        = t('global.title')
       %p
-        We help to connect commuters  with people in a wheelchair  to commute on public transport.
+        = t('global.about')
 
-    %section.actions.primary
-      = link_to "I can help", page_path(id: 'legal_helper'), :class => 'button primary'
-      = link_to "I need help", page_path(id: 'legal_traveller'), :class => 'button primary'
+  %section.actions.primary
+    = render partial: "partials/button", locals: {one: I18n.t('button.traveller'), page: 'profile_create_public', myclass: 'button primary'}
+
+    = render partial: "partials/button", locals: {one: I18n.t('button.helper'), page: 'helper_profile_create_public', myclass: 'button primary'}

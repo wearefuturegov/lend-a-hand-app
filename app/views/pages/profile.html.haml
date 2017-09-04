@@ -2,11 +2,12 @@
   %section.container
     %section.body
       %section.actions.secondary
-        = link_to I18n.t('buttons.this'), page_path(id: 'profile'), :class => 'button secondary active'
-        = link_to "Route", page_path(id: 'profile_route'), :class => 'button secondary'
-        = link_to "Contact", page_path(id: 'profile_contact'), :class => 'button secondary'
+        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'profile', myclass: 'button secondary active'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.route'), page: 'profile_route', myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.contact'), page: 'profile_contact', myclass: 'button secondary'}
 
-      = render partial: "partials/profile", locals: {title: "We found someone who would like to help.", name: "Jon Snow", info: "could be lending you a hand"}
+      = render partial: "partials/profile", locals: {title: I18n.t('helper_profile.title'), name: I18n.t('helper_profile.name'), info: I18n.t('helper_profile.info')}
+
 
       %section.card
         %section
@@ -17,8 +18,14 @@
           .info People helped:
           .info.right 22
 
-      = render partial: "partials/tags", locals: {title: "Feedback", tag_1: "Went above and beyond", tag_2: "Experienced", tag_3: "Engaging", tag_4: "Knowledge in technique", tag_5: "Funny and supportive", tag_6: "Super helpful"}
+      %section.card
+        %h2 
+          = t('helper_profile.feedback')
 
-      = render partial: "partials/secondary_single", locals: {title: "Find me another", page: 'sorry'}
+        = render partial: "partials/tags", locals: {tag_a: I18n.t('dummy.tag_a'), tag_b: I18n.t('dummy.tag_b'), tag_c: I18n.t('dummy.tag_c'), tag_d: I18n.t('dummy.tag_d'), tag_e: I18n.t('dummy.tag_e'), tag_f: I18n.t('dummy.tag_f')}
 
-      = render partial: "partials/cta", locals: {title: "Accept", page: 'helper_status'}
+      %section.actions.secondary
+        = render partial: "partials/button", locals: {one: I18n.t('button.decline'), page: 'sorry', myclass: 'button secondary'}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.accept'), page: 'helper_status', myclass: 'button primary confirm'}

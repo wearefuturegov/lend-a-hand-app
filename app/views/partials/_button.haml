@@ -1,0 +1,10 @@
+- if local_assigns[:page]
+  = link_to one, page_path(id: "#{page}"), :class => "#{myclass}"
+- else local_assigns[:myclass]
+  .button{:class => "#{myclass}"}
+    = one
+
+
+// if only myclass show .button
+// if only page error
+// if both myclass and page show
