@@ -1,4 +1,4 @@
-%main.main.search-details
+%main.main.full
   %section.container
     %section.body
       %section.card
@@ -20,6 +20,3 @@
           = t('about_station.accessibility')
         = render partial: 'partials/list'
         = render partial: 'partials/list'
-
-    %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.back'), page: 'helper_search_details', myclass: 'button primary confirm'}

@@ -16,25 +16,25 @@
             %span
               = fa_icon "angle-right"
           .info.extra
-            = t('helper_profile.name')
+            = t('traveller_profile.name')
 
       %section.card.divide
         .info.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+          =image_tag "app-grabs/profile_001.png", :alt => "Profile image", :class => "profile-img"
         .info.right 
           %span
             = fa_icon "angle-right"
         .info.extra
-          Persons name goes here as it has more space
+          = t('dummy.name_a')
 
       %section.card.divide
         .info.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+          =image_tag "app-grabs/profile_002.png", :alt => "Profile image", :class => "profile-img"
         .info.right 
           %span
             = fa_icon "angle-right"
         .info.extra
-          Persons name goes here as it has more space
+          = t('dummy.name_b')
 
       %section.card
         = render partial: 'partials/route_large'

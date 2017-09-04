@@ -1,0 +1,15 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('helper_pending_journey.title')
+
+        =image_tag "app-grabs/profile_dimitri.png", :alt => "Profile image", :class => "profile-img"
+
+      %section.card
+        = render partial: 'partials/route_large'
+
+      %section.actions.primary
+        = render partial: "partials/button", locals: {one: I18n.t('button.view_profile'), myclass: 'button primary confirm'}

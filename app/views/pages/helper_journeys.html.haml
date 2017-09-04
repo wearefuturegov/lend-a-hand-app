@@ -14,37 +14,28 @@
       %section.card
         .info
           = t('helper_journeys.upcoming')
-      = link_to page_path(id: 'helper_upcoming_journeys'), :title => "Search Details" do
-        %section.card.divide
-          .info.profile
-            =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-          .info.right 
-            %span
-              = fa_icon "angle-right"
-          .info.extra
-            = t('helper_profile.name')
+        = link_to page_path(id: 'helper_upcoming_journey'), :title => "Search Details" do
+          %section.card.divide
+            .info.profile
+              =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+            .info.right 
+              %span
+                = fa_icon "angle-right"
+            .info.extra
+              = t('helper_profile.name')
 
-
-      %section.card
-        .info
-          = t('helper_journeys.pending')
-      %section.card.divide
-        .info.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-        .info.right 
-          %span
-            = fa_icon "angle-right"
-        .info.extra
-          Persons name goes here as it has more space
-
-      %section.card.divide
-        .info.profile
-          =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
-        .info.right 
-          %span
-            = fa_icon "angle-right"
-        .info.extra
-          Persons name goes here as it has more space
+        %section.card
+          .info
+            = t('helper_journeys.pending')
+          = link_to page_path(id: 'helper_pending_journey'), :title => "Pending Journey" do
+            %section.card.divide
+              .info.profile
+                =image_tag "app-grabs/profile_dimitri.png", :alt => "Profile image", :class => "profile-img"
+              .info.right 
+                %span
+                  = fa_icon "angle-right"
+              .info.extra
+                Persons name goes here as it has more space
 
       %section.card
         %p
