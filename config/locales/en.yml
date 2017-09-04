@@ -57,6 +57,7 @@ en:
     back_journey: "Back to journeys"
     add_journey: "Add a journey"
     view_profile: "Views Kats profile"
+    back: "Back"
 
 # helper
 
@@ -101,6 +102,14 @@ en:
     tag_d: "Keeping me safe"
     tag_e: "To have a chat with"
     tag_f: "Be supportive and caring"
+
+# general
+
+  about_station:
+    title: "About Alburn station"
+    info: "Alburn has wheelchair access"
+    around: "Getting around the station"
+    accessibility: "Accessibility"
 
 ## --- to check
 

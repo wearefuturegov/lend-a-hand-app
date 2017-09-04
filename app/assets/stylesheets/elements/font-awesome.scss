@@ -15,7 +15,14 @@
 
 .fa-check {
   color: $confirm;
-  font-size: $baseline*2;
+  font-size: $baseline;
+}
+
+.fa-times {
+  color: $alert;
+  font-size: $baseline;
+  width: $baseline;
+  text-align: center;
 }
 
 .fa-circle-o {

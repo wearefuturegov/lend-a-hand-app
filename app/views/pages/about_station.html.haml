@@ -1,0 +1,25 @@
+%main.main.search-details
+  %section.container
+    %section.body
+      %section.card
+
+        %h1
+          = t('about_station.title')
+
+        %p
+          = t('about_station.info')
+
+      %section.card
+        %h2
+          = t('about_station.around')  
+        = render partial: 'partials/list'
+        = render partial: 'partials/list'
+
+      %section.card
+        %h2
+          = t('about_station.accessibility')
+        = render partial: 'partials/list'
+        = render partial: 'partials/list'
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.back'), page: 'helper_search_details', myclass: 'button primary confirm'}
