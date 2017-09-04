@@ -30,7 +30,7 @@ en:
     contact: "Contact"
     decline: "Find me another"
     call: "Call Jon"
-    message: "Message Jon"
+    message: "Message Kat"
     personal_details: "Personal details"
     public_details: "Public details"
     male: "Male"
@@ -54,12 +54,25 @@ en:
     home: "Home"
     ok: "Ok"
     plan: "Plan your journey"
+    back_journey: "Back to journeys"
+    add_journey: "Add a journey"
+    view_profile: "Views Kats profile"
 
 # helper
 
-  helper_search_when_where:
+  helper_journey_create:
     title: "Hi Julia!"
     info: "Find travellers to help on your next journey…"
+
+  helper_journeys:
+    title: "Hi Julia!"
+    info: "Find travellers to help on your next journey…"
+    upcoming: " Upcoming journeys"
+    pending: "Waiting for confirmation"
+    faq: "Check out the helper’s FAQ for information on how you can provide help effectively."
+
+  helper_upcoming_journeys:
+    title: "Your upcoming journey with Kat"
 
   helper_search_details:
     title: "About your journey"
@@ -79,7 +92,15 @@ en:
     title: "We found someone who needs your help."
     name: "Kat Stevens"
     info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
-    feedback: "I need help with"
+    help: "Kat would like help with…"
+
+  traveller_tag:
+    tag_a: "Changing platforms"
+    tag_b: "Navigate the station"
+    tag_c: "Pushing my wheelchair"
+    tag_d: "Keeping me safe"
+    tag_e: "To have a chat with"
+    tag_f: "Be supportive and caring"
 
 ## --- to check
 
@@ -168,6 +189,13 @@ en:
     title: "It looks like there isn't anyone to help you at the moment."
     info: "Don't worry, we're still looking and will notify you when we have found someone."
 
+  thanks:
+    title: "Thanks for lending a hand"
+    info: "We have notifed Kat and will let you know when your offer has been accepted"
+
+  chat:
+    title: "Chat"
+
   dummy:
     date_from: "11:00AM"
     date_to: "12:00PM"
@@ -175,11 +203,5 @@ en:
     platform: "Platform 1"
     info: "Accessibility information Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     info_short: "Accessibility information. Ramps."
-    tag_a: "Went above and beyond"
-    tag_b: "Experienced"
-    tag_c: "Engaging"
-    tag_d: "Knowledge in technique"
-    tag_e: "Funny and supportive"
-    tag_f: "Super helpful"
     lorem: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 

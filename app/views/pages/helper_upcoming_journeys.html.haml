@@ -1,0 +1,18 @@
+%main.main.search-details
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('helper_upcoming_journeys.title')
+
+        =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+
+      %section.card
+        = render partial: 'partials/route_large'
+
+      %section.actions.secondary
+        = render partial: "partials/button", locals: {one: I18n.t('button.view_profile'), page: 'traveller_profile_confirmed', myclass: 'button secondary confirm'}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.message'), page: 'chat', myclass: 'button primary confirm'}

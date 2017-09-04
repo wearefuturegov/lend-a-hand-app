@@ -14,8 +14,9 @@
 
         %h2
           = t('helper_search_details.departure')
-
+      
       = render partial: 'partials/helper_departure'
+      = render partial: 'partials/departure'
 
     %section.actions.primary
       = render partial: "partials/button", locals: {one: I18n.t('button.find_traveller'), page: 'searching', myclass: 'button primary confirm'}

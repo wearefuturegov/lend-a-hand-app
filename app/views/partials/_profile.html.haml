@@ -2,5 +2,7 @@
 
 %h2
   = name
-%p
-  = info
+
+- if local_assigns[:info]
+  %p
+    = info
