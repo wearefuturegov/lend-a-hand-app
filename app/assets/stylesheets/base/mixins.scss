@@ -6,6 +6,42 @@
   -moz-radius: $baseline*0.25;
 }
 
+@mixin left-radius {
+  border-top-left-radius: $baseline*0.25;
+  border-bottom-left-radius: $baseline*0.25;
+  -webkit-border-top-left-radius: $baseline*0.25;
+  -webkit-border-bottom-left-radius: $baseline*0.25;
+  -moz-top-left-radius: $baseline*0.25;
+  -moz-bottom-left-radius: $baseline*0.25;
+}
+
+@mixin right-radius {
+  border-top-right-radius: $baseline*0.25;
+  border-bottom-right-radius: $baseline*0.25;
+  -webkit-border-top-right-radius: $baseline*0.25;
+  -webkit-border-bottom-right-radius: $baseline*0.25;
+  -moz-top-right-radius: $baseline*0.25;
+  -moz-bottom-right-radius: $baseline*0.25;
+}
+
+@mixin no-left-radius {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-top-left-radius: 0;
+  -moz-bottom-left-radius: 0;
+}
+
+@mixin no-right-radius {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-top-right-radius: 0;
+  -moz-bottom-right-radius: 0;
+}
+
 @mixin ease {
   transition: all $speed $curve;
   -webkit-transition: all $speed $curve;
@@ -15,11 +51,10 @@
 
 @mixin circle {
   border: $border-width $border-style $brand;
-  height: $baseline;
-  width: $baseline;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-radius: 100%;
+  padding: $baseline;
 }
 
 @mixin spot {
@@ -63,4 +98,10 @@
   :-moz-placeholder { /* Firefox 18- */
     color: $placeholder-color;
   }
+}
+
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

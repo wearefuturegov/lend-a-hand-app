@@ -2,6 +2,8 @@
 
 .button {
   @include ease;
+  @include left-radius;
+  @include right-radius;
   background: $secondary;
   display: block;
   border: $border-width $border-style $secondary;
@@ -26,15 +28,15 @@
     border-color: $primary;
     background: $primary;
     &.confirm {
-      background: $confirm;
-      border-color: $confirm;
+      background: $primary;
+      border-color: $primary;
     }
   }
   &.secondary {
     float: left;
     width: auto;
     background: $white;
-    color: $brand;
+    color: $secondary;
     font-size: $small;
     margin-left: -$border-width;
     &.active {
@@ -102,4 +104,19 @@ input + .button {
   //   color: $brand-variant;
   //   border-color: $brand-variant;
   // }
+}
+
+.secondary {
+  a {
+    @include no-left-radius;
+    @include no-right-radius;
+  }
+  a:first-child {
+    @include left-radius;
+    @include no-right-radius;
+  }
+  a:last-child {
+    @include right-radius;
+    @include no-left-radius;
+  }
 }

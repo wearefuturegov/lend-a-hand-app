@@ -9,28 +9,26 @@ $footer: #000;
 /* notify */
 $alert: #de5a38;
 $error: #de5a38;
-$confirm: #09b569;
+$confirm: #04a75f;
 
 /* modifiers */
 $gray-darken: darken($gray, 30%);
 
 /* brand */
-$brand: #009ca6;
-$brand-variant: #17cbd4;
+$brand: #115db7;
 
-$primary: lighten($brand, 7%);
-$secondary: $brand;
+$primary: $brand;
+$secondary: #e87a24;
 
 $brand-dim: darken($brand, 12%);
 $brand-bright: lighten($brand, 12%);
-$brand-mute: #d5eff1;
+$brand-mute: lighten($brand, 50%);
 
-$attention: #ea7e07;
+$secondary-mute: lighten($secondary, 42%);
+
+$attention: #e87a24;
 
 $background: $white;
 
 
 /* outside colors */
-
-$color-one: #f5a623;
-$color-two: #03a9f4;

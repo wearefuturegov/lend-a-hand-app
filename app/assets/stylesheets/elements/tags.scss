@@ -3,14 +3,14 @@
 .tags {
   text-align: center;
   li {
-    background: $brand-mute;
+    background: $secondary-mute;
     padding: $baseline*0.25 $baseline*0.5;
     margin: $baseline*0.25;
     display: inline-block;
     span {
       font-size: $small;
       line-height: $tight;
-      color: $brand-dim;
+      color: $secondary;
     }
   }
 }

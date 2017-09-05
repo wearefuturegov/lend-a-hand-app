@@ -5,25 +5,44 @@
   padding: $baseline*4;
 }
 
-.form input {
-  border: none;
-  background: $background;
-  border-bottom: $border-width $border-style $gray;
-  padding: 0;
+.form { 
+  float: left;
+  input {
+    @include box-sizing;
+    @include left-radius;
+    @include right-radius;
+    border: none;
+    background: $background;
+    border: $border-width $border-style $gray;
+    padding: $baseline*0.25 $baseline*0.5;
+  }
 }
 
-.form, .form input {
+.form, .form input, .form textarea {
   @include placeholder($gray);
   color: $black;
-  font-size: $body;
+  font-size: $small;
   line-height: $baseline;
-  text-align: center;
-  margin-top: $baseline;
-  margin-bottom: $baseline;
+  text-align: left;
+  margin-top: $baseline*0.5;
+  margin-bottom: $baseline*0.5;
   .helper {
     font-size: $tiny;
     text-decoration: underline;
   }
+}
+
+.form textarea {
+  @include box-sizing;
+  @include left-radius;
+  @include right-radius;
+  height: $baseline*8;
+  text-align: left;
+  resize: none;
+  border: $border-style $border-width $gray;
+  padding: $baseline*0.5;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .key {

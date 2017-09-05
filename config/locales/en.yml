@@ -21,7 +21,7 @@
 
 en:
   global:
-    title: "Lend a Hand"
+    title: "Lend a Hand."
     about: "We help to connect commuters with people in wheelchairs to commute on public transport."
 
   button:
@@ -38,7 +38,7 @@ en:
     either: "Either"
     oneoff: "One-off"
     routine: "Routine"
-    create_profile: "Create profile"
+    create_profile: "Set up profile"
     helper: "I can help"
     traveller: "I need help"
     continue: "Continue"
@@ -68,32 +68,33 @@ en:
   helper_journeys:
     title: "Hi Julia!"
     info: "Find travellers to help on your next journey…"
-    upcoming: " Upcoming journeys"
-    pending: "Waiting for confirmation"
+    upcoming: " Upcoming journeys."
+    pending: "Waiting for confirmation."
     faq: "Check out the helper’s FAQ for information on how you can provide help effectively."
 
   helper_upcoming_journeys:
-    title: "Your upcoming journey with Kat"
+    title: "Your upcoming journey with Kat."
 
   helper_upcoming_journeys:
-    title: "Your upcoming journey with Kat"
+    title: "Your upcoming journey with Kat."
 
   helper_pending_journey:
-    title: "Waiting for Dimitri to accept your offer"
+    title: "Waiting for Dimitri to accept your offer."
 
   helper_search_details:
-    title: "About your journey"
-    info: "Familiarise yourself with each station's accessibility details"
-    departure: "Choose your departure time"
+    title: "About your journey."
+    info: "Familiarise yourself with each station's accessibility details."
+    departure: "Choose your departure time."
 
   searching:
     title: "Finding travellers for you to lend a hand…"
 
+
 # traveller
 
   travellers_available:
-    title: "We have found 3 travellers who are looking for help on this journey"
-    info: "Check a traveller's profile to make sure you are able to provide the help they need on their journey"
+    title: "We have found 3 travellers who are looking for help on this journey."
+    info: "Check a traveller's profile to make sure you are able to provide the help they need on their journey."
 
   traveller_profile:
     title: "We found someone who needs your help."
@@ -109,13 +110,20 @@ en:
     tag_e: "To have a chat with"
     tag_f: "Be supportive and caring"
 
+  traveller_profile_edit:
+    title: "Welcome Kat!"
+    info: "We just need a few details from you to set up your profile. This allows helpers to get to know a bit about you and your needs."
+    upload: "Upload your photo"
+    gender: "Who would you prefer to help you?"
+    tags: "What kind of help would you like?"
+
 # general
 
   about_station:
-    title: "About Alburn station"
-    info: "Alburn has wheelchair access"
-    around: "Getting around the station"
-    accessibility: "Accessibility"
+    title: "About Alburn station."
+    info: "Alburn has wheelchair access,"
+    around: "Getting around the station."
+    accessibility: "Accessibility."
 
 ## --- to check
 
@@ -128,7 +136,7 @@ en:
     routine: "How often do you need help?"
 
   helper_profile_create_public:
-    gender: "Gender"
+    gender: "Gender."
 
   form:
     title: "Your public details"
@@ -145,6 +153,9 @@ en:
     from: "From station"
     to: "To station"
     leaving: "Leaving 9am Oct 12"
+    about: "Tell us about yourself"
+    about_eg: "E.g. enjoys reading sci-fi books"
+    tag: "E.g. Push wheelchair, Cross road safely"
 
 
   legal_helper:
@@ -166,34 +177,34 @@ en:
   helper_profile:
     title: "We found someone who would like to help."
     name: "Jon Snow"
-    info: "could be lending you a hand"
-    feedback: "Feedback"
+    info: "could be lending you a hand."
+    feedback: "Feedback."
 
   helper_status:
     info: "will be lending you a hand."
     feedback: "pending…"
-    card_title: "Previous helpers"
+    card_title: "Previous helpers."
 
   profile_confirm:
     profile: "Your profile has been created!"
-    email: "We've also sent you an email confirm your registration"
+    email: "We've also sent you an email confirm your registration."
 
   search_when_where:
     title: "Where are you planning to go?"
     date: "When are your travelling?"
 
   search_details:
-    title: "About your journey"
-    time: "Choose a departure time"
+    title: "About your journey."
+    time: "Choose a departure time."
 
   acknowledgement:
     title: "Acknowledgement of personal responsibility."
 
   helper_profile_create_public:
-    title: "Needs"
+    title: "Needs."
 
   profile_create_public:
-    title: "Needs"
+    title: "Needs."
 
   photo_id:
     title: "Take photo of your driver’s licence or ID page of your passport."
@@ -205,11 +216,11 @@ en:
     info: "Don't worry, we're still looking and will notify you when we have found someone."
 
   thanks:
-    title: "Thanks for lending a hand"
-    info: "We have notifed Kat and will let you know when your offer has been accepted"
+    title: "Thanks for lending a hand!"
+    info: "We have notifed Kat and will let you know when your offer has been accepted."
 
   chat:
-    title: "Chat"
+    title: "Chat."
 
   dummy:
     date_from: "11:00AM"
