@@ -186,8 +186,8 @@ en:
     card_title: "Previous helpers."
 
   profile_confirm:
-    profile: "Your profile has been created!"
-    email: "We've also sent you an email confirm your registration."
+    profile: "Thanks Kat!"
+    email: "Your profile is ready. You can now start searching for helpers for your next journey."
 
   search_when_where:
     title: "Where are you planning to go?"

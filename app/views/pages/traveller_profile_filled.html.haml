@@ -1,0 +1,43 @@
+%main.main
+  %section.container
+    %section.body
+
+      %section.card
+        %h1
+          = t('traveller_profile_edit.title')
+
+        %p
+          = t('traveller_profile_edit.info')
+
+      %section.card
+
+        %p
+          = t('traveller_profile_edit.upload')
+        = image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+
+
+      %section.card
+        .form
+          %p
+            = t('form.about')
+          %textarea
+            = t('traveller_profile.info')
+
+      %section.card
+        %p
+          = t('traveller_profile_edit.gender')
+
+        %section.actions.secondary
+          = render partial: "partials/button", locals: {one: I18n.t('button.male'), page: 'profile_create_public', myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.female'), page: 'profile_create_public', myclass: 'button secondary active'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.either'), page: 'profile_create_public', myclass: 'button secondary'}
+
+      %section.card
+        %p 
+          = t('traveller_profile_edit.tags')
+
+        = render partial: "partials/tags", locals: {tag_a: "Lifting up", tag_b: "Securing while on train", tag_c: "Support", tag_d: "Pushing up slope", tag_e: "Holding me down steep slope", tag_f: "Emotional"}
+
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.create_profile'), page: 'profile_confirm', myclass: 'button primary confirm'}

@@ -41,13 +41,13 @@
     margin-left: -$border-width;
     &.active {
       color: white;
-      background: $brand;
+      background: $secondary;
     }
   }
   &.deactive {
     border-color: $gray;
     background: $gray;
-    pointer-events: none;
+    //pointer-events: none;
     cursor: default;
     &.secondary {
       color: $gray;
