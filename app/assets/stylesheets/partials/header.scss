@@ -1,6 +1,7 @@
 /* header */
 
 .header {
+  height: $header-height;
   .back .fa:before {
     font-size: $body*1.75;
     line-height: $header-height;
@@ -10,10 +11,10 @@
     ul {
       float: right;
       li a {
-        color: $white;
+        color: $brand;
         margin-left: $gutter*0.25;
         &:hover {
-          color: $white;
+          color: $brand;
         }
       }
     }
