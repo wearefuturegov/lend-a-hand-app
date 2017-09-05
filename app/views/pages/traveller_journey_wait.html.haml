@@ -1,0 +1,12 @@
+%main.main.search-details
+  %section.container
+    %section.body
+
+      %h2
+        = t('traveller_journey_wait.title')
+
+      = render partial: 'partials/route_large'
+
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.cancel_journey'), page: 'traveller_journey_wait', myclass: 'button primary decline deactive'}

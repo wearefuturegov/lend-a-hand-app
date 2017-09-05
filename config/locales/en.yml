@@ -58,6 +58,8 @@ en:
     add_journey: "Add a journey"
     view_profile: "View profile"
     back: "Back"
+    add_journey: "Add my journey"
+    cancel_journey: "Cancel my journey"
 
 # helper
 
@@ -72,8 +74,8 @@ en:
     pending: "Waiting for confirmation."
     faq: "Check out the helper’s FAQ for information on how you can provide help effectively."
 
-  helper_upcoming_journeys:
-    title: "Your upcoming journey with Kat."
+  helper_upcoming_journey:
+    title: "Kat"
 
   helper_upcoming_journeys:
     title: "Your upcoming journey with Kat."
@@ -91,6 +93,16 @@ en:
 
 
 # traveller
+
+  add_journey_confirm:
+    title: "Thanks Kat!"
+    info: "We'll let you know when a helper is available for your journey"
+
+  traveller_journey_overview:
+    title: "Review your journey"
+
+  traveller_journey_wait:
+    title: "Waiting for helpers for your journey"
 
   travellers_available:
     title: "We have found 3 travellers who are looking for help on this journey."
@@ -176,7 +188,7 @@ en:
 
   helper_profile:
     title: "We found someone who would like to help."
-    name: "Jon Snow"
+    name: "Kat"
     info: "could be lending you a hand."
     feedback: "Feedback."
 
@@ -232,4 +244,5 @@ en:
     lorem: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     name_a: "Priya Pai"
     name_b: "Amber Ma"
+    name_c: "Dimitri"
 

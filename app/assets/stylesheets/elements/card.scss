@@ -3,7 +3,7 @@
 .card {
   padding: $baseline 0;
   &.divide {
-    border-bottom: $border-width-thin $border-style $brand;
+    border-bottom: $border-width-thin $border-style $black;
   }
   + .card {
     margin-top: -$border-width;

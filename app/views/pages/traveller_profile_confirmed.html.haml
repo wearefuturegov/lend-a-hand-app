@@ -3,8 +3,6 @@
     %section.body
 
       %section.card.divide
-        %h1
-          = t('traveller_profile.title')
 
         = render partial: "partials/profile", locals: {title: I18n.t('traveller_profile.title'), name: I18n.t('traveller_profile.name'), info: I18n.t('traveller_profile.info')}
 
