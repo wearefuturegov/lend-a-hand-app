@@ -48,15 +48,19 @@
 
 .card.profile {
   position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
   &:after {
     background: $brand;
     content: '';
     width: 200%;
     position: absolute;
     top: -$baseline;
-    left: -50%;
+    left: -70%;
     bottom: 0;
-    border-radius: 100%;
+    border-radius: 70%;
+    border-bottom-left-radius: 100%;
     z-index: -100;
   }
 }
