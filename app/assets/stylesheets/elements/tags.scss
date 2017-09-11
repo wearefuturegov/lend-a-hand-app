@@ -11,6 +11,9 @@
       font-size: $small;
       line-height: $tight;
       color: $secondary;
+      &:before {
+        content: "x";
+      }
     }
   }
 }

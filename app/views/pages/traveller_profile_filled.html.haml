@@ -36,7 +36,7 @@
         %p 
           = t('traveller_profile_edit.tags')
 
-        = render partial: "partials/tags", locals: {tag_a: "Lifting up", tag_b: "Securing while on train", tag_c: "Support", tag_d: "Pushing up slope", tag_e: "Holding me down steep slope", tag_f: "Emotional"}
+        = render partial: "partials/tags", locals: {tag_a: I18n.t('traveller_tag.tag_a'), tag_b: I18n.t('traveller_tag.tag_b'), tag_c: I18n.t('traveller_tag.tag_c'), tag_d: I18n.t('traveller_tag.tag_d'), tag_e: I18n.t('traveller_tag.tag_e'), tag_f: I18n.t('traveller_tag.tag_f')}
 
 
     %section.actions.primary

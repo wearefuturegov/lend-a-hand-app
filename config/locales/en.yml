@@ -28,7 +28,8 @@ en:
     profile: "Profile"
     route: "Route"
     contact: "Contact"
-    decline: "Find me another"
+    find_another: "Find me another"
+    decline: "Decline"
     call: "Call Jon"
     message: "Message Kat"
     personal_details: "Personal details"
@@ -60,8 +61,26 @@ en:
     back: "Back"
     add_journey: "Add my journey"
     cancel_journey: "Cancel my journey"
+    next: "Next"
+    send: "Send"
+    flag: "Flag a concern"
+    feedback: "Provide feedback"
 
 # helper
+
+  helper_profile_view:
+    title: "Julia Leigh"
+    about: "I'm training to be a Yoga teacher and like to help friends and family live a healthy life. I enjoy classical music and history."
+    help: "I am able to assist people who use wheelchairs to get up and down ramps. I am also good with directions and can navigate stations quickly."
+    tags: "Top feedback"
+  
+  helper_accept:
+    title: "That's great!"
+    info: "You can now contact Julia and plan your journey together."
+    contact: "Contact Julia"
+
+  helper_profile_link:
+    text: "View Julia's profile"
 
   helper_journey_create:
     title: "Hi Julia!"
@@ -91,6 +110,14 @@ en:
   searching:
     title: "Finding travellers for you to lend a hand…"
 
+  helper_tag:
+    tag_a: "Attentive"
+    tag_b: "Went above and beyond"
+    tag_c: "Good conversationalist"
+    tag_d: "Sense of humour"
+    tag_e: "Fun"
+    tag_f: "Very supportive and caring"
+
 
 # traveller
 
@@ -100,6 +127,9 @@ en:
 
   traveller_journey_overview:
     title: "Review your journey"
+
+  traveller_journey_offer:
+    title: "Julia has offered to help you on your journey!"
 
   traveller_journey_wait:
     title: "Waiting for helpers for your journey"
@@ -137,6 +167,15 @@ en:
     around: "Getting around the station."
     accessibility: "Accessibility."
 
+  feedback:
+    title: "How was Julia as a helper?"
+    helper_info: "Choose from the options below and we'll add your feedback to her profile!"
+    placeholder: "E.g. Very kind, Super helpful, Supportive"
+
+  concern:
+    title: "Flag a concern"
+    info: "Let us know if you have some concerns about this helper. Please note that your comments remain private and will not be shared with them."
+
 ## --- to check
 
   profile_create_private:
@@ -168,6 +207,7 @@ en:
     about: "Tell us about yourself"
     about_eg: "E.g. enjoys reading sci-fi books"
     tag: "E.g. Push wheelchair, Cross road safely"
+    comments: "Please leave your comments"
 
 
   legal_helper:

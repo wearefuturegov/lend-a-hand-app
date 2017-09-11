@@ -12,11 +12,6 @@ body {
   background: $background;
 }
 
-.main {
-  display: flex;
-  height: calc(100% - #{$header-height});
-}
-
 .container {
   height: 100%;
   width: 100%;
@@ -33,7 +28,15 @@ body {
 
 
 .main {
-  // margin-top: $header-height;
+  background: $white;
+  display: flex;
+  height: calc(100% - #{$header-height});
+  z-index: 0;
+  &.cover {
+    position: absolute;
+    top: 0;
+    height: calc(100%);
+  }
   .form {
     margin-top: $baseline*0.5;
     margin-bottom: $baseline*0.5;

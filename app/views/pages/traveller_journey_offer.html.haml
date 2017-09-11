@@ -1,0 +1,22 @@
+%main.main.search-details
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('traveller_journey_offer.title')
+
+        =image_tag "app-grabs/profile_003.png", :alt => "Profile image", :class => "profile-img"
+      
+        %p
+          = link_to page_path(id: 'traveller_journey_wait'), :title => "Profile" do
+            = t('helper_profile_link.text')
+
+      %section.card
+
+        = render partial: 'partials/route_large'
+
+
+    %section.actions.secondary
+      = render partial: "partials/button", locals: {one: I18n.t('button.decline'), myclass: 'button secondary'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.accept'), page: 'helper_accept', myclass: 'button secondary'}

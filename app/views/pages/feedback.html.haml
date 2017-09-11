@@ -1,0 +1,20 @@
+%main.main
+  %section.container
+    %section.body
+
+      %section.card
+        %h2
+          = t('feedback.title')
+
+      %section.card
+        .form
+          %p 
+            = t('feedback.helper_info')
+          %input{:placeholder => t('feedback.placeholder')}
+
+
+        = render partial: "partials/tags", locals: {tag_a: I18n.t('helper_tag.tag_a'), tag_b: I18n.t('helper_tag.tag_b'), tag_c: I18n.t('helper_tag.tag_c'), tag_d: I18n.t('helper_tag.tag_d'), tag_e: I18n.t('helper_tag.tag_e'), tag_f: I18n.t('helper_tag.tag_f')}
+
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.send'), myclass: 'button primary'}

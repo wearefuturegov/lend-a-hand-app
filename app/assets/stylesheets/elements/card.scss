@@ -46,6 +46,21 @@
   }
 }
 
+.card.profile {
+  position: relative;
+  &:after {
+    background: $brand;
+    content: '';
+    width: 200%;
+    position: absolute;
+    top: -$baseline;
+    left: -50%;
+    bottom: 0;
+    border-radius: 100%;
+    z-index: -100;
+  }
+}
+
 .key {
   .card {
       padding: $baseline*0.5 0;

@@ -54,6 +54,10 @@ h3 {
   margin-bottom: $baseline*0.5;
 }
 
+img + p {
+  margin-top: $baseline;
+}
+
 .info {
   color: $black;
   font-size: $body;
@@ -70,6 +74,12 @@ h3 {
 
 .brand {
   h1, h2, p, a, a:active, a:hover, a:focus {
+    color: $white;
+  }
+}
+
+.profile {
+  h1, h2, h3 {
     color: $white;
   }
 }

@@ -1,0 +1,14 @@
+%main.main
+  %section.container
+    %section.body
+
+      %section.card
+        .form
+          %h2
+            = t('concern.title')
+          %p
+            = t('concern.info')
+          %textarea{:placeholder => t('form.comments')}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.send'), myclass: 'button primary'}
