@@ -44,7 +44,7 @@
 .fa-calendar-o {
   color: $black;
   font-size: $baseline;
-  margin-bottom: $baseline*0.5;
+  line-height: $baseline*2 - $border-width*4;
 }
 
 .fa-circle-o, 

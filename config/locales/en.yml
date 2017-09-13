@@ -70,8 +70,8 @@ en:
 
 # helper view
 
-  helper_profile_view:
-    title: "Julia Leigh"
+  helper_profile:
+    name: "Julia Leigh"
     about: "I'm training to be a Yoga teacher and like to help friends and family live a healthy life. I enjoy classical music and history."
     help: "I am able to assist people who use wheelchairs to get up and down ramps. I am also good with directions and can navigate stations quickly."
     tags: "Top feedback"
@@ -109,6 +109,9 @@ en:
   searching:
     title: "Finding travellers for you to lend a hand…"
 
+  helper_traveller_profile:
+    tags: "I would like help with…"
+
   helper_tag:
     tag_a: "Attentive"
     tag_b: "Went above and beyond"
@@ -120,7 +123,7 @@ en:
 
 # traveller view
 
-  traveller_pending_journey:
+  traveller_journey_pending:
     title: "Waiting for helpers for your journey."
 
   helper_profile_link:
@@ -242,12 +245,6 @@ en:
     title: "Please review and agree to the terms of consent below before continuing. You will also need to upload proof of ID."
     consent: "Consent to share your profile with other service users."
     acknowledgement: "Acknowledgement of personal responsibility."
-
-  helper_profile:
-    title: "We found someone who would like to help."
-    name: "Kat"
-    info: "could be lending you a hand."
-    feedback: "Feedback."
 
   helper_status:
     info: "will be lending you a hand."

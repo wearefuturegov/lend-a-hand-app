@@ -28,10 +28,5 @@
 
           %input{:value => t('form.leaving')}
 
-      %section.actions.secondary
-        = render partial: "partials/button", locals: {one: I18n.t('button.journey'), myclass: 'button secondary'}
-        = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
-        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), myclass: 'button secondary'}
-
     %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.plan'), page: 'traveller_search_details', myclass: 'button primary'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.plan'), page: 'traveller_journey_departure', myclass: 'button primary'}

@@ -2,13 +2,12 @@
   %section.container
     %section.body
       %section.card
-        = image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
 
-        %h2
+        %h1
           = t('thanks.title')
 
-        %p
+        %h2
           = t('thanks.info')
 
   %section.actions.primary
-    = render partial: "partials/button", locals: {one: I18n.t('button.back_journey'), page: 'helper_journeys', myclass: 'button primary'}
+    = render partial: "partials/button", locals: {one: I18n.t('button.back_journey'), page: 'helper_journey_add', myclass: 'button primary'}

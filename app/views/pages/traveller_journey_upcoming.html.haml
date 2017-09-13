@@ -1,0 +1,20 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('traveller_journey_offer.title')
+
+        =image_tag "app-grabs/helper_profile.png", :alt => "Profile image", :class => "profile-img"
+
+      %section.card
+
+        = render partial: 'partials/route_large'
+
+      %section.actions.secondary
+        = render partial: "partials/button", locals: {one: I18n.t('button.view_profile'), page: 'traveller_helper_profile', myclass: 'button secondary confirm'}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.contact'), page: 'chat', myclass: 'button primary confirm'}
+
