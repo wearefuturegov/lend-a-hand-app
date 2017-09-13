@@ -1,4 +1,4 @@
-%main.main.full.cover
+%main.main.cover
   %section.container
     %section.body
 
@@ -7,18 +7,23 @@
         = image_tag "app-grabs/profile_003.png", :alt => "Profile image", :class => "profile-img"
 
         %h1
-          = t('helper_profile_view.title')
+          = t('helper_profile.name')
 
 
       %section.card
         %p
-          = t('helper_profile_view.about')
+          = t('helper_profile.about')
 
         %p
-          = t('helper_profile_view.help')
+          = t('helper_profile.help')
 
       %section.card
         %h2 
           = t('helper_profile_view.tags')
 
         = render partial: "partials/tags", locals: {tag_a: I18n.t('helper_tag.tag_a'), tag_b: I18n.t('helper_tag.tag_b'), tag_c: I18n.t('helper_tag.tag_c'), tag_d: I18n.t('helper_tag.tag_d'), tag_e: I18n.t('helper_tag.tag_e'), tag_f: I18n.t('helper_tag.tag_f')}
+
+    %section.actions.secondary
+      = render partial: "partials/button", locals: {one: I18n.t('button.journey'), page: 'helper_journey_add', myclass: 'button secondary'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.profile'), myclass: 'button secondary active'}

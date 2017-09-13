@@ -8,10 +8,10 @@
         %p
           = t('travellers_available.info')
 
-      = link_to page_path(id: 'traveller_profile'), :title => "Search Details" do
+      = link_to page_path(id: 'helper_traveller_profile'), :title => "Search Details" do
         %section.card.divide
           .info.profile
-            =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+            =image_tag "app-grabs/traveller_profile.png", :alt => "Profile image", :class => "profile-img"
           .info.right 
             %span
               = fa_icon "angle-right"
