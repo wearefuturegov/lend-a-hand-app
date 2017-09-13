@@ -1,0 +1,47 @@
+%main.main.full
+  %section.container
+    %section.body
+      %section.card.divide
+        %h1
+          = t('traveller_journey_create.title')
+
+        %h2
+          = t('traveller_journey_create.info')
+
+        %section.actions.secondary
+          = render partial: "partials/button", locals: {one: I18n.t('button.add_journey'), myclass: 'button secondary'}
+
+      %section.card
+        .info
+          = t('helper_journeys.upcoming')
+        = link_to page_path(id: 'helper_upcoming_journey'), :title => "Search Details" do
+          %section.card.divide
+            .info.profile
+              =image_tag "app-grabs/profile_003.png", :alt => "Profile image", :class => "profile-img"
+            .info.right 
+              %span
+                = fa_icon "angle-right"
+            .info.extra
+              = t('helper_profile_view.title')
+
+        %section.card
+          .info
+            = t('helper_journeys.pending')
+          = link_to page_path(id: 'helper_pending_journey'), :title => "Pending Journey" do
+            %section.card.divide
+              .info
+
+              .info.right 
+                %span
+                  = fa_icon "angle-right"
+              .info.extra
+                = t('dummy.name_c')
+
+      %section.card
+        %p
+          = t('helper_journeys.faq')
+
+      %section.actions.secondary
+        = render partial: "partials/button", locals: {one: I18n.t('button.journey'), myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'traveller_profile', myclass: 'button secondary'}

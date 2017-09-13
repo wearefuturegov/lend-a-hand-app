@@ -7,18 +7,18 @@ $gray: #bbb;
 $footer: #000;
 
 /* notify */
-$alert: #de5a38;
-$error: #de5a38;
+$alert: #ff5c00;
+$error: #ff5c00;
 $confirm: #04a75f;
 
 /* modifiers */
 $gray-darken: darken($gray, 30%);
 
 /* brand */
-$brand: #115db7;
+$brand: #ff5c00;
 
 $primary: $brand;
-$secondary: #e87a24;
+$secondary: #18cca4;
 
 $brand-dim: darken($brand, 12%);
 $brand-bright: lighten($brand, 12%);

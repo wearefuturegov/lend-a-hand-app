@@ -4,6 +4,7 @@ body, h1, h2, h3, p {
   font-family: $stack;
   font-size: $body;
   line-height: $baseline;
+  text-align: left;
   color: $black;
 }
 
@@ -18,7 +19,6 @@ a, a:active, a:focus {
 
 p {
   color: $black;
-  text-align: center;
   margin-bottom: $baseline;
   span {
     color: $brand;
@@ -32,7 +32,6 @@ p {
 h1 {
   font-size: $h1;
   line-height: $h1*1.4;
-  text-align: center;
   margin-bottom: $baseline*0.5;
   color: $secondary;
 }
@@ -40,8 +39,6 @@ h1 {
 h2 {
   font-size: $h2;
   line-height: $h2*1.25;
-  text-align: center;
-  margin-top: $baseline*0.5;
   margin-bottom: $baseline*0.5
 }
 
@@ -49,7 +46,6 @@ h3 {
   color: $black;
   font-size: $h3;
   line-height: $h3*1.25;
-  text-align: center;
   margin-top: 0;
   margin-bottom: $baseline*0.5;
 }
@@ -81,5 +77,9 @@ img + p {
 .profile {
   h1, h2, h3 {
     color: $white;
+  }
+  h1 {
+    text-align: center;
+    margin-top: $baseline;
   }
 }

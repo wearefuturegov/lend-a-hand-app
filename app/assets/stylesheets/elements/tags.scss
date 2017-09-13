@@ -3,9 +3,11 @@
 .tags {
   text-align: center;
   li {
+    float: left;
     background: $secondary-mute;
     padding: $baseline*0.25 $baseline*0.5;
     margin: $baseline*0.25;
+    margin-left: 0;
     display: inline-block;
     span {
       font-size: $small;

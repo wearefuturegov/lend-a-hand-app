@@ -1,0 +1,13 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+
+      %h1
+        = t('profile_confirm.profile')
+      %h2 
+        = t('profile_confirm.email')
+
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.lets_go'), page: 'traveller_journey_create', myclass: 'button primary'}

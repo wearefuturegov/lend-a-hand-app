@@ -119,4 +119,8 @@ input + .button {
     @include right-radius;
     @include no-left-radius;
   }
+  a:only-child {
+    @include left-radius;
+    @include right-radius;
+  }
 }

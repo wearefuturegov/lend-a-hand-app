@@ -26,12 +26,13 @@ en:
 
   button:
     profile: "Profile"
-    route: "Route"
+    journey: "Journeys"
+    message: "Messages"
+    profile: "Profile"
     contact: "Contact"
     find_another: "Find me another"
     decline: "Decline"
     call: "Call Jon"
-    message: "Message Kat"
     personal_details: "Personal details"
     public_details: "Public details"
     male: "Male"
@@ -45,6 +46,7 @@ en:
     continue: "Continue"
     confirm: "Confirm"
     begin: "Begin your search"
+    lets_go: "Let's go"
     find: "Find helpers"
     find_traveller: "Find travellers"
     accept: "Accept"
@@ -57,14 +59,14 @@ en:
     plan: "Plan your journey"
     back_journey: "Back to journeys"
     add_journey: "Add a journey"
+    cancel_journey: "Cancel my journey"
     view_profile: "View profile"
     back: "Back"
-    add_journey: "Add my journey"
-    cancel_journey: "Cancel my journey"
     next: "Next"
     send: "Send"
     flag: "Flag a concern"
     feedback: "Provide feedback"
+    review: "Review"
 
 # helper
 
@@ -90,8 +92,8 @@ en:
     title: "Hi Julia!"
     info: "Find travellers to help on your next journey…"
     upcoming: " Upcoming journeys."
-    pending: "Waiting for confirmation."
-    faq: "Check out the helper’s FAQ for information on how you can provide help effectively."
+    pending: "Waiting for helpers."
+    faq: "Check out the travellers FAQ for information on how you can provide help effectively."
 
   helper_upcoming_journey:
     title: "Kat"
@@ -121,9 +123,18 @@ en:
 
 # traveller
 
+  traveller_search_details:
+    title: "About your journey."
+    info: "Familiarise yourself with each station's accessibility details."
+    departure: "Choose your departure time."
+
   add_journey_confirm:
-    title: "Thanks Kat!"
+    title: "You're all set!"
     info: "We'll let you know when a helper is available for your journey"
+
+  traveller_journey_create:
+    title: "Hi Kat!"
+    info: "Find helpers to help on your next journey…"
 
   traveller_journey_overview:
     title: "Review your journey"
@@ -142,15 +153,15 @@ en:
     title: "We found someone who needs your help."
     name: "Kat Stevens"
     info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
-    help: "Kat would like help with…"
+    tags: "What kind of help would you like?"
 
   traveller_tag:
-    tag_a: "Changing platforms"
-    tag_b: "Navigate the station"
-    tag_c: "Pushing my wheelchair"
+    tag_a: "Platforms"
+    tag_b: "Lifting"
+    tag_c: "Chatty"
     tag_d: "Keeping me safe"
-    tag_e: "To have a chat with"
-    tag_f: "Be supportive and caring"
+    tag_e: "Supportive"
+    tag_f: "Pushing my wheelchair"
 
   traveller_profile_edit:
     title: "Welcome Kat!"

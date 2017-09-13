@@ -1,12 +1,13 @@
 %main.main.search-details
   %section.container
     %section.body
+      %section.card
 
-      %h2
-        = t('traveller_journey_overview.title')
+        %h2
+          = t('traveller_journey_overview.title')
 
       = render partial: 'partials/route_large'
 
 
     %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.add_journey'), page: 'add_journey_confirm', myclass: 'button primary'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.add_journey'), page: 'traveller_add_journey_confirm', myclass: 'button primary'}

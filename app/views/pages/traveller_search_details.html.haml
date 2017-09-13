@@ -1,0 +1,19 @@
+%main.main.search-details
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('traveller_search_details.info')
+
+      %section.card.divide
+        = render partial: 'partials/route_large'
+
+        %h2
+          = t('travller_search_details.departure')
+      
+      = render partial: 'partials/traveller_departure'
+      = render partial: 'partials/departure'
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.review'), page: 'traveller_journey_overview', myclass: 'button primary confirm'}

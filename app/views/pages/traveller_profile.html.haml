@@ -1,16 +1,26 @@
-%main.main
+%main.main.full.cover
   %section.container
     %section.body
 
-      %section.card.divide
+      %section.card.profile
 
-        = render partial: "partials/profile", locals: {title: I18n.t('traveller_profile.title'), name: I18n.t('traveller_profile.name'), info: I18n.t('traveller_profile.info')}
+        =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+
+        %h1
+          = t('traveller_profile.name')
+
+      %section.card
+
+        %p
+          = t('traveller_profile.info')
 
       %section.card
         %h2 
-          = t('traveller_profile.help')
+          = t('traveller_profile.tags')
 
         = render partial: "partials/tags", locals: {tag_a: I18n.t('traveller_tag.tag_a'), tag_b: I18n.t('traveller_tag.tag_b'), tag_c: I18n.t('traveller_tag.tag_c'), tag_d: I18n.t('traveller_tag.tag_d'), tag_e: I18n.t('traveller_tag.tag_e'), tag_f: I18n.t('traveller_tag.tag_f')}
 
-    %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.offer_to_help'), page: 'helper_help_confirmed', myclass: 'button primary confirm'}
+      %section.actions.secondary
+        = render partial: "partials/button", locals: {one: I18n.t('button.journey'), page: 'traveller_journey_add', myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'traveller_profile', myclass: 'button secondary'}

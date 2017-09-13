@@ -1,0 +1,37 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+        %h1
+          = t('traveller_journey_create.title')
+
+        %h2
+          = t('traveller_journey_create.info')
+
+      %section.key
+        %section.markers
+          %section
+            = fa_icon "circle-o"
+          %section.link
+          %section
+            = fa_icon "map-marker"
+        %section.form
+
+          %input{:placeholder => t('form.from'), :class => "from"} 
+          %input{:placeholder => t('form.to'), :class => "to"}
+
+      %section.key
+        %section.markers
+          %section
+            = fa_icon "calendar-o"
+        %section.form
+
+          %input{:value => t('form.leaving')}
+
+      %section.actions.secondary
+        = render partial: "partials/button", locals: {one: I18n.t('button.journey'), myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), myclass: 'button secondary'}
+
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.plan'), page: 'traveller_search_details', myclass: 'button primary'}
