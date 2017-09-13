@@ -14,7 +14,7 @@
       %section.card
         .info
           = t('helper_journeys.upcoming')
-        = link_to page_path(id: 'helper_upcoming_journey'), :title => "Search Details" do
+        = link_to page_path(id: 'traveller_upcoming_journey'), :title => "Search Details" do
           %section.card.divide
             .info.profile
               =image_tag "app-grabs/profile_003.png", :alt => "Profile image", :class => "profile-img"
@@ -27,7 +27,7 @@
         %section.card
           .info
             = t('helper_journeys.pending')
-          = link_to page_path(id: 'helper_pending_journey'), :title => "Pending Journey" do
+          = link_to page_path(id: 'traveller_pending_journey'), :title => "Pending Journey" do
             %section.card.divide
               .info
 
@@ -42,6 +42,6 @@
           = t('helper_journeys.faq')
 
       %section.actions.secondary
-        = render partial: "partials/button", locals: {one: I18n.t('button.journey'), myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.journey'), myclass: 'button secondary active'}
         = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
         = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'traveller_profile', myclass: 'button secondary'}

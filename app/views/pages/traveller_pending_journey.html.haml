@@ -1,0 +1,13 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('traveller_pending_journey.title')
+
+      %section.card
+        = render partial: 'partials/route_large'
+
+      %section.actions.primary
+        = render partial: "partials/button", locals: {one: I18n.t('button.cancel_journey'), myclass: 'button primary'}

@@ -59,7 +59,7 @@ en:
     plan: "Plan your journey"
     back_journey: "Back to journeys"
     add_journey: "Add a journey"
-    cancel_journey: "Cancel my journey"
+    cancel_journey: "Cancel journey"
     view_profile: "View profile"
     back: "Back"
     next: "Next"
@@ -68,7 +68,7 @@ en:
     feedback: "Provide feedback"
     review: "Review"
 
-# helper
+# helper view
 
   helper_profile_view:
     title: "Julia Leigh"
@@ -80,9 +80,6 @@ en:
     title: "That's great!"
     info: "You can now contact Julia and plan your journey together."
     contact: "Contact Julia"
-
-  helper_profile_link:
-    text: "View Julia's profile"
 
   helper_journey_create:
     title: "Hi Julia!"
@@ -121,7 +118,16 @@ en:
     tag_f: "Very supportive and caring"
 
 
-# traveller
+# traveller view
+
+  traveller_pending_journey:
+    title: "Waiting for helpers for your journey."
+
+  helper_profile_link:
+    text: "View Julia's profile"
+
+  traveller_upcoming_journeys:
+    title: "Your upcoming journey with Julia."
 
   traveller_search_details:
     title: "About your journey."

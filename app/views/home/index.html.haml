@@ -2,13 +2,11 @@
   %section.container
     %section.body
       %section.card
-        =image_tag "color/logo.svg", :alt => "Lend a hand logo", :class => "logo"
-        
       
-      %h1
-        = t('global.title')
-      %p
-        = t('global.about')
+        %h1
+          = t('global.title')
+        %h2
+          = t('global.about')
 
   %section.actions.primary
     = render partial: "partials/button", locals: {one: I18n.t('button.traveller'), page: 'traveller_profile_edit', myclass: 'button primary'}

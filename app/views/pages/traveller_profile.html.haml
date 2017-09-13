@@ -4,7 +4,7 @@
 
       %section.card.profile
 
-        =image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
+        = image_tag "app-grabs/profile400x400.png", :alt => "Profile image", :class => "profile-img"
 
         %h1
           = t('traveller_profile.name')
@@ -23,4 +23,4 @@
       %section.actions.secondary
         = render partial: "partials/button", locals: {one: I18n.t('button.journey'), page: 'traveller_journey_add', myclass: 'button secondary'}
         = render partial: "partials/button", locals: {one: I18n.t('button.message'), myclass: 'button secondary'}
-        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'traveller_profile', myclass: 'button secondary'}
+        = render partial: "partials/button", locals: {one: I18n.t('button.profile'), page: 'traveller_profile', myclass: 'button secondary active'}
