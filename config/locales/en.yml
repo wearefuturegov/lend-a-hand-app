@@ -300,3 +300,13 @@ en:
     name_b: "Amber Ma"
     name_c: "Dimitri"
 
+  departure:
+    top:
+      title: "Departing"
+      info: "Auburn Station"
+      extra: "Station accessibility"
+    bottom:
+      title: "Arriving"
+      info: "Central Station"
+      extra: "Station accessibility"
+

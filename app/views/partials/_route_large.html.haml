@@ -1,16 +1,24 @@
 %section.markers
   %section
-    .info 11:05 AM. Platform 1. 
-    .info.extra 
-      = link_to page_path(id: 'about_station'), :title => "About Station" do
-        Station Accessibility
     = fa_icon "circle-o"
-
-  %section.link.center
-
+  %section.link.long
   %section
-    = fa_icon "map-marker"
-    .info 11:05 AM. Platform 1. 
-    .info.extra
-      = link_to page_path(id: 'about_station'), :title => "About Station" do
-        Station Accessibility
+    = fa_icon 'map-marker'
+%section.info-wrap
+
+  %span.top
+    .title
+      = t('departure.top.title')
+    .info
+      = t('departure.top.info')
+    .extra
+      = link_to page_path(id: 'about_station'), :title => 'About Station' do
+        = t('departure.top.extra')
+  %span.bottom
+    .title
+      = t('departure.bottom.title')
+    .info
+      = t('departure.bottom.info')
+    .extra
+      = link_to page_path(id: 'about_station'), :title => 'About Station' do
+        = t('departure.bottom.extra')

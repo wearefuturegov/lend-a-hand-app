@@ -6,14 +6,14 @@
         %h2
           = t('traveller_search_details.info')
 
-      %section.card.divide
+      %section.key.card.divide
         = render partial: 'partials/route_large'
 
-        %h2
-          = t('travller_search_details.departure')
+      %h2
+        = t('traveller_search_details.departure')
       
       = render partial: 'partials/traveller_departure'
       = render partial: 'partials/departure'
 
     %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.find_traveller'), page: 'traveller_journey_review', myclass: 'button primary confirm'}
+      = render partial: 'partials/button', locals: {one: I18n.t('button.find_traveller'), page: 'traveller_journey_review', myclass: 'button primary confirm'}

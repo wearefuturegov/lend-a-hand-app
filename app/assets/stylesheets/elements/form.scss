@@ -45,36 +45,6 @@
   margin-bottom: 0;
 }
 
-.key {
-  position: relative;
-  .form {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: calc(16.6666666667% - 21px + #{$gutter});
-    margin-top: 0;
-    margin-bottom: 0;
-    input {
-      text-align: left;
-      margin-left: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-      &.from {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-      }
-      &.to {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-      }
-    }
-  }
-}
-
 .main.brand {
   .form, .form input {
     @include placeholder($brand-dim);

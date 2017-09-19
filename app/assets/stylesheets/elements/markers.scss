@@ -6,4 +6,7 @@
   margin-top: $baseline*0.25;
   margin-bottom: $baseline*0.25;
   margin: $baseline*0.25 calc(50% - #{$border-width});
+  &.long {
+    height: $baseline*4;
+  }
 }

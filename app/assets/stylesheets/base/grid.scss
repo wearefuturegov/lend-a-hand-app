@@ -48,6 +48,10 @@ p,
   .form {
     @include grid-column(5);
   }
+  .info-wrap {
+    @include grid-column(5);
+    margin-left: 0;
+  }
 }
 
 .card {
@@ -66,6 +70,9 @@ p,
   .tags {
     @include grid-column(6);
   }
+  .title {
+    @include grid-column(6);
+  }
   .extra {
     @include grid-column(6);
   }
@@ -79,8 +86,12 @@ p,
   }
 }
 
-.search-details, .profile-route {
-  .markers {
-    @include grid-column(6);
-  }
+// .search-details, .profile-route {
+//   .markers {
+//     @include grid-column(6);
+//   }
+// }
+
+.markers {
+  @include grid-column(6);
 }
