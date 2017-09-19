@@ -62,19 +62,23 @@ p,
     }
     &.right {
       @include grid-column(2);
+      float: right;
     }
     &.extra {
       @include grid-column(6);
     }
   }
-  .tags {
+  .tags, .title, .extra {
     @include grid-column(6);
   }
-  .title {
-    @include grid-column(6);
-  }
-  .extra {
-    @include grid-column(6);
+  &.key {
+    .title, .info, .extra {
+      @include grid-column(4);
+      &.right {
+        @include grid-column(2);
+        float: right;
+      }
+    }
   }
 }
 

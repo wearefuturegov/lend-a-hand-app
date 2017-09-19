@@ -46,6 +46,10 @@ body {
   }
 }
 
+.card {
+  margin: $baseline 0;
+}
+
 .fa-clock-o {
   margin-top: $baseline;
   text-align: center;
@@ -77,10 +81,6 @@ body {
   overflow: hidden;
   width: 100%;
   margin-left: 0;
-}
-
-.key {
-  margin: $baseline*1.5 0;
 }
 
 .tags {

@@ -301,12 +301,12 @@ en:
     name_c: "Dimitri"
 
   departure:
-    top:
+    from:
       title: "Departing"
-      info: "Auburn Station"
+      info: "Auburn"
       extra: "Station accessibility"
-    bottom:
+    to:
       title: "Arriving"
-      info: "Central Station"
+      info: "Central"
       extra: "Station accessibility"
 

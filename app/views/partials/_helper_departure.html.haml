@@ -1,8 +1,32 @@
-%section.card.divide
-  .info
-    .icon
-      = fa_icon "check-circle-o"
-  .info.right 
-    15mins
-  .info.extra
-    11.05am – 11:20am. Ramps available.
+%section.key.card.divide
+  %section.markers
+    = fa_icon "circle-o"
+  %section.info-wrap
+    .title 
+      = t('departure.from.info')
+    .title.right
+      = t('departure.to.info')
+    .extra 8:46am
+    .extra.right 9:15am
+
+%section.key.card.divide
+  %section.markers
+    = fa_icon "check-circle-o"
+  %section.info-wrap
+    .title 
+      = t('departure.from.info')
+    .title.right
+      = t('departure.to.info')
+    .extra 9:01am
+    .extra.right 9:29am
+
+%section.key.card
+  %section.markers
+    = fa_icon "circle-o"
+  %section.info-wrap
+    .title 
+      = t('departure.from.info')
+    .title.right
+      = t('departure.to.info')
+    .extra 9:07am
+    .extra.right 9:32am

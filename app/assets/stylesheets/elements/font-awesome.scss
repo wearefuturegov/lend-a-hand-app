@@ -14,7 +14,7 @@
 }
 
 .fa-check-circle-o {
-  color: $confirm;
+  color: $brand;
   font-size: $baseline*1.5;
 }
 
@@ -47,7 +47,8 @@
   line-height: $baseline*2 - $border-width*4;
 }
 
-.fa-circle-o, 
+.fa-circle-o,
+.fa-check-circle-o, 
 .fa-map-marker, 
 .fa-camera, 
 .fa-frown-o, 

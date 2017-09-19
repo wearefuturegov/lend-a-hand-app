@@ -6,14 +6,13 @@
         %p
           = t('helper_search_details.info')
 
-      %section.key.card.divide
+      %section.key.card
         = render partial: 'partials/route_large'
 
         %h2
           = t('helper_search_details.departure')
       
       = render partial: 'partials/helper_departure'
-      = render partial: 'partials/departure'
 
     %section.actions.primary
       = render partial: "partials/button", locals: {one: I18n.t('button.find_traveller'), page: 'helper_traveller_search', myclass: 'button primary confirm'}
