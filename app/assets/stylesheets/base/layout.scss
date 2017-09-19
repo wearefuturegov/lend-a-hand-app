@@ -26,7 +26,6 @@ body {
 //   flex: 0 1 auto;
 // }
 
-
 .main {
   background: $white;
   display: flex;
@@ -47,7 +46,16 @@ body {
 }
 
 .card {
-  margin: $baseline 0;
+  margin: $baseline*1.5 0;
+}
+
+.slide {
+  margin: 0;
+}
+
+.divide {
+  border-bottom: $border-width-thin $border-style $black;
+  padding: $baseline 0;
 }
 
 .fa-clock-o {

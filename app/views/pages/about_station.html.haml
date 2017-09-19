@@ -10,13 +10,11 @@
           = t('about_station.info')
 
       %section.card
-        %h2
+        .title
           = t('about_station.around')  
-        = render partial: 'partials/list'
-        = render partial: 'partials/list'
+        = render partial: 'partials/list_getting_around'
 
       %section.card
-        %h2
+        .title
           = t('about_station.accessibility')
-        = render partial: 'partials/list'
-        = render partial: 'partials/list'
+        = render partial: 'partials/list_access'

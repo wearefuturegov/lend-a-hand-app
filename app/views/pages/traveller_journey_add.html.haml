@@ -15,7 +15,7 @@
         .title
           = t('helper_journeys.upcoming')
         = link_to page_path(id: 'traveller_journey_upcoming'), title: 'Search Details' do
-          %section.card.divide.profile-card
+          %section.slide.divide.profile-card
             .profile
               = image_tag 'app-grabs/helper_profile.png', alt: 'Profile image'
             .info
@@ -36,7 +36,9 @@
           .title
             = t('helper_journeys.pending')
           = link_to page_path(id: 'traveller_journey_pending'), title: 'Pending Journey' do
-            %section.card.divide.info-card
+            %section.slide.divide.profile-card
+              .profile
+                = fa_icon 'ellipsis-h', class: 'circle'
               .extra
                 = t('dummy.time_b')
                 –

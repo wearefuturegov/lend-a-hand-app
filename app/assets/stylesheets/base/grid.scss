@@ -80,22 +80,63 @@ p,
       }
     }
   }
-  .profile-card {
-    .profile {
-      @include grid-column(2);
-    }
+}
+
+.slide {
+  padding: $baseline*0.5 0;
+  // .info {
+  //   @include grid-column(4);
+  //   &.profile {
+  //     @include grid-column(2);
+  //   }
+  //   &.right {
+  //     @include grid-column(2);
+  //     float: right;
+  //   }
+  //   &.extra {
+  //     @include grid-column(6);
+  //   }
+  // }
+  .tags, .title, .extra {
+    @include grid-column(6);
+  }
+  &.key {
     .title, .info, .extra {
-      @include grid-column(3);
-    }
-    .right {
-      @include grid-column(1);
+      @include grid-column(4);
+      &.right {
+        @include grid-column(2);
+        float: right;
+      }
     }
   }
-  .info-card {
-    .title, .info, .extra {
+}
+
+.profile-card {
+  .profile {
+    @include grid-column(2);
+  }
+  .title, .info, .extra {
+    @include grid-column(3);
+  }
+  .right {
+    @include grid-column(1);
+  }
+}
+.info-card {
+  .title, .info, .extra {
+    @include grid-column(5);
+  }
+  .right {
+    @include grid-column(1);
+  }
+}
+
+.slide {
+  &.listing {
+    .info, .extra {
       @include grid-column(5);
     }
-    .right {
+    .check {
       @include grid-column(1);
     }
   }

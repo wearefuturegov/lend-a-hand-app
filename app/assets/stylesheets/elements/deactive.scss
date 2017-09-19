@@ -1,0 +1,10 @@
+/* deactive */
+
+.deactive {
+  .profile img,
+  .info, 
+  .extra,
+  .fa-angle-right {
+    @include grayscale;
+  }
+}

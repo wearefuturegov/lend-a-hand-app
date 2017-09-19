@@ -25,7 +25,7 @@
 }
 
 .fa-times {
-  color: $alert;
+  color: $gray;
   font-size: $baseline;
   width: $baseline;
   text-align: center;
@@ -79,5 +79,15 @@
   &.circle:before {
     @include circle;
     border-color: $secondary;
+  }
+}
+
+.fa-ellipsis-h {
+  color: $gray;
+  font-size: $baseline;
+  &.circle:before {
+    @include circle;
+    display: block;
+    border-color: $gray;
   }
 }

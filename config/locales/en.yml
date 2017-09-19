@@ -28,7 +28,6 @@ en:
     profile: "Profile"
     journey: "Journeys"
     message: "Messages"
-    profile: "Profile"
     contact: "Contact"
     find_another: "Find me another"
     decline: "Decline"
@@ -90,6 +89,7 @@ en:
     info: "Find travellers to help on your next journey…"
     upcoming: " Upcoming journeys."
     pending: "Waiting for helpers."
+    waiting: "Waiting for confirmation"
     faq: "Check out the travellers FAQ for information on how you can provide help effectively."
 
   helper_upcoming_journey:
@@ -125,9 +125,6 @@ en:
 
   traveller_journey_pending:
     title: "Waiting for helpers for your journey."
-
-  helper_profile_link:
-    text: "View Julia's profile"
 
   traveller_upcoming_journeys:
     title: "Your upcoming journey with Julia."
@@ -181,11 +178,27 @@ en:
 
 # general
 
+  link:
+    profile: "View profile"
+
   about_station:
     title: "About Alburn station."
     info: "Alburn has wheelchair access,"
     around: "Getting around the station."
     accessibility: "Accessibility."
+    getting_around:
+      around_a: "Stairs"
+      around_b: "Escalator"
+      around_c: "Lift"
+      around_d: "Ramp (1:14 gradient)"
+      around_e: "Level crossing"
+    access_options:
+      options_a: "Hearing Loop"
+      options_b: "Platform tactile tiles"
+      options_c: "Portable boarding ramp"
+      options_d: "Wheelchair accessible toilet"
+      options_e: "Wheelchair accessible payphone"
+      options_f: "Wheelchair accessible carspaces"
 
   feedback:
     title: "How was Julia as a helper?"

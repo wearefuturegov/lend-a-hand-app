@@ -8,33 +8,39 @@
         %p
           = t('travellers_available.info')
 
-      = link_to page_path(id: 'helper_traveller_profile'), :title => "Search Details" do
-        %section.card.divide
-          .info.profile
-            =image_tag "app-grabs/traveller_profile.png", :alt => "Profile image", :class => "profile-img"
-          .info.right 
-            %span
-              = fa_icon "angle-right"
-          .info.extra
+      = link_to page_path(id: 'helper_traveller_profile'), title: 'Profile' do
+        %section.card.divide.profile-card
+          .profile
+            = image_tag 'app-grabs/traveller_profile.png', alt: 'Profile image'
+          .extra
+            = t('link.profile')
+          .info
             = t('traveller_profile.name')
+          .right 
+            %span
+              = fa_icon 'angle-right'
 
-      %section.card.divide
-        .info.profile
-          =image_tag "app-grabs/profile_001.png", :alt => "Profile image", :class => "profile-img"
-        .info.right 
-          %span
-            = fa_icon "angle-right"
-        .info.extra
-          = t('dummy.name_a')
+        %section.card.divide.profile-card.deactive
+          .profile
+            = image_tag 'app-grabs/profile_001.png', alt: 'Profile image'
+          .extra
+            = t('link.profile')
+          .info
+            = t('dummy.name_a')
+          .right 
+            %span
+              = fa_icon 'angle-right'
 
-      %section.card.divide
-        .info.profile
-          =image_tag "app-grabs/profile_002.png", :alt => "Profile image", :class => "profile-img"
-        .info.right 
-          %span
-            = fa_icon "angle-right"
-        .info.extra
-          = t('dummy.name_b')
+        %section.card.divide.profile-card.deactive
+          .profile
+            = image_tag 'app-grabs/profile_002.png', alt: 'Profile image'
+          .extra
+            = t('link.profile')
+          .info
+            = t('dummy.name_b')
+          .right 
+            %span
+              = fa_icon 'angle-right'
 
       %section.key.card
         = render partial: 'partials/route_large'
