@@ -14,19 +14,19 @@
             = fa_icon "circle-o"
           %section.link
           %section
-            = fa_icon "map-marker"
+            = fa_icon 'map-marker'
         %section.form
 
-          %input{:placeholder => t('form.from'), :class => "top"} 
-          %input{:placeholder => t('form.to'), :class => "bottom"}
+          %input{placeholder: t('form.from'), class: 'top'}
+          %input{placeholder: t('form.to'), class: 'bottom'}
 
       %section.key.card
         %section.markers
           %section
-            = fa_icon "calendar-o"
+            = fa_icon 'calendar-o'
         %section.form
 
-          %input{:value => t('form.leaving')}
+          %input{value: t('form.leaving')}
 
     %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.plan'), page: 'helper_journey_departure', myclass: 'button primary'}
+      = render partial: 'partials/button', locals: {one: I18n.t('button.plan'), page: 'helper_journey_departure', myclass: 'button primary'}
