@@ -80,6 +80,25 @@ p,
       }
     }
   }
+  .profile-card {
+    .profile {
+      @include grid-column(2);
+    }
+    .title, .info, .extra {
+      @include grid-column(3);
+    }
+    .right {
+      @include grid-column(1);
+    }
+  }
+  .info-card {
+    .title, .info, .extra {
+      @include grid-column(5);
+    }
+    .right {
+      @include grid-column(1);
+    }
+  }
 }
 
 

@@ -58,7 +58,6 @@ img + p {
   color: $black;
   font-size: $body;
   line-height: $baseline;
-  margin-bottom: $baseline*0.25;
   &.extra {
     font-size: $small;
     line-height: $baseline - 2px;
@@ -82,4 +81,20 @@ img + p {
     text-align: center;
     margin-top: $baseline;
   }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: $tiny;
+  color: $gray;
+}
+
+.info {
+  color: $black;
+  font-size: $h2;
+}
+
+.extra {
+  color: $black;
+  font-size: $small;
 }

@@ -299,6 +299,14 @@ en:
     name_a: "Priya Pai"
     name_b: "Amber Ma"
     name_c: "Dimitri"
+    time_a: "8:46am"
+    time_b: "9:15am"
+    time_c: "9:01am"
+    time_d: "9:29am"
+    time_e: "9:07am"
+    time_f: "9:32am"
+    date_a: "Oct 12"
+    date_b: "Oct 13"
 
   departure:
     from:
