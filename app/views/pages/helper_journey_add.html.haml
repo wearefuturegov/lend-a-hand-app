@@ -12,30 +12,46 @@
           = render partial: "partials/button", locals: {one: I18n.t('button.add_journey'), myclass: 'button primary'}
 
       %section.card
-        .info
+        .title
           = t('helper_journeys.upcoming')
-        = link_to page_path(id: 'helper_journey_upcoming'), :title => "Search Details" do
-          %section.card.divide
-            .info.profile
-              =image_tag "app-grabs/traveller_profile.png", :alt => "Profile image", :class => "profile-img"
-            .info.right 
-              %span
-                = fa_icon "angle-right"
-            .info.extra
+        = link_to page_path(id: 'helper_journey_upcoming'), title: 'Search Details' do
+          %section.card.divide.profile-card
+            .profile
+              = image_tag 'app-grabs/traveller_profile.png', alt: 'Profile image'
+            .info
               = t('traveller_profile.name')
+            .extra
+              = t('dummy.time_a')
+              –
+              = t('dummy.date_a')
+            .title
+              = t('departure.from.info')
+              = fa_icon 'long-arrow-right'
+              = t('departure.to.info')
+            .right 
+              %span
+                = fa_icon 'angle-right'
 
         %section.card
-          .info
+          .title
             = t('helper_journeys.pending')
-          = link_to page_path(id: 'helper_journey_pending'), :title => "Pending Journey" do
-            %section.card.divide
-              .info.profile
-                =image_tag "app-grabs/profile_dimitri.png", :alt => "Profile image", :class => "profile-img"
-              .info.right 
-                %span
-                  = fa_icon "angle-right"
-              .info.extra
+          = link_to page_path(id: 'helper_journey_pending'), title: 'Pending Journey' do
+            %section.card.divide.profile-card
+              .profile
+                =image_tag "app-grabs/profile_dimitri.png", alt: 'Profile image'
+              .info
                 = t('dummy.name_c')
+              .extra
+                = t('dummy.time_a')
+                –
+                = t('dummy.date_a')
+              .title
+                = t('departure.from.info')
+                = fa_icon 'long-arrow-right'
+                = t('departure.to.info')
+              .right 
+                %span
+                  = fa_icon 'angle-right'
 
       %section.card
         %p
