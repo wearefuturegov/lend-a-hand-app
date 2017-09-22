@@ -91,3 +91,15 @@
     border-color: $gray;
   }
 }
+
+.fa-pencil {
+  color: $secondary;
+  font-size: $baseline;
+  &.circle:before {
+    @include circle;
+    padding: $baseline*0.5;
+    display: block;
+    border-color: $white;
+    background: $white;
+  }
+}

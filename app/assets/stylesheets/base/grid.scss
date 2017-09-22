@@ -54,6 +54,10 @@ p,
   }
 }
 
+.top-nav {
+  @include grid-column(6);
+}
+
 .card {
   .info {
     @include grid-column(4);
