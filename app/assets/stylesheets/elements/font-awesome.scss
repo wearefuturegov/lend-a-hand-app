@@ -4,7 +4,11 @@
   font-size: $baseline*6;
 }
 
-.fa-angle-left, .fa-bars {
+.fa-angle-left {
+  color: $white;
+}
+
+.fa-bars {
   color: $brand;
 }
 
