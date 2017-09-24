@@ -1,5 +1,11 @@
 /* form */
 
+input[type=text] {   
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .feedback {
   border: none;
   padding: $baseline*4;
