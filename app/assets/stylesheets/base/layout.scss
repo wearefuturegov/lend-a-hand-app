@@ -10,7 +10,7 @@ header {
 
 body {
   background: $background;
-  + .divide {
+  .divide:first-child {
     padding-top: 0;
   }
 }

@@ -1,0 +1,14 @@
+/* modal */
+
+span.open .extra {
+  color: $brand;
+  }
+
+.modal {
+  display: none;
+  &.show {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+}

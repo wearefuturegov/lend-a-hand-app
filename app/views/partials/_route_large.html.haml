@@ -10,14 +10,14 @@
       = t('departure.from.title')
     .info
       = t('departure.from.info')
-    .extra
-      = link_to page_path(id: 'about_station'), title: 'About Station' do
+    %span.open
+      .extra
         = t('departure.from.extra')
   %span.bottom
     .title
       = t('departure.to.title')
     .info
       = t('departure.to.info')
-    .extra
-      = link_to page_path(id: 'about_station'), title: 'About Station' do
+    %span.open
+      .extra.open
         = t('departure.to.extra')

@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+    $("span.open").click(function(){
+        $("span").addClass("show");
+    });
+    $("span.hide").click(function(){
+        $("span").removeClass("show");
+    });
+});
