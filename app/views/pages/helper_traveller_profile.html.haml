@@ -3,6 +3,9 @@
     %section.body
 
       %section.card.profile
+        %section.top-nav
+          = link_to page_path(id: 'helper_traveller_available'), :title => "Profile" do
+            = fa_icon 'long-arrow-left', class: 'white'
 
         = image_tag "app-grabs/traveller_profile.png", :alt => "Profile image", :class => "profile-img"
 

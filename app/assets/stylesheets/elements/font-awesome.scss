@@ -4,17 +4,25 @@
   font-size: $baseline*6;
 }
 
-.fa-angle-left {
-  color: $white;
+.fa-angle-left, .fa-arrow-left, .fa-bars, .fa-long-arrow-left {
+  color: $brand;
+  &.white {
+    color: $white;
+  }
 }
 
-.fa-bars {
-  color: $brand;
+.fa-long-arrow-left {
+  font-size: $body*1.75;
+  line-height: $baseline*2;
 }
 
 .fa-angle-right, .fa-check {
   color: $brand;
   font-size: $baseline;
+}
+
+.fa-angle-right {
+  font-size: $baseline*1.5;
 }
 
 .fa-check-circle-o {
@@ -105,5 +113,7 @@
     display: block;
     border-color: $white;
     background: $white;
+    position: relative;
+    top: $baseline*0.5;
   }
 }

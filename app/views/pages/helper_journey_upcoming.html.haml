@@ -1,3 +1,7 @@
+%header.header
+  .back
+    = link_to page_path(id: 'helper_journey_add'), :title => "Profile" do
+      = fa_icon "long-arrow-left"
 %main.main
   %section.container
     %section.body
@@ -11,8 +15,5 @@
       %section.key.card
         = render partial: 'partials/route_large'
 
-      %section.actions.secondary
-        = render partial: "partials/button", locals: {one: I18n.t('button.view_profile'), page: 'helper_traveller_profile_contact', myclass: 'button secondary confirm'}
-
     %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.contact'), page: 'chat', myclass: 'button primary confirm'}
+      = render partial: "partials/button", locals: {one: I18n.t('button.view_profile'), page: 'helper_traveller_profile_contact', myclass: 'button primary confirm'}

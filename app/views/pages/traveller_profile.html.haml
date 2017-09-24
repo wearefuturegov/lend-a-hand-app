@@ -4,6 +4,8 @@
 
       %section.card.profile
         %section.top-nav
+          = link_to page_path(id: 'traveller_journey_add'), :title => "Profile" do
+            = fa_icon 'long-arrow-left', class: 'white'
           = fa_icon 'pencil', class: 'circle'
 
         = image_tag "app-grabs/traveller_profile.png", :alt => "Profile image", :class => "profile-img"

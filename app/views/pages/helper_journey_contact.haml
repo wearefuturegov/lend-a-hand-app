@@ -1,0 +1,13 @@
+%header.header
+  .back
+    = link_to page_path(id: 'helper_traveller_profile_contact'), :title => "Profile" do
+      = fa_icon "long-arrow-left"
+%main.main
+  %section.container
+    %section.body
+
+      %section.card
+        %h1
+          = t('chat.title')
+
+          = fa_icon 'comment-o'

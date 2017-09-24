@@ -2,8 +2,8 @@
   %section.container
     %section.body
 
-      %section.card.divide
+      %section.card
         %h1
           = t('chat.title')
 
-        = render partial: "partials/profile", locals: {title: I18n.t('traveller_profile.title'), name: I18n.t('traveller_profile.name')}
+          = fa_icon 'comment-o'

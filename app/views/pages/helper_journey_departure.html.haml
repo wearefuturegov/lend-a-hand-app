@@ -1,12 +1,16 @@
+%header.header
+  .back
+    = link_to page_path(id: 'helper_journey_create'), :title => "Profile" do
+      = fa_icon "long-arrow-left"
 %main.main.search-details
   %section.container
     %section.body
       %section.card
 
-        %p
+        %h2
           = t('helper_search_details.info')
 
-      %section.key.card
+      %section.key.card.divide
         = render partial: 'partials/route_large'
 
       %h2

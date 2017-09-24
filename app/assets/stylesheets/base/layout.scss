@@ -10,6 +10,9 @@ header {
 
 body {
   background: $background;
+  + .divide {
+    padding-top: 0;
+  }
 }
 
 .container {
@@ -35,6 +38,9 @@ body {
     position: absolute;
     top: 0;
     height: calc(100%);
+    .card.profile {
+      padding-top: 0;
+    }
   }
   .form {
     margin-top: $baseline*0.5;

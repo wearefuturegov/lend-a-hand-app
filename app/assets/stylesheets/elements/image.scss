@@ -4,11 +4,9 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  &.logo {
-    margin: 0 25%;
-    width: 50%;
-  }
 }
+
+
 
 .product {
   height: calc(0vh);
@@ -24,4 +22,18 @@ img.profile-img {
 
 .grayscale, .grayscale h2 {
   @include grayscale;
+}
+
+.body .card.logo {
+  margin-top: $baseline*6;
+  .logo {
+    float: left;
+    margin: 0 25%;
+    width: 50%;
+    h2 {
+      margin-top: $baseline*2;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
 }
