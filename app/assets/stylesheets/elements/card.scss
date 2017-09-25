@@ -1,5 +1,9 @@
 /* card */
 
+.card.divide {
+  margin: 0;
+}
+
 .card {
   // + .card {
   //   margin-top: -$border-width;
@@ -13,7 +17,7 @@
     }
   }
   .info, .title {
-    line-height: $baseline;
+    line-height: $baseline*1.25;
     .fa-circle-o {
       text-align: left;
     }
@@ -85,5 +89,16 @@
   }
   .right {
     text-align: right;
+    line-height: 100%;
+  }
+}
+
+.profile-card {
+  .info, .fa-angle-right {
+    color: $brand;
+    line-height: $baseline*4.5;
+  }
+  .fa-angle-right {
+    float: right;
   }
 }

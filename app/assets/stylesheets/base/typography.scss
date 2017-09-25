@@ -39,7 +39,8 @@ h1 {
 h2 {
   font-size: $h2;
   line-height: $h2-lineheight;
-  margin-bottom: $baseline*2 - $h2-lineheight
+  margin-top: $baseline*2 - $h2-lineheight;
+  margin-bottom: $baseline*2 - $h2-lineheight;
 }
 
 h3 {

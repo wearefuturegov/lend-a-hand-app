@@ -1,4 +1,4 @@
-%main.main.cover
+%main.main
   %section.container
     %section.body
       %section.card.divide
@@ -14,42 +14,41 @@
       %section.card
         .title
           = t('helper_journeys.upcoming')
+      %section.card
         = link_to page_path(id: 'traveller_journey_upcoming'), title: 'Search Details' do
           %section.slide.divide.profile-card
             .profile
               = image_tag 'app-grabs/helper_profile.png', alt: 'Profile image'
             .info
               = t('helper_profile.name')
-            .extra
-              = t('dummy.time_a')
-              –
-              = t('dummy.date_a')
+              = fa_icon 'angle-right'
             .title
+              = t('dummy.time_a')
+              ,
+              = t('dummy.date_a')
+              ,
               = t('departure.from.info')
               = fa_icon 'long-arrow-right'
               = t('departure.to.info')
-            .right 
-              %span
-                = fa_icon 'angle-right'
 
         %section.card
           .title
             = t('helper_journeys.pending')
+        %section.card
           = link_to page_path(id: 'traveller_journey_pending'), title: 'Pending Journey' do
             %section.slide.divide.profile-card
               .profile
-                = fa_icon 'ellipsis-h', class: 'circle'
-              .extra
-                = t('dummy.time_b')
-                –
-                = t('dummy.date_b')
+                = fa_icon 'user', class: 'circle'
+              .info
+                = fa_icon 'angle-right'
               .title
+                = t('dummy.time_b')
+                ,
+                = t('dummy.date_b')
+                ,
                 = t('departure.from.info')
                 = fa_icon 'long-arrow-right'
                 = t('departure.to.info')
-              .right 
-                %span
-                  = fa_icon 'angle-right'
 
       %section.card
         %p

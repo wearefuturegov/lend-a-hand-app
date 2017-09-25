@@ -86,17 +86,17 @@ en:
 
   helper_journeys:
     title: "Hi Julia!"
-    info: "Find travellers to help on your next journey…"
+    info: "Searching for travellers to help on your next journey…"
     upcoming: " Upcoming journeys."
     pending: "Waiting for helpers."
     waiting: "Waiting for confirmation"
     faq: "Check out the travellers FAQ for information on how you can provide help effectively."
 
   helper_upcoming_journey:
-    title: "Kat"
+    title: "Daniel"
 
   helper_upcoming_journeys:
-    title: "Your upcoming journey with Kat."
+    title: "Your upcoming journey with Daniel."
 
   helper_pending_journey:
     title: "Waiting for Dimitri to accept your offer."
@@ -107,7 +107,7 @@ en:
     departure: "Choose your departure time."
 
   searching:
-    title: "Finding travellers for you to lend a hand…"
+    title: "Searching for travellers for you to lend a hand…"
 
   helper_traveller_profile:
     tags: "I would like help with…"
@@ -139,7 +139,7 @@ en:
     info: "We'll let you know when a helper is available for your journey"
 
   traveller_journey_create:
-    title: "Hi Kat!"
+    title: "Hi Daniel!"
     info: "Find helpers to help on your next journey…"
 
   traveller_journey_overview:
@@ -157,7 +157,7 @@ en:
 
   traveller_profile:
     title: "We found someone who needs your help."
-    name: "Kat Stevens"
+    name: "Daniel Tang"
     info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
     tags: "What kind of help would you like?"
 
@@ -170,7 +170,7 @@ en:
     tag_f: "Pushing my wheelchair"
 
   traveller_profile_edit:
-    title: "Welcome Kat!"
+    title: "Welcome Daniel!"
     info: "We just need a few details from you to set up your profile. This allows helpers to get to know a bit about you and your needs."
     upload: "Upload your photo"
     gender: "Who would you prefer to help you?"
@@ -265,7 +265,7 @@ en:
     card_title: "Previous helpers."
 
   profile_confirm:
-    profile: "Thanks Kat!"
+    profile: "Thanks Daniel!"
     email: "Your profile is ready. You can now start searching for helpers for your next journey."
 
   search_when_where:
@@ -296,7 +296,7 @@ en:
 
   thanks:
     title: "Thanks for lending a hand!"
-    info: "We have notifed Kat and will let you know when your offer has been accepted."
+    info: "We have notifed Daniel and will let you know when your offer has been accepted."
 
   chat:
     title: "Chat…"

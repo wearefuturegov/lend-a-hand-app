@@ -29,8 +29,8 @@
 
         %section.actions.secondary
           = render partial: "partials/button", locals: {one: I18n.t('button.male'), myclass: 'button secondary'}
-          = render partial: "partials/button", locals: {one: I18n.t('button.female'), myclass: 'button secondary active'}
-          = render partial: "partials/button", locals: {one: I18n.t('button.either'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.female'), myclass: 'button secondary'}
+          = render partial: "partials/button", locals: {one: I18n.t('button.either'), myclass: 'button secondary active'}
 
       %section.card
         %p 
@@ -39,5 +39,5 @@
         = render partial: "partials/tags", locals: {tag_a: I18n.t('traveller_tag.tag_a'), tag_b: I18n.t('traveller_tag.tag_b'), tag_c: I18n.t('traveller_tag.tag_c'), tag_d: I18n.t('traveller_tag.tag_d'), tag_e: I18n.t('traveller_tag.tag_e'), tag_f: I18n.t('traveller_tag.tag_f')}
 
 
-    %section.actions.primary
-      = render partial: "partials/button", locals: {one: I18n.t('button.create_profile'), page: 'traveller_profile_confirm', myclass: 'button primary confirm'}
+      %section.actions.primary
+        = render partial: "partials/button", locals: {one: I18n.t('button.create_profile'), page: 'traveller_profile_confirm', myclass: 'button primary confirm'}

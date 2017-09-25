@@ -13,6 +13,10 @@ input[type] {
   padding: $baseline*4;
 }
 
+.key .form input {
+  width: 100%;
+}
+
 .form { 
   float: left;
   input {
@@ -23,7 +27,6 @@ input[type] {
     background: $background;
     border: $border-width $border-style $gray;
     padding: $baseline*0.5;
-    width: 100%;
   }
 }
 

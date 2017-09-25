@@ -88,19 +88,6 @@ p,
 
 .slide {
   padding: $baseline*0.5 0;
-  // .info {
-  //   @include grid-column(4);
-  //   &.profile {
-  //     @include grid-column(2);
-  //   }
-  //   &.right {
-  //     @include grid-column(2);
-  //     float: right;
-  //   }
-  //   &.extra {
-  //     @include grid-column(6);
-  //   }
-  // }
   .tags, .title, .extra {
     @include grid-column(6);
   }
@@ -119,13 +106,11 @@ p,
   .profile {
     @include grid-column(2);
   }
-  .title, .info, .extra {
-    @include grid-column(3);
-  }
-  .right {
-    @include grid-column(1);
+  .extra, .info {
+     @include grid-column(4);
   }
 }
+
 .info-card {
   .title, .info, .extra {
     @include grid-column(5);
@@ -153,12 +138,6 @@ p,
       width: 50%;
   }
 }
-
-// .search-details, .profile-route {
-//   .markers {
-//     @include grid-column(6);
-//   }
-// }
 
 .markers {
   @include grid-column(6);

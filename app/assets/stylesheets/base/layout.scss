@@ -30,17 +30,22 @@ body {
 //   flex: 0 1 auto;
 // }
 
+.header + .main {
+  padding-top: 0;
+}
+
 .main {
   background: $white;
   display: flex;
   // height: calc(100% - #{$header-height});
   z-index: 0;
-  margin-bottom: $baseline*4;
-  padding-top: $baseline;
+  padding-top: $baseline*1.5;
   &.cover {
     position: absolute;
     top: 0;
     height: calc(100%);
+    padding-top: 0;
+    // margin-bottom: 0;
     .card.profile {
       padding-top: 0;
     }
@@ -62,9 +67,13 @@ body {
   margin: 0;
 }
 
+.key.card.divide {
+  padding: $baseline 0;
+}
+
 .divide {
   border-bottom: $border-width-thin $border-style $black;
-  padding: $baseline 0;
+  padding: $baseline*0.5 0;
 }
 
 .fa-clock-o {
@@ -74,12 +83,12 @@ body {
 }
 
 .actions {
-  margin-top: $baseline*0.5;
+  margin-top: 0;
   margin-bottom: $baseline*0.5;
   &.secondary {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+    // position: fixed;
+    // bottom: 0;
   }
   .secondary {
     flex: 1 1 100%;
@@ -89,6 +98,15 @@ body {
     bottom: 0;
     left: 0;
   }
+}
+
+.body .actions {
+  position: relative;
+  margin-top: $baseline;
+}
+
+.body .actions + .actions {
+  margin-top: 0;
 }
 
 .choice {
@@ -119,4 +137,8 @@ body {
 
 .listing .right {
   float: right;
+}
+
+.profile-card .profile {
+  margin-bottom: $baseline*0.25;
 }
