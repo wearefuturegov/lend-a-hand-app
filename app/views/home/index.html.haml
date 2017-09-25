@@ -1,4 +1,4 @@
-%main.main
+%main.main.helper
   %section.container
     %section.body
       %section.card
@@ -9,6 +9,6 @@
           = t('global.about')
 
   %section.actions.primary
-    = render partial: "partials/button", locals: {one: I18n.t('button.traveller'), page: 'traveller_profile_edit', myclass: 'button primary'}
-
     = render partial: "partials/button", locals: {one: I18n.t('button.helper'), page: 'helper_journey_create', myclass: 'button primary'}
+    
+    = render partial: "partials/button", locals: {one: I18n.t('button.traveller'), page: 'traveller_profile_edit', myclass: 'button primary'}

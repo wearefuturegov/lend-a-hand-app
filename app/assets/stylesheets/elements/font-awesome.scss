@@ -12,6 +12,7 @@
 }
 
 .fa-long-arrow-left {
+  color: $secondary;
   font-size: $body*1.75;
   line-height: $baseline*2;
 }
@@ -60,7 +61,7 @@
 
 
 .fa-map-marker {
-  color: $brand;
+  color: $secondary;
   font-size: $baseline*1.5;
 }
 
@@ -105,8 +106,8 @@
   &.circle:before {
     @include circle;
     display: block;
-    border-color: $secondary;
-    background: $secondary;
+    border-color: $tertiary;
+    background: $tertiary;
     height: 100px;
     width: 100px;
     line-height: 50px;

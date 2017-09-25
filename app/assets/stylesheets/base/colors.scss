@@ -19,16 +19,36 @@ $brand: #ff5c00;
 
 $primary: $brand;
 $secondary: #18cca4;
+$tertiary: #4b06b7;
 
 $brand-dim: darken($brand, 12%);
 $brand-bright: lighten($brand, 12%);
 $brand-mute: lighten($brand, 50%);
 
-$secondary-mute: lighten($secondary, 42%);
+$secondary-mute: lighten($secondary, 46%);
+$tertiary-mute: lighten($tertiary, 58%);
 
 $attention: #e87a24;
 
 $background: $white;
 
 
-/* outside colors */
+/* specific colors */
+
+.helper {
+  h1,
+  .fa-long-arrow-left,
+  .fa-map-marker,
+  .button.secondary,
+  .fa-pencil,
+  .tags li span {
+    color: $tertiary;
+    border-color: $tertiary;
+  }
+  .tags li {
+    background: $tertiary-mute;
+  }
+  .card.profile:after, .button.secondary.active {
+    background: $tertiary;
+  }
+}
