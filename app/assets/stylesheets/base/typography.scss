@@ -19,7 +19,7 @@ a, a:active, a:focus {
 
 p {
   color: $black;
-  margin-bottom: $baseline;
+  margin-bottom: $baseline*0.5;
   span {
     color: $brand;
   }
@@ -31,15 +31,15 @@ p {
 
 h1 {
   font-size: $h1;
-  line-height: $h1*1.4;
-  margin-bottom: $baseline*0.5;
+  line-height: $h1-lineheight;
+  margin-bottom: $baseline*3 - $h1-lineheight;
   color: $secondary;
 }
 
 h2 {
   font-size: $h2;
-  line-height: $h2*1.25;
-  margin-bottom: $baseline*0.5
+  line-height: $h2-lineheight;
+  margin-bottom: $baseline*2 - $h2-lineheight
 }
 
 h3 {

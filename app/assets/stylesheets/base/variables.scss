@@ -7,8 +7,10 @@ $gutter: 18px;
 
 $mobile-width: 414px;
 
-$h1: 30px;
+$h1: 34px;
+$h1-lineheight: $h1*1.2; 
 $h2: 20px;
+$h2-lineheight: $h2*1.3;
 $h3: 14px;
 
 $medium: 18px;
@@ -21,6 +23,7 @@ $border-width: 2px;
 $border-style: solid;
 
 $border-width-thin: 1px;
+$border-radius: 4px;
 
 $speed: 500ms;
 $curve: ease;

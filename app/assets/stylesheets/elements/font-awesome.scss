@@ -25,9 +25,10 @@
   font-size: $baseline*1.5;
 }
 
-.fa-check-circle-o {
+.fa-check {
   color: $brand;
-  font-size: $baseline*1.5;
+  font-size: $baseline;
+  line-height: $baseline*2;
 }
 
 .fa-long-arrow-right {
@@ -50,7 +51,7 @@
 .fa-circle-o {
   color: $gray;
   font-size: $baseline*1.5;
-  font-weight: 600;
+  line-height: $baseline*2;
 }
 
 .markers .fa-circle-o {
@@ -70,7 +71,7 @@
 }
 
 .fa-circle-o,
-.fa-check-circle-o, 
+.fa-check, 
 .fa-map-marker, 
 .fa-camera, 
 .fa-frown-o, 
@@ -90,11 +91,10 @@
 .fa-camera {
   color: $secondary;
   font-size: $baseline*2;
-  margin-top: $baseline*1.5;
-  margin-bottom: $baseline*1.5;
   &.circle:before {
     @include circle;
     border-color: $secondary;
+    display: inline-block;
   }
 }
 

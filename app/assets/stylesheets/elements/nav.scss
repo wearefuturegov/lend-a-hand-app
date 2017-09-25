@@ -20,4 +20,8 @@ nav {
   .fa-pencil, .fa-times {
     float: right;
   }
+  .fa-times {
+    font-size: $h1;
+    line-height: $h1-lineheight;
+  }
 }

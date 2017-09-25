@@ -22,7 +22,8 @@ input[type] {
     border: none;
     background: $background;
     border: $border-width $border-style $gray;
-    padding: $baseline*0.25 $baseline*0.5;
+    padding: $baseline*0.5;
+    width: 100%;
   }
 }
 
@@ -32,8 +33,8 @@ input[type] {
   font-size: $small;
   line-height: $baseline;
   text-align: left;
-  margin-top: $baseline*0.5;
-  margin-bottom: $baseline*0.5;
+  margin-top: 0;
+  margin-bottom: 0;
   .helper {
     font-size: $tiny;
     text-decoration: underline;

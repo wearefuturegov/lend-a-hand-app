@@ -41,8 +41,19 @@
       position: relative;
     }
     .bottom {
-      margin-top: $baseline*3;
+      margin-top: $baseline*5;
       margin-bottom: $baseline;
     }
+  }
+}
+
+.link {
+  border-left: $border-width*2 dotted $gray;
+  height: $baseline*4;
+  margin-top: $baseline*0.25;
+  margin-bottom: $baseline*0.25;
+  margin: $baseline*0.25 calc(50% - #{$border-width});
+  &.long {
+    height: $baseline*6;
   }
 }

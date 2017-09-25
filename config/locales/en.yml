@@ -21,7 +21,7 @@
 
 en:
   global:
-    title: "Lend a Hand."
+    title: "Lend a Hand"
     about: "We help to connect commuters with people in wheelchairs to commute on public transport."
 
   button:
@@ -102,7 +102,7 @@ en:
     title: "Waiting for Dimitri to accept your offer."
 
   helper_search_details:
-    title: "About your journey."
+    title: "About your journey"
     info: "Familiarise yourself with each station's accessibility details."
     departure: "Choose your departure time."
 
@@ -182,7 +182,7 @@ en:
     profile: "View profile"
 
   about_station:
-    title: "About station."
+    title: "Alburn station"
     info: "Alburn has wheelchair access,"
     around: "Getting around the station."
     accessibility: "Accessibility."

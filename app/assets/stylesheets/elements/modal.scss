@@ -10,5 +10,10 @@ span.open .extra {
     display: block;
     position: absolute;
     top: 0;
+    bottom: 0;
+    background: $white;
+  }
+  .main {
+    margin-bottom: 0;
   }
 }

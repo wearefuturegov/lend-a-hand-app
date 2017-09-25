@@ -1,9 +1,9 @@
 /* card */
 
 .card {
-  + .card {
-    margin-top: -$border-width;
-  }
+  // + .card {
+  //   margin-top: -$border-width;
+  // }
   &.route {
     border-bottom: none;
     padding-top: 0;
