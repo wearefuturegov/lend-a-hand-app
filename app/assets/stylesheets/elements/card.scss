@@ -85,7 +85,7 @@
 
 .profile-card, .info-card {
   .extra {
-    color: $brand;
+    color: $primary;
   }
   .right {
     text-align: right;
@@ -95,7 +95,7 @@
 
 .profile-card {
   .info, .fa-angle-right {
-    color: $brand;
+    color: $primary;
     line-height: $baseline*4.5;
   }
   .fa-angle-right {

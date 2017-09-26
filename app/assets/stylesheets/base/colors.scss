@@ -6,21 +6,29 @@ $black: #505050;
 $gray: #bbb;
 $footer: #000;
 
-/* notify */
-$alert: #ff5c00;
-$error: #ff5c00;
-$confirm: #04a75f;
-
 /* modifiers */
 $gray-darken: darken($gray, 10%);
 
 /* brand */
+$brand: #ec0000; // passable contrast
 $brand: #ff5c00;
 
-$primary: $brand;
+/* colour hierarchy */
+$primary: #ec0000; // passable contrast
+$primary: #ea4b08;
+
+$secondary: #0ca784; // passable contrast
 $secondary: #18cca4;
+
 $tertiary: #4b06b7;
 
+/* notify */
+$attention: $brand;
+$alert: $brand;
+$error: $brand;
+$confirm: #04a75f;
+
+/* shades */
 $brand-dim: darken($brand, 12%);
 $brand-bright: lighten($brand, 12%);
 $brand-mute: lighten($brand, 50%);
@@ -28,12 +36,9 @@ $brand-mute: lighten($brand, 50%);
 $secondary-mute: lighten($secondary, 46%);
 $tertiary-mute: lighten($tertiary, 58%);
 
-$attention: #e87a24;
-
-$background: $white;
-
 
 /* specific colors */
+$background: $white;
 
 .helper {
   h1,
