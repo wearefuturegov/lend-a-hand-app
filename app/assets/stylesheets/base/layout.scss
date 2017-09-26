@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  height: 100%;
   width: 100%;
 }
 
@@ -22,10 +23,6 @@ body {
   // height: calc(100% - #{$baseline*3 - $h1-lineheight});
   padding-bottom: $baseline;
 }
-
-// .actions {
-//   flex: 0 1 auto;
-// }
 
 .header h1 {
   padding-top: 0;
