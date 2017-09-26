@@ -96,6 +96,9 @@ body {
 .body .actions {
   position: relative;
   margin-top: $baseline;
+  &.secondary {
+    margin-top: 0;
+  }
 }
 
 .body .actions + .actions {
