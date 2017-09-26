@@ -1,10 +1,10 @@
-%header.header
-  .back
-    = link_to page_path(id: 'traveller_journey_create'), :title => "Profile" do
-      = fa_icon "long-arrow-left"
 %main.main.search-details
   %section.container
     %section.body
+      %header.header
+        .back
+          = link_to page_path(id: 'traveller_journey_create'), :title => "Profile" do
+            = fa_icon "long-arrow-left"
       %section.card
 
         %h2
@@ -18,7 +18,7 @@
       
       = render partial: 'partials/traveller_departure'
 
-      %section.actions.primary
-        = render partial: 'partials/button', locals: {one: I18n.t('button.find_traveller'), page: 'traveller_journey_review', myclass: 'button primary confirm'}
+    %section.actions.primary
+      = render partial: 'partials/button', locals: {one: I18n.t('button.find_traveller'), page: 'traveller_journey_review', myclass: 'button primary confirm'}
 
 = render partial: 'partials/about_station'

@@ -32,6 +32,8 @@ p {
 h1 {
   font-size: $h1;
   line-height: $h1-lineheight;
+  margin-top: $baseline*3 - $h1-lineheight;
+  // margin-top: $baseline*2 + $border-width*2;
   margin-bottom: $baseline*3 - $h1-lineheight;
   color: $secondary;
 }

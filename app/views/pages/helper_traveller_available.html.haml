@@ -1,10 +1,10 @@
-%header.header.helper
-  .back
-    = link_to page_path(id: 'helper_journey_departure'), :title => "Profile" do
-      = fa_icon "long-arrow-left"
 %main.main.full.helper
   %section.container
     %section.body
+      %header.header.helper
+        .back
+          = link_to page_path(id: 'helper_journey_departure'), :title => "Profile" do
+            = fa_icon "long-arrow-left"
       %section.card
 
         %h2 

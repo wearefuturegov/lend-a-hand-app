@@ -1,11 +1,10 @@
-%header.header
-  .back
-    = link_to page_path(id: 'traveller_helper_profile'), :title => "Profile" do
-      = fa_icon "long-arrow-left"
 %main.main
   %section.container
     %section.body
-
+      %header.header
+        .back
+          = link_to page_path(id: 'traveller_helper_profile'), :title => "Profile" do
+            = fa_icon "long-arrow-left"
       %section.card
         %h1
           = t('concern.title')

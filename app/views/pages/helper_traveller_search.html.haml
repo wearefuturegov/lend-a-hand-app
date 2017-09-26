@@ -1,8 +1,9 @@
 %main.main.helper
-  %section.body
-    %section.card
-      %h1
-        = t('searching.title')
+  %section.container
+    %section.body
+      %section.card
+        %h1
+          = t('searching.title')
 
-  %section.actions.primary
-    = render partial: "partials/button", locals: {one: I18n.t('button.continue'), page: 'helper_traveller_available', myclass: 'button primary confirm'}
+    %section.actions.primary
+      = render partial: "partials/button", locals: {one: I18n.t('button.continue'), page: 'helper_traveller_available', myclass: 'button primary confirm'}
