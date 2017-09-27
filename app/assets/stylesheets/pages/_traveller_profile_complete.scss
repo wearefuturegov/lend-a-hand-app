@@ -1,0 +1,15 @@
+/* traveller_profile_complete */
+
+.traveller_profile_complete {
+  .tags {
+    position: relative;
+      li:first-child {
+      position: absolute;
+      top: -$baseline*3 - $border-width;
+      left: $baseline*0.25;
+    }
+    li span:before {
+      content: "x";
+    }
+  }
+}
