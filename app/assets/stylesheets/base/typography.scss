@@ -84,6 +84,11 @@ img + p {
     text-align: center;
     margin-top: $baseline;
   }
+  p {
+    color: $white;
+    text-align: center;
+    margin-top: -$baseline*0.5;
+  }
 }
 
 .title {

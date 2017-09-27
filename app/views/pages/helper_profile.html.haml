@@ -10,18 +10,23 @@
 
         %h1
           = t('helper_profile.name')
+        %p
+          = t('helper_profile.helped')
 
 
       %section.card
+        %h2
+          = t('helper_profile.about.title')
         %p
-          = t('helper_profile.about')
+          = t('helper_profile.about.info')
 
+        %h2
+          = t('helper_profile.help.title')
         %p
-          = t('helper_profile.help')
+          = t('helper_profile.help.info')
 
-      %section.card
         %h2 
-          = t('helper_profile_view.tags')
+          = t('helper_profile.tags')
 
         = render partial: "partials/tags", locals: {tag_a: I18n.t('helper_tag.tag_a'), tag_b: I18n.t('helper_tag.tag_b'), tag_c: I18n.t('helper_tag.tag_c'), tag_d: I18n.t('helper_tag.tag_d'), tag_e: I18n.t('helper_tag.tag_e'), tag_f: I18n.t('helper_tag.tag_f')}
 

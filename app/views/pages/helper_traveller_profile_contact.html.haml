@@ -10,13 +10,15 @@
         = image_tag "app-grabs/traveller_profile.png", :alt => "Profile image", :class => "profile-img"
 
         %h1
-          = t('traveller_profile.name')
+          = t('helper_traveller_profile.name')
 
       %section.card
+
+        %h2
+          = t('helper_traveller_profile.about.title')
         %p
-          = t('traveller_profile.info')
-
-      %section.card
+          = t('helper_traveller_profile.about.info')
+          
         %h2 
           = t('helper_traveller_profile.tags')
 

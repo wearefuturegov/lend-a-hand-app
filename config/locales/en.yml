@@ -71,9 +71,21 @@ en:
 
   helper_profile:
     name: "Julia Leigh"
-    about: "I'm training to be a Yoga teacher and like to help friends and family live a healthy life. I enjoy classical music and history."
-    help: "I am able to assist people who use wheelchairs to get up and down ramps. I am also good with directions and can navigate stations quickly."
-    tags: "Top feedback"
+    helped: "5 people helped"
+    about:
+      title: "About you"
+      info: "I'm training to be a Yoga teacher and like to help friends and family live a healthy life. I enjoy classical music and history."
+    help:
+      title: "How you can help"
+      info: "I am able to assist people who use wheelchairs to get up and down ramps. I am also good with directions and can navigate stations quickly."
+    tags: "Your feedback"
+
+  helper_traveller_profile:
+    name: "Daniel Tang"
+    about:
+      title: "About Daniel"
+      info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
+    tags: "Daniel would like help with…"
   
   helper_accept:
     title: "That's great!"
@@ -109,9 +121,6 @@ en:
   searching:
     title: "Searching for travellers for you to lend a hand…"
 
-  helper_traveller_profile:
-    tags: "I would like help with…"
-
   helper_tag:
     tag_a: "Attentive"
     tag_b: "Went above and beyond"
@@ -122,6 +131,24 @@ en:
 
 
 # traveller view
+
+  traveller_profile:
+    title: "We found someone who needs your help."
+    name: "Daniel Tang"
+    about:
+      title: "About you"
+      info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
+    tags: "What kind of help would you like?"
+
+  traveller_helper_profile:
+    name: "Julia Leigh"
+    about:
+      title: "About Julia"
+      info: "I'm training to be a Yoga teacher and like to help friends and family live a healthy life. I enjoy classical music and history."
+    help:
+      title: "How Julia can help"
+      info: "I am able to assist people who use wheelchairs to get up and down ramps. I am also good with directions and can navigate stations quickly."
+    tags: "Top feedback"
 
   traveller_journey_pending:
     title: "Waiting for helpers for your journey."
@@ -154,12 +181,6 @@ en:
   travellers_available:
     title: "We have found 3 travellers who are looking for help on this journey."
     info: "Check a traveller's profile to make sure you are able to provide the help they need on their journey."
-
-  traveller_profile:
-    title: "We found someone who needs your help."
-    name: "Daniel Tang"
-    info: "I live with my two kids and our family dog, Beanie. I want to be more independant and not have to rely on them to travel during their work day."
-    tags: "What kind of help would you like?"
 
   traveller_tag:
     tag_a: "Platforms"
