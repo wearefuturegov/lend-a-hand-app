@@ -1,0 +1,63 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card.divide
+        %h1
+          = t('traveller_journey_create.title')
+
+        %h2
+          = t('traveller_journey_create.info')
+
+        %section.primary
+          %a.button{class: 'button primary'}
+            = t('button.add_journey')
+
+      %section.card
+        .title
+          = t('helper_journeys.upcoming')
+      %section.card
+        = link_to traveller_page_path(id: 'journey_upcoming'), title: 'Search Details' do
+          %section.slide.divide.profile-card
+            .profile
+              = image_tag 'app-grabs/helper_profile.png', alt: 'Profile image'
+            .info
+              = t('helper_profile.name')
+              = fa_icon 'angle-right'
+            .title
+              = t('dummy.time_a')
+              ,
+              = t('dummy.date_a')
+              ,
+              = t('departure.from.info')
+              = fa_icon 'long-arrow-right'
+              = t('departure.to.info')
+
+        %section.card
+          .title
+            = t('helper_journeys.pending')
+        %section.card
+          = link_to traveller_page_path(id: 'journey_pending'), title: 'Pending Journey' do
+            %section.slide.divide.profile-card
+              .profile
+                = fa_icon 'user', class: 'circle'
+              .info
+                = fa_icon 'angle-right'
+              .title
+                = t('dummy.time_b')
+                ,
+                = t('dummy.date_b')
+                ,
+                = t('departure.from.info')
+                = fa_icon 'long-arrow-right'
+                = t('departure.to.info')
+
+      %section.card
+        %p
+          = t('helper_journeys.faq')
+
+    %section.actions.secondary
+      %a.button{class: 'button secondary active'}
+        = t('button.journey')
+      %a.button{class: 'button secondary'}
+        = t('button.message')
+      = link_to I18n.t('button.profile'), traveller_page_path(id: 'profile'), class: 'button secondary'

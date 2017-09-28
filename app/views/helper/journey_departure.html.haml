@@ -1,0 +1,23 @@
+%main.main.search-details.helper
+  %section.container
+    %section.body
+      %header.header.helper
+        .back
+          = link_to helper_page_path(id: 'journey_create'), title: 'Profile' do
+            = fa_icon 'long-arrow-left'
+      %section.card
+
+        %h2
+          = t('helper_search_details.info')
+
+      %section.key.card.divide
+        = render partial: 'partials/route_large'
+
+      %h2
+        = t('helper_search_details.departure')
+      
+      = render partial: 'partials/helper_departure'
+
+    %section.actions.primary
+      = link_to I18n.t('button.find_traveller'), helper_page_path(id: 'traveller_search'), class: 'button primary confirm'
+  = render partial: 'partials/about_station'

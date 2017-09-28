@@ -1,0 +1,9 @@
+%main.main.helper
+  %section.container
+    %section.body
+      %section.card
+        %h1
+          = t('searching.title')
+
+    %section.actions.primary
+      = link_to I18n.t('button.continue'), helper_page_path(id: 'traveller_available'), class: 'button primary confirm'

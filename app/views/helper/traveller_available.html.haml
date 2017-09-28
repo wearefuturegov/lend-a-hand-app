@@ -1,0 +1,40 @@
+%main.main.full.helper
+  %section.container
+    %section.body
+      %header.header.helper
+        .back
+          = link_to helper_page_path(id: 'journey_departure'), title: 'Profile' do
+            = fa_icon 'long-arrow-left'
+      %section.card
+
+        %h2 
+          = t('travellers_available.title')
+        %p
+          = t('travellers_available.info')
+
+      = link_to helper_page_path(id: 'traveller_profile'), title: 'Profile' do
+        %section.card.divide.profile-card
+          .profile
+            = image_tag 'app-grabs/traveller_profile.png', alt: 'Profile image'
+          .info
+            = t('traveller_profile.name')
+            = fa_icon 'angle-right'
+
+      %section.card.divide.profile-card.deactive
+        .profile
+          = image_tag 'app-grabs/profile_001.png', alt: 'Profile image'
+        .info
+          = t('dummy.name_a')
+          = fa_icon 'angle-right'
+
+      %section.card.divide.profile-card.deactive
+        .profile
+          = image_tag 'app-grabs/profile_002.png', alt: 'Profile image'
+        .details
+          .info
+            = t('dummy.name_b')
+            = fa_icon 'angle-right'
+
+      %section.key.card
+        = render partial: 'partials/route_large'
+  = render partial: 'partials/about_station'

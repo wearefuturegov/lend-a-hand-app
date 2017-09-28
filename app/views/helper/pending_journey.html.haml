@@ -1,0 +1,16 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+
+        %h2
+          = t('helper_pending_journey.title')
+
+        =image_tag 'app-grabs/profile_dimitri.png', alt: 'Profile image', class: 'profile-img'
+
+      %section.card
+        = render partial: 'partials/route_large'
+
+      %section.actions.primary
+        %a.button{class: 'button primary deactive'}
+          = t('button.view_profile')

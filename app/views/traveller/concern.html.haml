@@ -1,0 +1,18 @@
+%main.main
+  %section.container
+    %section.body
+      %header.header
+        .back
+          = link_to traveller_page_path(id: 'helper_profile'), title: 'Profile' do
+            = fa_icon 'long-arrow-left'
+      %section.card
+        %h1
+          = t('concern.title')
+        .form
+          %p
+            = t('concern.info')
+          %textarea{placeholder: t('form.comments')}
+
+    %section.actions.primary
+      %a.button{class: 'button primary'}
+        = t('button.send')

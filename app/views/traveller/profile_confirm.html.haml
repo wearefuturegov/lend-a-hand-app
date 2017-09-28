@@ -1,0 +1,12 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+        %h1
+          = t('profile_confirm.profile')
+        %h2 
+          = t('profile_confirm.email')
+
+
+    %section.actions.primary
+      = link_to I18n.t('button.lets_go'), traveller_page_path(id: 'journey_create'), class: 'button primary'

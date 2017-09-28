@@ -1,0 +1,23 @@
+%main.main
+  %section.container
+    %section.body
+      %header.header
+        .back
+          = link_to traveller_page_path(id: 'journey_add'), title: 'Profile' do
+            = fa_icon 'long-arrow-left'
+      %section.card
+
+        %h2
+          = t('traveller_journey_offer.title')
+
+        =image_tag 'app-grabs/helper_profile.png', alt: 'Profile image', class: 'profile-img'
+
+      %section.key.card
+        = render partial: 'partials/route_large'
+
+    %section.actions.primary
+      = link_to I18n.t('button.view_profile'), traveller_page_path(id: 'helper_profile'), class: 'button primary confirm'
+
+
+  = render partial: 'partials/about_station'
+

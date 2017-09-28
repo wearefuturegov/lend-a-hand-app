@@ -1,0 +1,20 @@
+%main.main
+  %section.container
+    %section.body
+      %header.header
+        .back
+          = link_to traveller_page_path(id: 'journey_add'), title: 'Profile' do
+            = fa_icon 'long-arrow-left'
+      %section.card
+
+        %h2
+          = t('traveller_journey_pending.title')
+
+      %section.key.card
+        = render partial: 'partials/route_large'
+
+    %section.actions.primary
+      %a.button{class: 'button primary'}
+        = t('button.cancel_journey')
+
+  = render partial: 'partials/about_station'

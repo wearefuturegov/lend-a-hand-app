@@ -1,0 +1,22 @@
+%main.main.helper
+  %section.container
+    %section.body
+      %header.header.helper
+        .back
+          = link_to helper_page_path(id: 'journey_add'), title: 'Profile' do
+            = fa_icon 'long-arrow-left'
+      %section.card
+
+        %h2
+          = t('helper_pending_journey.title')
+
+        =image_tag 'app-grabs/profile_dimitri.png', alt: 'Profile image', class: 'profile-img'
+
+      %section.key.card
+        = render partial: 'partials/route_large'
+
+    %section.actions.primary
+      %a.button{class: 'button primary'}
+        = t('button.view_profile')
+
+  = render partial: 'partials/about_station'

@@ -1,0 +1,48 @@
+%main.main.traveller_profile_complete
+  %section.container
+    %section.body
+
+      %section.card
+        %h1
+          = t('traveller_profile_edit.title')
+
+        %h2
+          = t('traveller_profile_edit.info')
+
+      %section.card
+
+        %p
+          = t('traveller_profile_edit.upload')
+        = image_tag 'app-grabs/traveller_profile.png', alt: 'Profile image', class: 'profile-img'
+
+
+      %section.card
+        .form
+          %p
+            = t('form.about')
+          %textarea
+            = t('traveller_profile.about.info')
+
+      %section.card
+        %p
+          = t('traveller_profile_edit.gender')
+
+        %section.actions.secondary
+          %a.button{class: 'button secondary'}
+            = t('button.male')
+          %a.button{class: 'button secondary'}
+            = t('button.female')
+          %a.button{class: 'button secondary active'}
+            = t('button.either')
+
+      %section.card
+        .form
+          %p 
+            = t('traveller_profile_edit.tags')
+          %input
+      %section.card
+        = render partial: 'partials/tags', locals: {tag_a: I18n.t('traveller_tag.tag_a'), tag_b: I18n.t('traveller_tag.tag_b'), tag_c: I18n.t('traveller_tag.tag_c'), tag_d: I18n.t('traveller_tag.tag_d'), tag_e: I18n.t('traveller_tag.tag_e'), tag_f: I18n.t('traveller_tag.tag_f')}
+
+
+    %section.actions.primary
+      = link_to I18n.t('button.create_profile'), traveller_page_path(id: 'profile_confirm'), class: 'button primary confirm'

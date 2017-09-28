@@ -1,0 +1,13 @@
+%main.main.helper
+  %section.container
+    %section.body
+      %section.card
+
+        %h1
+          = t('thanks.title')
+
+        %h2
+          = t('thanks.info')
+
+    %section.actions.primary
+      = link_to I18n.t('button.back_journey'), helper_page_path(id: 'journey_add'), class: 'button primary'

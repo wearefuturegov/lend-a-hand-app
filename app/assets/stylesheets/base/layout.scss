@@ -4,10 +4,6 @@ html, body {
   height: 100%;
 }
 
-header {
-  // flex: 0 1 auto;
-}
-
 body {
   background: $background;
 }
@@ -20,8 +16,11 @@ body {
 .body { 
   overflow-y: auto; 
   height: calc(100% - #{$header-height + $border-width*2 + $baseline*2});
-  // height: calc(100% - #{$baseline*3 - $h1-lineheight});
   padding-bottom: $baseline;
+  &.double {
+    height: calc(100% - #{$header-height + $border-width*2 + $baseline*9});
+    padding-bottom: $baseline*8;
+  }
 }
 
 .header h1 {
@@ -32,15 +31,12 @@ body {
   background: $white;
   display: flex;
   height: 100%;
-  // height: calc(100% - #{$header-height + $border-width*2});
-  // height: calc(100% - #{$baseline*3 - $h1-lineheight});
   z-index: 0;
   &.cover {
     position: absolute;
     top: 0;
     height: calc(100%);
     padding-top: 0;
-    // margin-bottom: 0;
     .card.profile {
       padding-top: 0;
     }
@@ -81,12 +77,11 @@ body {
   margin-top: 0;
   margin-bottom: $baseline*0.5;
   &.double {
-    margin-top: -$baseline*2 - $border-width*2 - $baseline*0.5;
+    position: relative;
+    bottom: $baseline*2 + $border-width*2 + $baseline*0.5;
   }
   &.secondary {
     display: flex;
-    // position: fixed;
-    // bottom: 0;
   }
   .secondary {
     flex: 1 1 100%;

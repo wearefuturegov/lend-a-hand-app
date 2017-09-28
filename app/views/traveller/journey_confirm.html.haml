@@ -1,0 +1,13 @@
+%main.main
+  %section.container
+    %section.body
+      %section.card
+
+        %h1
+          = t('add_journey_confirm.title')
+
+        %h2
+          = t('add_journey_confirm.info')
+
+    %section.actions.primary
+      = link_to I18n.t('button.back_journey'), traveller_page_path(id: 'journey_add'), class: 'button primary'

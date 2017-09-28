@@ -1,0 +1,32 @@
+%main.main.helper
+  %section.container
+    %section.body
+      %section.card
+        %h1
+          = t('helper_journey_create.title')
+
+        %h2
+          = t('helper_journey_create.info')
+
+      %section.key.card
+        %section.markers
+          %section
+            = fa_icon "circle-o"
+          %section.link
+          %section
+            = fa_icon 'map-marker'
+        %section.form
+
+          %input{placeholder: t('form.from'), class: 'top'}
+          %input{placeholder: t('form.to'), class: 'bottom'}
+
+      %section.key.card
+        %section.markers
+          %section
+            = fa_icon 'calendar-o'
+        %section.form
+
+          %input{value: t('form.leaving')}
+
+    %section.actions.primary
+      = link_to I18n.t('button.plan'), helper_page_path(id: 'journey_departure'), class: 'button primary'

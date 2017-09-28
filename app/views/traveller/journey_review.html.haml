@@ -1,0 +1,19 @@
+%main.main.search-details
+  %section.container
+    %section.body
+      %header.header
+        .back
+          = link_to traveller_page_path(id: 'journey_departure'), title: 'Profile' do
+            = fa_icon "long-arrow-left"
+      %section.card
+
+        %h2
+          = t('traveller_journey_overview.title')
+      
+      %section.key.card
+        = render partial: 'partials/route_large'
+
+    %section.actions.primary
+      = link_to I18n.t('button.add_journey'), traveller_page_path(id: 'journey_confirm'), class: 'button primary'
+
+  = render partial: 'partials/about_station'

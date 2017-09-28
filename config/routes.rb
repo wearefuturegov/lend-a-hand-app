@@ -7,4 +7,11 @@ Rails.application.routes.draw do
 
   resources :pages, only: :show
 
+  namespace :traveller do
+    resources :pages, only: :show
+  end
+
+  namespace :helper do
+    resources :pages, only: :show
+  end
 end

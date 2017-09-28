@@ -1,0 +1,36 @@
+%main.main.cover.helper
+  %section.container
+    %section.body.double
+
+      %section.card.profile
+        %section.top-nav
+          = link_to traveller_page_path(id: 'journey_upcoming'), title: 'Profile' do
+            = fa_icon 'long-arrow-left', class: 'white'
+
+        = image_tag 'app-grabs/profile_003.png', alt: 'Profile image', class: 'profile-img'
+
+        %h1
+          = t('helper_profile.name')
+        %p
+          = t('helper_profile.helped')
+
+
+      %section.card
+        %h2
+          = t('traveller_helper_profile.about.title')
+        %p
+          = t('traveller_helper_profile.about.info')
+
+        %h2
+          = t('traveller_helper_profile.help.title')
+        %p
+          = t('traveller_helper_profile.help.info')
+
+        %h2 
+          = t('helper_profile.tags')
+
+        = render partial: 'partials/tags', locals: {tag_a: I18n.t('helper_tag.tag_a'), tag_b: I18n.t('helper_tag.tag_b'), tag_c: I18n.t('helper_tag.tag_c'), tag_d: I18n.t('helper_tag.tag_d'), tag_e: I18n.t('helper_tag.tag_e'), tag_f: I18n.t('helper_tag.tag_f')}
+
+    %section.actions.primary.double
+      = link_to I18n.t('button.flag'), traveller_page_path('concern'), class: 'button primary confirm'      
+      = link_to I18n.t('button.feedback'), traveller_page_path(id: 'feedback'), class: 'button primary confirm'

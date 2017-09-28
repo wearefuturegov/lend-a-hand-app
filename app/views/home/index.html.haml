@@ -9,6 +9,6 @@
           = t('global.about')
 
     %section.actions.primary.double
-      = render partial: "partials/button", locals: {one: I18n.t('button.helper'), page: 'helper_journey_create', myclass: 'button primary'}
+      = link_to I18n.t('button.helper'), helper_page_path(id: 'journey_create'), class: 'button primary'
       
-      = render partial: "partials/button", locals: {one: I18n.t('button.traveller'), page: 'traveller_profile_edit', myclass: 'button primary'}
+      = link_to I18n.t('button.traveller'), traveller_page_path(id: 'profile_edit'), class: 'button primary'

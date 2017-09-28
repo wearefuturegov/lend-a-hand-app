@@ -1,0 +1,13 @@
+%header.header.helper
+  .back
+    = link_to helper_page_path(id: 'traveller_profile_contact'), title: 'Profile' do
+      = fa_icon 'long-arrow-left'
+%main.main.helper
+  %section.container
+    %section.body
+
+      %section.card
+        %h1
+          = t('chat.title')
+
+          = fa_icon 'comment-o'
